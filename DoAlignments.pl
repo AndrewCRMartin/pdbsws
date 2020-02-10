@@ -70,6 +70,19 @@ $|=1;
 $::dbname    = "pdbsws" if(!defined($::dbname));
 $::dbhost    = $ACRMPerlVars::pghost if(!defined($::dbhost));
 
+if(defined($::h))
+{
+    print <<__EOF;
+
+DoAlignments.pl [-dbname=dbname] [-dbhost=dbhost] [-pdbc=pdbc]
+
+Normally runs all alignments that need doing. If -pdbc is specified
+just does that one (whether or not it is flagged as done).
+
+__EOF
+   exit 0;
+}
+
 # Connect to the database
 $::dbh  = DBI->connect("dbi:Pg:dbname=$::dbname;host=$::dbhost");
 die "Could not connect to database: $DBI::errstr" if(!$::dbh);
@@ -108,7 +121,14 @@ $::tmp2 = "/tmp/DA.$$._temp2.faa";
 $::tmp3 = "/tmp/DA.$$._temp3.faa";
 $::tmp4 = "/tmp/DA.$$._temp4.faa";
 
-DoProcessing($::redo);
+if(defined($::pdbc))
+{
+    DoSingleAlignment($::pdbc);
+}
+else
+{
+    DoProcessing($::redo);
+}
 #ProcessEntry("2if1", " ", "P41567", "14", "126",
 #             "MSAIQNLHSFDPFADASKGDDLLPAGTEDYIHIRIQQRNGRKTLTTVQGIADDYDKKKLVKAFKKKFACNGTVIEHPEYGEVIQLQGDQRKNICQFLVEIGLAKDDQLKVHGF",
 #             $::tmp1, $::tmp2, $::tmp3, $::tmp4);
@@ -151,8 +171,7 @@ sub DoProcessing
         {
             DeleteCurrentAlignment($results[0], $results[1], $results[2]) if($redo);
             
-            $sql   = "SELECT sequence FROM sprot WHERE ac = '$results[2]'";
-            ($seq) = $::dbh->selectrow_array($sql);
+            $seq = GetSequence($results[2]);
             ProcessEntry($results[0], $results[1], $results[2], $results[3], 
                          $results[4], $seq,
                          $::tmp1, $::tmp2, $::tmp3, $::tmp4);
@@ -160,6 +179,17 @@ sub DoProcessing
     }
 }
 
+#*************************************************************************
+sub GetSequence
+{
+    my($ac) = @_;
+    my($sql, $seq);
+
+    $sql   = "SELECT sequence FROM sprot WHERE ac = '$ac'";
+    ($seq) = $::dbh->selectrow_array($sql);
+
+    return($seq);
+}
 
 #*************************************************************************
 sub ProcessEntry
@@ -512,3 +542,25 @@ sub ResGE
     return(0);
 }
 
+#*************************************************************************
+sub DoSingleAlignment
+{
+    my($pdbc) = @_;
+    my($pdb, $chain, $sql, $ac, $start, $stop, $seq);
+
+    $pdb = substr($pdbc, 0, 4);
+    $chain = ((length($pdbc) == 5) ? substr($pdbc, 4, 1) : " ");
+
+    $sql = "SELECT ac, start, stop FROM pdbsws WHERE pdb = '$pdb' AND chain = '$chain'";
+    ($ac, $start, $stop) = $::dbh->selectrow_array($sql);
+    if($ac eq "")
+    {
+        print "ERROR: mapping not known for entry: $pdb chain '$chain'\n";
+    }
+    else
+    {
+        $seq = GetSequence($ac);
+        DeleteCurrentAlignment($pdb, $chain, $ac);
+        ProcessEntry($pdb, $chain, $ac, $start, $stop, $seq, $::tmp1, $::tmp2, $::tmp3, $::tmp4);
+    }
+}
