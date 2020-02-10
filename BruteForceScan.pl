@@ -161,13 +161,14 @@ sub DoNonExactUpdateProcessing
 #*************************************************************************
 # Extracts a list of PDBCs for entries which have been processed with
 # BruteForceScan at least $age days ago, but which have found non-exact hits
+# 23.09.05 Changed to identity < 95.0 rather than 100.0
 sub GetPDBChainListNonExact
 {
     my($age) = @_;
     my($sql, $sth, $rv, @pdbcs);
     my(@results);
     
-    $sql = "SELECT pdb, chain FROM pdbsws WHERE valid = 't' AND source = 'brute' AND (identity < 100.0 OR fracoverlap < 0.9) AND date < current_date - integer '$age'";
+    $sql = "SELECT pdb, chain FROM pdbsws WHERE valid = 't' AND source = 'brute' AND (identity < 95.0 OR fracoverlap < 0.9) AND date < current_date - integer '$age'";
     $sth = $::dbh->prepare($sql);
     $rv = $sth->execute;
     while(@results = $sth->fetchrow_array)
@@ -485,6 +486,10 @@ sub StoreData
 # Runs the actual scan with FASTA
 # 12.08.97 Original   By: ACRM
 #          Based on Alex Michie's routine
+# 19.09.05 Now just takes the first hit with best e-value rather than the
+#          highest sequence ID. Using SeqID messed up 1ldm which hit
+#          Q9UDE9 at 100% ID over 16 residues rather than P00341 with
+#          94% identity over 301 residues
 sub BruteFASTA
 {
     my($probefile, $sprot) = @_;
@@ -492,7 +497,8 @@ sub BruteFASTA
 
     $ident     = -999;
     $bestident = -999;
-    $bestid    = "0";
+    $bestid    = "";
+    $id        = "";
 
     open(FASTA,"$ACRMPerlVars::fasta -q $probefile $sprot |") || die "Cannot run $ACRMPerlVars::fasta\n";
     
@@ -503,23 +509,27 @@ FLOOP:
         {
             $id = $1;
         }
-
-        elsif(/\s+(\S+)%\s+identity\s+in\s+(\S+)\s+aa/)
+        elsif(($id ne "") && (/\s+(\S+)%\s+identity\s+in\s+(\S+)\s+aa/))
         {
             $ident = $1;
             $overlap = $2;
-            if($ident > $bestident)
-            {
-                $bestident   = $ident;
-                $bestid      = $id;
-                $bestoverlap = $overlap;
-            }
-            elsif(($ident == $bestident) && ($overlap > $bestoverlap))
-            {
-                $bestident   = $ident;
-                $bestid      = $id;
-                $bestoverlap = $overlap;
-            }
+            # ACRM 19.09.05 Just choose the first one.
+            $bestident = $ident;
+            $bestoverlap = $overlap;
+            $bestid = $id;
+            last;
+#            if($ident > $bestident)
+#            {
+#                $bestident   = $ident;
+#                $bestid      = $id;
+#                $bestoverlap = $overlap;
+#            }
+#            elsif(($ident == $bestident) && ($overlap > $bestoverlap))
+#            {
+#                $bestident   = $ident;
+#                $bestid      = $id;
+#                $bestoverlap = $overlap;
+#            }
         }
     }
     close(FASTA);
