@@ -1,0 +1,1 @@
+nohup nice -10 ./build.sh &> build.out &
