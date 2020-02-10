@@ -45,6 +45,11 @@
 #
 #   Usage:
 #   ======
+#   DoAlignments.pl [-dbname=database] [-dbhost=dbhost] [-redo]
+#   -dbname - specify the database name being used (default dbsws)
+#   -dbhost - specify the database server (default $ACRMPerVars::pghost)
+#   -redo   - redo all the existing alignments - deletes one at a time
+#             and regenerates it. Used after fixing bugs in this program!
 #
 #*************************************************************************
 #
