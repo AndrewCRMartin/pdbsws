@@ -1,0 +1,1 @@
+psql pdbsws < create.sql
