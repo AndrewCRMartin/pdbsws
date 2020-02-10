@@ -19,6 +19,8 @@ SPROT_TREMBL=/acrm/data/tmp/sprottrembl.faa
 PROGS=/home/bsm/martin/pdbcec_new/
 # Name of database
 DB=pdbsws
+# The location of the web interface
+WEB=/acrm/www/html/pdbsws/index.html
 #### Note! you also need to alter the makefile to give the
 #### paths to the sprot and trembl files
 
@@ -91,6 +93,9 @@ mv ${PDBSWSMAP}.2 $PDBSWSMAP
 echo -n "Re-analyze database : "
 date
 psql $DB -c 'vacuum analyze'
+
+# Touch the web interface so the date is displayed correctly
+touch $WEB
 
 # All done!
 echo -n "Finished : "
