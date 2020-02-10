@@ -1,0 +1,1 @@
+psql pdbswstest < create.sql
