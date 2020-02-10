@@ -265,6 +265,8 @@ sub RemoveRedundantID
 }
 
 #*************************************************************************
+# TODO 19.09.05 this code needs to be fixed to handle 1abyA which is a 
+# true self-chimera
 sub DeleteFalseChimeras
 {
     my($sql, $sth, $rv, $pdb, $chain, $seq, $count, $minstart);
