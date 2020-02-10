@@ -2,36 +2,41 @@
 #########################################################################
 # You NEED to alter these...
 ############################
-# The final output map of PDB to SwissProt
+# The final OUTPUT maps of PDB to SwissProt
 PDBSWSMAP=/acrm/data/pdbuniprot/pdb_uniprot_map.lst
+PDBSWSCHN=/acrm/data/pdbuniprot/pdb_uniprot_chain_map.lst
+PDBSWSMUT=/acrm/data/pdbuniprot/pdb_uniprot_mutants.xml
 # The SwissProt and trEMBL files
 SPROT_DATA=/acrm/data/swissprot/full/uniprot_sprot.dat
 TREMBL_DATA=/acrm/data/swissprot/full/uniprot_trembl.dat
 SPROT_FASTA=/acrm/data/swissprot/full/uniprot_sprot.fasta
 TREMBL_FASTA=/acrm/data/swissprot/full/uniprot_trembl.fasta
+# Temp working directory (needs lots of space)
+TMPDIR=/acrm/data/tmp/pdbsws
 # Where the PDB lives
 PDBDIR=/acrm/data/pdb
-LOGS=/home/bsm/martin/pdbcec_new/
-TOUCH=/home/bsm/martin/pdbcec_new/
-# The SwissProt and Trembl FASTA file
-SPROT_TREMBL=/acrm/data/tmp/sprottrembl.faa
-# Location of the scripts
+# Location of the scripts, logs and touch files
 PROGS=/home/bsm/martin/pdbcec_new/
+#LOGS=/home/bsm/martin/pdbcec_new/
+LOGS=/acrm/data/tmp/pdbsws
+TOUCH=/home/bsm/martin/pdbcec_new/
 # Name of database
 DB=pdbsws
 # The location of the web interface
-WEB=/acrm/www/html/pdbsws/index.html
+WEB=/acrm/www/html/pdbsws/
+# How old a non-exact hit should be before re-scanning it
+DAYSOLD=150
+# Path needed for tpage when re-making the web pages
+export PATH="$PATH:/acrm/usr/local/bin" 
 #### Note! you also need to alter the makefile to give the
 #### paths to the sprot and trembl files
 
 #########################################################################
 # Should NEVER need to alter below here...
 ##########################################
-
-# Populate from SwissProt data
-echo -n "Starting SwissProt : "
-date
-$PROGS/ProcessSProt.pl -dbname=$DB $SPROT_DATA  &> $LOGS/ProcessSProt.log
+# The SwissProt and Trembl FASTA file
+SPROT_TREMBL=$TMPDIR/sprottrembl.faa
+UPDATEFILE=$WEB/lastupdate.tt
 
 # Populate from trEMBL data
 echo -n "Starting trEMBL : "
@@ -40,6 +45,18 @@ $PROGS/ProcessSProt.pl -dbname=$DB $TREMBL_DATA &> $LOGS/ProcessTrembl.log
 
 # Vacuum the database
 echo -n "Vacuum/analyze database : "
+date
+psql $DB -c 'vacuum analyze'
+
+# 06.03.07 Moved SwissProt after trEMBL in case entries appear in both
+# (by mistake) SwissProt will have priority
+# Populate from SwissProt data
+echo -n "Starting SwissProt : "
+date
+$PROGS/ProcessSProt.pl -dbname=$DB $SPROT_DATA  &> $LOGS/ProcessSProt.log
+
+# Vacuum the database
+echo -n "Re-analyze database : "
 date
 psql $DB -c 'vacuum analyze'
 
@@ -73,29 +90,48 @@ $PROGS/MakeFASTA.pl $SPROT_FASTA $TREMBL_FASTA $SPROT_TREMBL
 # Run the brute-force scan on remaining un-assigned sequences
 echo -n "Starting Brute Force Scan : "
 date
-$PROGS/BruteForceScan.pl -dbname=$DB $SPROT_TREMBL &> $LOGS/BruteForceScan.log
+$PROGS/BruteForceScan.pl -dbname=$DB -daysold=$DAYSOLD $SPROT_TREMBL &> $LOGS/BruteForceScan.log
 
 # Vacuum the database
 echo -n "Re-analyze database : "
 date
 psql $DB -c 'vacuum analyze'
 
-# Finally create the alignments and dump the results
+# Finally create the alignments
 echo -n "Starting Alignments : "
 date
 $PROGS/DoAlignments.pl -dbname=$DB   &> $LOGS/DoAlignments.log
-echo -n "Starting Dump : "
-date
-$PROGS/dump_mapping.pl -dbname=$DB >${PDBSWSMAP}.2
-mv ${PDBSWSMAP}.2 $PDBSWSMAP
 
 # Vacuum the database
 echo -n "Re-analyze database : "
 date
 psql $DB -c 'vacuum analyze'
 
-# Touch the web interface so the date is displayed correctly
-touch $WEB
+# Now dump the results
+echo -n "Starting By-residue Dump : "
+date
+$PROGS/dump_mapping.pl -dbname=$DB >${PDBSWSMAP}.2
+gzip -c ${PDBSWSMAP}.2 > ${PDBSWSMAP}.2.gz
+mv ${PDBSWSMAP}.2 ${PDBSWSMAP}
+mv ${PDBSWSMAP}.2.gz ${PDBSWSMAP}.gz
+
+echo -n "Starting By-chain Dump : "
+date
+$PROGS/dump_chain_mapping.pl -dbname=$DB >${PDBSWSCHN}.2
+gzip -c ${PDBSWSCHN}.2 > ${PDBSWSCHN}.2.gz
+mv ${PDBSWSCHN}.2 ${PDBSWSCHN}
+mv ${PDBSWSCHN}.2.gz ${PDBSWSCHN}.gz
+
+# Extract mutants from the final map
+$PROGS/findmutants.pl ${PDBSWSMAP} > ${PDBSWSMUT}.2
+gzip -c ${PDBSWSMUT}.2 > ${PDBSWSMUT}.2.gz
+mv ${PDBSWSMUT}.2 ${PDBSWSMUT}
+mv ${PDBSWSMUT}.2.gz ${PDBSWSMUT}.gz
+
+# Update the web interface so the date is displayed correctly
+date | awk '{print $3, $2, $6}' > $UPDATEFILE
+sleep 2
+(cd $WEB; make)
 
 # All done!
 echo -n "Finished : "
