@@ -110,6 +110,9 @@ sub StoreEntry
             $sql = "DELETE FROM idac WHERE ac = '$$acs_p[$i]'";
             $retval = $::dbh->do($sql);
             $sql = "DELETE FROM pdbac WHERE ac = '$$acs_p[$i]'";
+            #+++ 06.03.07 This code was missing!
+            $retval = $::dbh->do($sql);
+            #END
         }
         # Delete this ID from the IDAC table (in case it exists and the
         # old AC isn't listed in the Sprot Entry)
@@ -153,6 +156,15 @@ sub StoreEntry
                 $sql = "INSERT INTO pdbac VALUES ('$$acs_p[0]', '$$pdbs_p[$i]', 'f')";
                 $retval = $::dbh->do($sql);
             }
+
+            #+++ 06.03.07
+            # Update the IDAC entry - delete/insert rather than update
+            # in case it wasn't there before
+            $sql = "DELETE FROM idac WHERE ac = '$$acs_p[$i]'";
+            $retval = $::dbh->do($sql);
+            $sql = "INSERT INTO idac VALUES ('$id', '$$acs_p[0]')";
+            $retval = $::dbh->do($sql);
+            #END
 
             # If the sequence has changed, update the 'aligned' flag in the
             # PDBSWS table entries which reference this AC. This will force 
@@ -217,6 +229,9 @@ sub ProcessSwissProt
         {
             @fields = split;    # Store the final date record
             $date = $fields[1];
+            #+++ 06.03.07 A comma seems to have crept onto end of date
+            $date =~ s/\,//g;
+            #END
         }
         elsif(/^DR /)
         {
