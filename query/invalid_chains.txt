@@ -1,0 +1,5 @@
+ 1a45 - DBREF uses chain A, but ATOMS have blank chain name
+ 1bpl - DBREF uses blank chain, but ATOMS have A and B
+ 1dox - DBREF uses chain A, but ATOMS have blank chain name
+ 1doy - DBREF uses chain A, but ATOMS have blank chain name
+ 1hgx - DBREF uses blank chain, but ATOMS have A and B
