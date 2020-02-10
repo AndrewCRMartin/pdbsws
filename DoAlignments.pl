@@ -140,13 +140,18 @@ sub DoProcessing
     $rv = $sth->execute;
     while(@results = $sth->fetchrow_array)
     {
-        DeleteCurrentAlignment($results[0], $results[1], $results[2]) if($redo);
-
-        $sql   = "SELECT sequence FROM sprot WHERE ac = '$results[2]'";
-        ($seq) = $::dbh->selectrow_array($sql);
-        ProcessEntry($results[0], $results[1], $results[2], $results[3], 
-                     $results[4], $seq,
-                     $::tmp1, $::tmp2, $::tmp3, $::tmp4);
+        if(($results[2] ne "ERROR") &&
+           ($results[2] ne "SHORT") &&
+           ($results[2] ne "DNA"))
+        {
+            DeleteCurrentAlignment($results[0], $results[1], $results[2]) if($redo);
+            
+            $sql   = "SELECT sequence FROM sprot WHERE ac = '$results[2]'";
+            ($seq) = $::dbh->selectrow_array($sql);
+            ProcessEntry($results[0], $results[1], $results[2], $results[3], 
+                         $results[4], $seq,
+                         $::tmp1, $::tmp2, $::tmp3, $::tmp4);
+        }
     }
 }
 
