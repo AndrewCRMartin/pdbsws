@@ -57,7 +57,9 @@ sub ProcessPDBMap
     my ($pdbc, $sprot, $count) = @_;
     my ($i, $insert, $gotprev, $gotpost);
     
-
+    $pdbc =~ s/\&/\&amp\;/g;
+    $pdbc =~ s/\</\&lt\;/g;
+    $pdbc =~ s/\>/\&gt\;/g;
     print "   <pdbc id='$pdbc' sprot='$sprot' rescount='$count'>\n";
     $insert = 0;
     $gotprev = 0;

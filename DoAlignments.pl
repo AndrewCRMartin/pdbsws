@@ -90,7 +90,7 @@ $::dbh2 = DBI->connect("dbi:Pg:dbname=$::dbname;host=$::dbhost");
 die "Could not connect to database: $DBI::errstr" if(!$::dbh2);
 
 # External programs
-$::ssearch = "$ACRMPerlVars::ssearch -a -q -E 1000 -m 10";
+$::ssearch = "$ACRMPerlVars::ssearch_64 -a -q -E 1000 -m 10";
 
 # Initialize variables
 %::throne = ('ALA' => 'A',
@@ -203,7 +203,7 @@ sub ProcessEntry
     WriteFASTA($swsseqfile, $ac, $sequence);
     $retval = WritePDBSequence($pdbseqfile, $idmap, $pdb, $chain, $start, $stop);
 
-    if($retval == 0)
+    if($retval == 0)  # Success
     {
         ($swsaln, $pdbaln) = DoAlign($swsseqfile, $pdbseqfile, $alignout);
 
@@ -239,17 +239,21 @@ sub ProcessEntry
 
         MarkAsAligned($pdb, $chain, $ac);
     }
-    elsif($retval == 2)
+    elsif($retval == 2) # File found, but specified residue range not found
     {
         print "WARNING: Residue range specified in PDB file $pdb for $ac not found\n";
     }
-    else
+    elsif($retval == 1)  # File not found (and verified that it's not an NFS error)
     {
         print "WARNING: PDB file for $pdb no longer exists - removed from database\n";
         $sql = "DELETE FROM pdbsws WHERE pdb = '$pdb'";
         $::dbh->do($sql);
         $sql = "DELETE FROM pdbac WHERE pdb = '$pdb'";
         $::dbh->do($sql);
+    }
+    elsif($retval == 3)  # NFS error
+    {
+        die "ERROR: DoAlignments.pl killed as there is an NFS error";
     }
 }
 
@@ -427,9 +431,10 @@ sub WritePDBSequenceOrig
 
 #*************************************************************************
 # Returns 0 for success
-#         1 for file not found
+#         1 for file not found and verified not an NFS error
 #         2 for file found, but residue range specified in the PDB file for
 #           a SwissProt entry not found in that file
+#         3 NFS error
 sub WritePDBSequence
 {
     my($fastafile, $idmap, $pdb, $chain, $start, $stop) = @_;
@@ -507,9 +512,33 @@ sub WritePDBSequence
         close FASTA;
         close PDB;
     }
-    else
+    else # We failed to open the file
     {
-        return(1);
+        # See if there is anything in the directory
+        my($pdbdir) = $ACRMPerlVars::pdbprep;
+        chop($pdbdir) while(substr($pdbdir,length($pdbdir)-1,1) ne "/");
+        if(opendir(PDBDIR,$pdbdir))
+        {
+            my(@allfiles) = grep(!/^\./, readdir(PDBDIR));
+            closedir(PDBDIR);
+            if(@allfiles > 1000) # Seems OK - we've read 1000 files
+            {
+                # Try again to access the file. If we get it this time
+                # it was an NFS error. Otherwise it really was missing.
+                if( -e $pdbfile)
+                {
+                    return(3);
+                }
+                else
+                {
+                    return(1);
+                }
+            }
+        }   # We couldn't open the directory! Definitely NFS error
+        else
+        {
+            return(3);
+        }
     }
     return($retval);
 }
@@ -552,15 +581,19 @@ sub DoSingleAlignment
     $chain = ((length($pdbc) == 5) ? substr($pdbc, 4, 1) : " ");
 
     $sql = "SELECT ac, start, stop FROM pdbsws WHERE pdb = '$pdb' AND chain = '$chain'";
-    ($ac, $start, $stop) = $::dbh->selectrow_array($sql);
-    if($ac eq "")
+    my $sth = $::dbh->prepare($sql);
+    my $rv  = $sth->execute;
+    while(($ac, $start, $stop) = $sth->fetchrow_array)
     {
-        print "ERROR: mapping not known for entry: $pdb chain '$chain'\n";
-    }
-    else
-    {
-        $seq = GetSequence($ac);
-        DeleteCurrentAlignment($pdb, $chain, $ac);
-        ProcessEntry($pdb, $chain, $ac, $start, $stop, $seq, $::tmp1, $::tmp2, $::tmp3, $::tmp4);
+        if($ac eq "")
+        {
+            print "ERROR: mapping not known for entry: $pdb chain '$chain'\n";
+        }
+        else
+        {
+            $seq = GetSequence($ac);
+            DeleteCurrentAlignment($pdb, $chain, $ac);
+            ProcessEntry($pdb, $chain, $ac, $start, $stop, $seq, $::tmp1, $::tmp2, $::tmp3, $::tmp4);
+        }
     }
 }

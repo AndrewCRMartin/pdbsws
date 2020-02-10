@@ -81,9 +81,9 @@ if(defined($::h))
 }
 
 # Names for temporary files
-$::tmp1 = "/tmp/MSD.$$._temp1.faa";
-$::tmp2 = "/tmp/MSD.$$._temp2.faa";
-$::tmp3 = "/tmp/MSD.$$._temp3.faa";
+$::tmp1 = "/acrm/data/tmp/MSD.$$._temp1.faa";
+$::tmp2 = "/acrm/data/tmp/MSD.$$._temp2.faa";
+$::tmp3 = "/acrm/data/tmp/MSD.$$._temp3.faa";
 
 DoProcessing();
 
@@ -157,7 +157,7 @@ sub GetBestChains
     my($dbfile, $scanfile) = @_;
     my($insection, @fields, @labels, @scores, @chains, $i);
 
-    `$ACRMPerlVars::ssearch -q -E 1000 $scanfile $dbfile >$::tmp3`;
+    `$ACRMPerlVars::ssearch_64 -q -E 1000 $scanfile $dbfile >$::tmp3`;
     open(FILE, $::tmp3) || die "Can't read $::tmp3";
     $insection = 0;
     @chains = ();

@@ -34,6 +34,8 @@
 #
 #   Revision History:
 #   =================
+#   09.03.09 Fix to FASTA output parsing as SwissProt FASTA dump format
+#   has changed.
 #
 #*************************************************************************
 # Packages to use
@@ -58,7 +60,9 @@ $::sprottrembl = shift(@ARGV);
 
 if(defined($::h) || !defined($::sprottrembl))
 {
-    print STDERR "\nUsage: BruteForceScan [-pdbc=pdbc] [-dbname=dbname] [-dbhost=dbhost] sprotrembl.faa\n";
+    print STDERR "\nUsage: BruteForceScan [-pdbc=pdbc] [-dbname=dbname] [-dbhost=dbhost] [-noupdates] sprotrembl.faa\n";
+    print STDERR "If used with -pdbc then forces scanning of this single entry\n";
+    print STDERR "-noupdates stops it trying to update old entries\n\n";
     exit 0;
 }
 
@@ -67,11 +71,11 @@ $::pdb2pir  = "$::ACRMPerlVars::bindir/pdb2pir -f -x";
 $::getchain = "$::ACRMPerlVars::bindir/getchain";
 
 # Names for temporary files
-$::tmp1 = "/tmp/MSD.$$._temp1.faa";
-$::tmp2 = "/tmp/MSD.$$._temp2.faa";
+$::tmp1 = "/acrm/data/tmp/MSD.$$._temp1.faa";
+$::tmp2 = "/acrm/data/tmp/MSD.$$._temp2.faa";
 
 # How many days old a non-exact hit should be before re-scanning it
-$::daysold = 30;
+$::daysold = 30 if(!defined($::daysold));
 
 if(defined($::pdbc))
 {
@@ -79,10 +83,13 @@ if(defined($::pdbc))
 }
 else
 {
-    print "\nINFO: *** Trying to update non-exact hits done > $::daysold days ago ***\n";
-    DoNonExactUpdateProcessing($::daysold);
-    print "\nINFO: *** Updating hits which didn't match anything on last run ***\n";
-    DoUpdateProcessing();
+    if(!defined($::noupdates))
+    {
+        print "\nINFO: *** Trying to update non-exact hits done > $::daysold days ago ***\n";
+        DoNonExactUpdateProcessing($::daysold);
+        print "\nINFO: *** Updating hits which didn't match anything on last run ***\n";
+        DoUpdateProcessing();
+    }
     print "\n\nINFO: *** Main brute-force scan ***\n";
     DoMainProcessing($::sprottrembl);
 }
@@ -97,6 +104,7 @@ unlink($::tmp2);
 ##########################################################################
 #*************************************************************************
 # Forces scanning of an entry specified on the command line
+# 06.10.06 Checks return from BuildPDBChainSequenceFile()
 sub ForceScanEntry
 {
     my($pdbc, $fullsprot) = @_;
@@ -107,8 +115,14 @@ sub ForceScanEntry
 
     print "INFO: Scanning individual entry: $pdb chain '$chain' against $fullsprot\n";
 
-    BuildPDBChainSequenceFile($pdb, $chain, $::tmp1);
-    doScan($::tmp1, $pdb, $chain, $fullsprot);
+    if(BuildPDBChainSequenceFile($pdb, $chain, $::tmp1))
+    {
+        doScan($::tmp1, $pdb, $chain, $fullsprot);
+    }
+    else
+    {
+        print "ERROR: Failed to write sequence file for $pdb chain '$chain'\n";
+    }
 }
 
 ##########################################################################
@@ -121,6 +135,7 @@ sub ForceScanEntry
 # input. This routine runs an update only on entries which do have a match
 # but the match isn't very good. It only does so on entries which haven't
 # been checked already in the specified number of days
+# 06.10.06 Checks return from BuildPDBChainSequenceFile()
 sub DoNonExactUpdateProcessing
 {
     my($age) = @_;
@@ -143,8 +158,17 @@ sub DoNonExactUpdateProcessing
                 ($pdb, $chain) = split(/\s+/, $pdbc);
 
                 print "INFO: Updating $pdb chain '$chain'\n";
-                BuildPDBChainSequenceFile($pdb, $chain, $::tmp1);
-                doScan($::tmp1, $pdb, $chain, $sprot);
+                if(BuildPDBChainSequenceFile($pdb, $chain, $::tmp1))
+                {
+                    # TODO 24.04.07 There can be problems with updates not 
+                    # really being better. See doScan()
+                    doScan($::tmp1, $pdb, $chain, $sprot);
+                }
+                else
+                {
+                    print "ERROR: Failed to write sequence file for $pdb chain '$chain'\n";
+                }
+
             }
         }
         else
@@ -201,6 +225,7 @@ sub GetNonExactDate
 #*************************************************************************
 # Main routine to handle re-scanning of entries which previously hit
 # nothing.
+# 06.10.06 Checks return from BuildPDBChainSequenceFile()
 sub DoUpdateProcessing
 {
     my(@pdbcs, $pdbc, $pdb, $chain);
@@ -223,8 +248,15 @@ sub DoUpdateProcessing
                 ($pdb, $chain) = split(/\s+/, $pdbc);
 
                 print "INFO: Updating $pdb chain '$chain'\n";
-                BuildPDBChainSequenceFile($pdb, $chain, $::tmp1);
-                doScan($::tmp1, $pdb, $chain, $sprot);
+                if(BuildPDBChainSequenceFile($pdb, $chain, $::tmp1))
+                {
+                    doScan($::tmp1, $pdb, $chain, $sprot);
+                }
+                else
+                {
+                    print "ERROR: Failed to write sequence file for $pdb chain '$chain'\n";
+                }
+
             }
         }
         else
@@ -280,6 +312,7 @@ sub GetUpdateDate
 #*************************************************************************
 # This is the main routine to handle new entries which have not yet been
 # processed
+# 06.10.06 Checks return from BuildPDBChainSequenceFile()
 sub DoMainProcessing
 {
     my($fullsprot) = @_;
@@ -298,8 +331,14 @@ sub DoMainProcessing
             ($pdb, $chain) = split(/\s+/, $pdbc);
             
             print "INFO: Processing $pdb chain '$chain' : ";
-            BuildPDBChainSequenceFile($pdb, $chain, $::tmp1);
-            doScan($::tmp1, $pdb, $chain, $sprot);
+            if(BuildPDBChainSequenceFile($pdb, $chain, $::tmp1))
+            {
+                doScan($::tmp1, $pdb, $chain, $sprot);
+            }
+            else
+            {
+                print "ERROR: Failed to write sequence file for $pdb chain '$chain'\n";
+            }
         }
     }
     else
@@ -336,20 +375,23 @@ sub GetPDBChainListUnprocessed
 # Creates a FASTA format file of SwissProt/trEMBL entries newer than
 # specified date
 #
+# 24.04.07 Modified to produce a FASTA file in the new format used by
+#          SwissProt
 sub BuildSprotFileDate
 {
     my ($date, $sprotfile) = @_;
     my($sql, $sth, $rv, @results, $count);
 
     open(FILE, ">$sprotfile") || die "Can't write $sprotfile";
-    $sql = "SELECT ac, sequence FROM sprot WHERE date >= '$date'";
+#    $sql = "SELECT ac, sequence FROM sprot WHERE date >= '$date'";
+    $sql = "SELECT s.ac, i.id, s.sequence FROM sprot s, idac i WHERE date >= '$date' AND s.ac = i.ac";
     $sth = $::dbh->prepare($sql);
     $rv = $sth->execute;
     $count = 0;
     while(@results = $sth->fetchrow_array)
     {
-        print FILE ">$results[0]\n";
-        print FILE "$results[1]\n";
+        print FILE ">$results[0]|$results[1]\n";
+        print FILE "$results[2]\n";
         $count++;
     }
     close(FILE);
@@ -400,13 +442,27 @@ sub doScan
 
 #*************************************************************************
 # Build a sequence file for a PDB chain
+# 06.10.06 Modified to check that something actually ended up in the 
+#          output file
 sub BuildPDBChainSequenceFile
 {
     my($pdb, $chain, $tmp) = @_;
-    my($pdbfile);
+    my($pdbfile, $seqdata);
     $pdbfile = $ACRMPerlVars::pdbprep . $pdb . $ACRMPerlVars::pdbext;
     $chain = "0" if(($chain eq " ") || ($chain eq ""));
-    `$::getchain $chain $pdbfile | $::pdb2pir > $tmp`;
+    $seqdata = `$::getchain $chain $pdbfile | $::pdb2pir`;
+
+    if($seqdata =~ /^>/)        # Check the resulting sequence data
+    {                           # starts with a >
+        open(TFILE, ">$tmp") || die "ERROR: Can't write $tmp\n";
+        print TFILE $seqdata;
+        close TFILE;
+        return(1);
+    }
+    else
+    {
+        return(0);
+    }
 }
 
 #*************************************************************************
@@ -434,6 +490,7 @@ sub SetProcessed
 
 #*************************************************************************
 # If it's DNA returns 0, if protein returns the number of aas
+# 09.03.09 Added I to list of protein/rna bases
 sub IsProtein
 {
     my($file) = @_;
@@ -451,8 +508,8 @@ sub IsProtein
     }
     close FILE;
     $seqcp = $seq;
-    $seqcp =~ s/[atcguATCGU\s]//g;  # Remove ATCGU and white space
-    if(!length($seqcp))             # If nothing left, it's DNA
+    $seqcp =~ s/[atcguiATCGUI\s]//g;  # Remove ATCGUI and white space
+    if(!length($seqcp))               # If nothing left, it's DNA
     {
         return(0);
     }
@@ -461,13 +518,20 @@ sub IsProtein
 
 #*************************************************************************
 # Stores the match in the database, setting the valid flag and date
+# TODO 24.04.07 This routine needs to check if there is something in there
+# already and only put this entry in if it is significantly better (for
+# updates where a trEMBL entry may be the same as, or not much better
+# than, an existing SwissProt entry. Also check that it isn't a better
+# identity over a shorter region. e.g. 2bkiD had been aligned with
+# Q91BQ9 over 74 residues but the update replaces that with A2Q0R2
+# at 100% over 57 residues
 sub StoreData
 {
     my($pdb, $chain, $ac, $ident, $overlap, $len) = @_;
     my($sql, $rv, $fo);
 
     # If the hit came from SwissProt rather than from trEMBL, it will have
-    # and ID rather than an AC, so we convert
+    # an ID rather than an AC, so we convert
     if($ac =~ /[A-Za-z0-9]+\_[A-Za-z0-9]+/)
     {
         my($id) = $ac;
@@ -490,6 +554,8 @@ sub StoreData
 #          highest sequence ID. Using SeqID messed up 1ldm which hit
 #          Q9UDE9 at 100% ID over 16 residues rather than P00341 with
 #          94% identity over 301 residues
+# 24.04.07 Updated for new SwissProt FASTA format which changes the
+#          FASTA results line
 sub BruteFASTA
 {
     my($probefile, $sprot) = @_;
@@ -500,13 +566,16 @@ sub BruteFASTA
     $bestid    = "";
     $id        = "";
 
-    open(FASTA,"$ACRMPerlVars::fasta -q $probefile $sprot |") || die "Cannot run $ACRMPerlVars::fasta\n";
+    open(FASTA,"$ACRMPerlVars::fasta_64 -q $probefile $sprot |") || die "Cannot run $ACRMPerlVars::fasta_64\n";
     
 FLOOP:
     while(<FASTA>) 
     {
-        if(/^>>(\S+)\s+/)
+# FASTA FORMAT DEPENDENT
+# Modified 09.03.09
+        if(/^\>\>.*\|(\S+_\S+)[\s\|]+/)
         {
+            # $1 is ID
             $id = $1;
         }
         elsif(($id ne "") && (/\s+(\S+)%\s+identity\s+in\s+(\S+)\s+aa/))

@@ -4,11 +4,11 @@
 #   Program:    
 #   File:       
 #   
-#   Version:    V1.3
-#   Date:       15.09.05
+#   Version:    V1.4
+#   Date:       08.07.08
 #   Function:   Build database table of SwissProt info from the PDB
 #   
-#   Copyright:  (c) UCL / Dr. Andrew C. R. Martin 1997-2005
+#   Copyright:  (c) UCL / Dr. Andrew C. R. Martin 1997-2008
 #   Author:     Dr. Andrew C. R. Martin
 #   Address:    Biomolecular Structure & Modelling Unit,
 #               Department of Biochemistry & Molecular Biology,
@@ -59,6 +59,7 @@
 #                  entries. This caused PDB files with a single chain,
 #                  but WITH a chain label, to break.
 #   V1.3  15.09.05 Database version
+#   V1.4  08.07.08 Added new SwissProt AC format
 #
 #*************************************************************************
 # Packages to use
@@ -198,7 +199,7 @@ sub ProcessFile
         last if(/^ATOM  /);
         if(/^DBREF /)
         {
-            # Allow UNP as well as SWS - 1uw5 does this
+            # Allow UNP as well as SWS - 1uw5, 1d8d, 1d8e, etc do this
             if((substr($_,26,5) eq "SWS  ") ||
                (substr($_,26,5) eq "UNP  "))
             {
@@ -212,13 +213,19 @@ sub ProcessFile
                 $word2 = substr($_,33,8);
                 $word2 =~ s/ //g;
                 # If the first cross-reference isn't a SwissProt AC
-                if(!($word2 =~ /^[OPQ]\d[A-Z0-9][A-Z0-9][A-Z0-9]\d/))
+                # 08.07.08 Added new allowed format
+#                if(!($word2 =~ /^[OPQ]\d[A-Z0-9][A-Z0-9][A-Z0-9]\d/))
+                if((!($word2 =~ /^[OPQ]\d[A-Z0-9][A-Z0-9][A-Z0-9]\d/)) &&
+                   (!($word2 =~ /^[A-NR-Z]\d[A-Z][A-Z0-9][A-Z0-9]\d/)))
                 {
                     # Get the second cross-reference
                     $word3 = substr($_,42,12);
                     $word3 =~ s/ //g;
                     # Use this instead if it is a SwissProt AC
-                    if($word3 =~ /^[OPQ]\d[A-Z0-9][A-Z0-9][A-Z0-9]\d/)
+                    # 08.07.08 Added new allowed format
+#                    if($word3 =~ /^[OPQ]\d[A-Z0-9][A-Z0-9][A-Z0-9]\d/)
+                    if(($word3 =~ /^[OPQ]\d[A-Z0-9][A-Z0-9][A-Z0-9]\d/) ||
+                       ($word3 =~ /^[A-NR-Z]\d[A-Z][A-Z0-9][A-Z0-9]\d/))
                     {
                         $word2 = $word3;
                     }

@@ -160,7 +160,8 @@ sub StoreEntry
             #+++ 06.03.07
             # Update the IDAC entry - delete/insert rather than update
             # in case it wasn't there before
-            $sql = "DELETE FROM idac WHERE ac = '$$acs_p[$i]'";
+            # ACRM 07.11.07 Corrected from $$acs_p[$i] to $$acs_p[0]
+            $sql = "DELETE FROM idac WHERE ac = '$$acs_p[0]'";
             $retval = $::dbh->do($sql);
             $sql = "INSERT INTO idac VALUES ('$id', '$$acs_p[0]')";
             $retval = $::dbh->do($sql);
@@ -174,6 +175,8 @@ sub StoreEntry
             if($seq ne $oldseq)
             {
                 $sql = "UPDATE pdbsws SET aligned = 'f' WHERE ac = '$$acs_p[0]'";
+                # ACRM 07.11.07 It helps to execute the SQL!
+                $retval = $::dbh->do($sql);
             }
         }
         else

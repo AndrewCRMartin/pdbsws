@@ -161,7 +161,8 @@ sub ValidateAC
     my($sql, $retval, $sth, @results);
 
     # Set all valid flags to TRUE if they are valid primary SProt accessions
-    $sql = "UPDATE pdbsws SET valid = 't' WHERE pdbsws.ac = sprot.ac AND pdbsws.valid <> 't'";
+    # 30.03.12 Fixed update command - didn't have the WHERE clause before so wasn't working!
+    $sql = "UPDATE pdbsws SET valid = 't' FROM sprot WHERE pdbsws.ac = sprot.ac AND pdbsws.valid <> 't'";
     $retval = $::dbh->do($sql);
 
     # List all invalid ACs (just for verification)
@@ -174,6 +175,7 @@ sub ValidateAC
     }
 
     # Now set all invalid ACs to a ?
+    # We no longer do this - better to be able to display the invalid code as that is all we have
 #    $sql = "UPDATE pdbsws SET ac = '?' WHERE valid = 'f' AND ac <> '?'";
 #    $retval = $::dbh->do($sql);
 }
@@ -185,7 +187,8 @@ sub MarkSProtEntries
 
     # Set the done flag in pdbac for all entries where the SPROT/PDB mapping
     # has come from the PDB file
-    $sql = "UPDATE pdbac SET done = 't' WHERE pdbsws.ac = pdbac.ac AND pdbsws.valid = 't' AND pdbsws.pdb = pdbac.pdb";
+    # 30.03.12 Added FROM clause - wasn't working before!
+    $sql = "UPDATE pdbac SET done = 't' FROM pdbsws WHERE pdbsws.ac = pdbac.ac AND pdbsws.valid = 't' AND pdbsws.pdb = pdbac.pdb";
     $retval = $::dbh->do($sql);
 }
 
