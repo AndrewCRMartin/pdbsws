@@ -1,0 +1,4317 @@
+ID   MAGA_XENLA     STANDARD;      PRT;   303 AA.
+AC   P11006;
+DT   01-JUL-1989 (Rel. 11, Created)
+DT   01-JUL-1989 (Rel. 11, Last sequence update)
+DT   10-MAY-2005 (Rel. 47, Last annotation update)
+DE   Magainins precursor.
+OS   Xenopus laevis (African clawed frog).
+OC   Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+OC   Amphibia; Batrachia; Anura; Mesobatrachia; Pipoidea; Pipidae;
+OC   Xenopodinae; Xenopus; Xenopus.
+OX   NCBI_TaxID=8355;
+RN   [1]
+RP   NUCLEOTIDE SEQUENCE, AND PARTIAL PROTEIN SEQUENCE.
+RX   MEDLINE=88186892; PubMed=2833514;
+RA   Terry A.S., Poulter L., Williams D.H., Nutkins J.C., Giovannini M.G.,
+RA   Moore C.H., Gibson B.W.;
+RT   "The cDNA sequence coding for prepro-PGS (prepro-magainins) and
+RT   aspects of the processing of this prepro-polypeptide.";
+RL   J. Biol. Chem. 263:5745-5751(1988).
+RN   [2]
+RP   NUCLEOTIDE SEQUENCE OF 6-158 AND 297-303, AND PARTIAL PROTEIN
+RP   SEQUENCE.
+RC   TISSUE=Skin, and Skin secretion;
+RX   MEDLINE=87261003; PubMed=3299384;
+RA   Zasloff M.;
+RT   "Magainins, a class of antimicrobial peptides from Xenopus skin:
+RT   isolation, characterization of two active forms, and partial cDNA
+RT   sequence of a precursor.";
+RL   Proc. Natl. Acad. Sci. U.S.A. 84:5449-5453(1987).
+RN   [3]
+RP   PROTEIN SEQUENCE OF MAGAININS I AND II.
+RC   TISSUE=Stomach;
+RX   MEDLINE=92011794; PubMed=1717472;
+RA   Moore K.S., Bevins C.L., Brasseur M.M., Tomassini N., Turner K.,
+RA   Eck H., Zasloff M.;
+RT   "Antimicrobial peptides in the stomach of Xenopus laevis.";
+RL   J. Biol. Chem. 266:19851-19857(1991).
+RN   [4]
+RP   STRUCTURE BY NMR OF MAGAININ II.
+RX   MEDLINE=94129391; PubMed=8298457;
+RA   Bechinger B., Zasloff M., Opella S.J.;
+RT   "Structure and orientation of the antibiotic peptide magainin in
+RT   membranes by solid-state nuclear magnetic resonance spectroscopy.";
+RL   Protein Sci. 2:2077-2084(1993).
+CC   -!- FUNCTION: Antimicrobial peptides that inhibit the growth of
+CC       numerous species of bacteria and fungi and induce osmotic lysis of
+CC       protozoa. Magainins are membrane lytic agents.
+CC   -!- SUBCELLULAR LOCATION: Secreted.
+CC   -!- TISSUE SPECIFICITY: Synthesized in the stomach and stored in a
+CC       novel granular multinucleated cell in the gastric mucosa. It is
+CC       stored as active, processed peptides in large granules within the
+CC       granular gland secretions of the skin.
+CC   -!- SIMILARITY: Belongs to the gastrin/cholecystokinin family.
+CC       Magainin subfamily.
+CC   -!- DATABASE: NAME=Protein Spotlight; NOTE=Issue 7 of February 2001;
+CC       WWW="http://www.expasy.org/spotlight/back_issues/sptlt007.shtml".
+CC   --------------------------------------------------------------------------
+CC   This Swiss-Prot entry is copyright. It is produced through a collaboration
+CC   between  the Swiss Institute of Bioinformatics  and the  EMBL outstation -
+CC   the European Bioinformatics Institute.  There are no  restrictions on  its
+CC   use as long as its content is in no way modified and this statement is not
+CC   removed.
+CC   --------------------------------------------------------------------------
+DR   EMBL; J03193; AAA49930.1; -; mRNA.
+DR   PIR; A28620; A28620.
+DR   PDB; 1D9J; NMR; A=-.
+DR   PDB; 1D9L; NMR; A=-.
+DR   PDB; 1D9M; NMR; A=-.
+DR   PDB; 1D9O; NMR; A=-.
+DR   PDB; 1D9P; NMR; A=-.
+DR   PDB; 1F0D; NMR; A=-.
+DR   PDB; 1F0E; NMR; A=-.
+DR   PDB; 1F0F; NMR; A=-.
+DR   PDB; 1F0G; NMR; A=-.
+DR   PDB; 1F0H; NMR; A=-.
+DR   PDB; 2MAG; NMR; @=83-105.
+DR   InterPro; IPR001651; Gastrin.
+DR   Pfam; PF00918; Gastrin; 1.
+KW   3D-structure; Antibiotic; Cleavage on pair of basic residues;
+KW   Cytolysis; Direct protein sequencing; Fungicide; Hemolysis; Repeat;
+KW   Signal.
+FT   SIGNAL        1     18       Potential.
+FT   PROPEP       19     26
+FT   PEPTIDE      27     32       Small acidic peptide copy A.
+FT   PROPEP       33     36
+FT   PEPTIDE      37     59       Magainin I.
+FT   PROPEP       62     72
+FT   PEPTIDE      73     78       Small acidic peptide copy B.
+FT   PROPEP       79     82
+FT   PEPTIDE      83    105       Magainin II copy A.
+FT   PROPEP      108    118
+FT   PEPTIDE     119    124       Small aciDic peptide copy C.
+FT   PROPEP      125    128
+FT   PEPTIDE     129    151       Magainin II copy B.
+FT   PROPEP      154    164
+FT   PEPTIDE     165    170       Small acidic peptide copy D.
+FT   PROPEP      171    174
+FT   PEPTIDE     175    197       Magainin II copy C.
+FT   PROPEP      200    210
+FT   PEPTIDE     211    216       Small acidic peptide copy E.
+FT   PROPEP      217    220
+FT   PEPTIDE     221    243       Magainin II copy D.
+FT   PROPEP      246    256
+FT   PEPTIDE     257    262       Small acidic peptide copy F.
+FT   PROPEP      263    266
+FT   PEPTIDE     267    289       Magainin II copy E.
+FT   PROPEP      292    303
+FT   CONFLICT     74     74       E -> Q (in Ref. 2).
+FT   TURN         84     85
+FT   HELIX        86    103
+SQ   SEQUENCE   303 AA;  33380 MW;  E369B0DBB033EA80 CRC64;
+     MFKGLFICSL IAVICANALP QPEASADEDM DEREVRGIGK FLHSAGKFGK AFVGEIMKSK
+     RDAEAVGPEA FADEDLDERE VRGIGKFLHS AKKFGKAFVG EIMNSKRDAE AVGPEAFADE
+     DLDEREVRGI GKFLHSAKKF GKAFVGEIMN SKRDAEAVGP EAFADEDLDE REVRGIGKFL
+     HSAKKFGKAF VGEIMNSKRD AEAVGPEAFA DEDFDEREVR GIGKFLHSAK KFGKAFVGEI
+     MNSKRDAEAV GPEAFADEDL DEREVRGIGK FLHSAKKFGK AFVGEIMNSK RDAEAVDDRR
+     WVE
+//
+ID   CECA_HYACE     STANDARD;      PRT;    64 AA.
+AC   P01507;
+DT   21-JUL-1986 (Rel. 01, Created)
+DT   01-APR-1988 (Rel. 07, Last sequence update)
+DT   10-MAY-2005 (Rel. 47, Last annotation update)
+DE   Cecropin A precursor (Cecropin C).
+OS   Hyalophora cecropia (Cecropia moth).
+OC   Eukaryota; Metazoa; Arthropoda; Hexapoda; Insecta; Pterygota;
+OC   Neoptera; Endopterygota; Lepidoptera; Glossata; Ditrysia; Bombycoidea;
+OC   Saturniidae; Saturniinae; Attacini; Hyalophora.
+OX   NCBI_TaxID=7123;
+RN   [1]
+RP   NUCLEOTIDE SEQUENCE.
+RX   MEDLINE=91268009; PubMed=1711035;
+RA   Gudmundsson G.H., Lidholm D.-A., Aasling B., Gan R., Boman H.G.;
+RT   "The cecropin locus. Cloning and expression of a gene cluster encoding
+RT   three antibacterial peptides in Hyalophora cecropia.";
+RL   J. Biol. Chem. 266:11510-11517(1991).
+RN   [2]
+RP   NUCLEOTIDE SEQUENCE.
+RA   Lidholm D.-A., Gudmundsson G.H., Xanthopoulos K.G., Boman H.G.;
+RT   "Insect immunity: cDNA clones coding for the precursor forms of
+RT   cecropins A and D, antibacterial proteins from Hyalophora cecropia.";
+RL   FEBS Lett. 226:8-12(1987).
+RN   [3]
+RP   PROTEIN SEQUENCE OF 27-63.
+RX   MEDLINE=83053366; PubMed=7140755;
+RA   Hultmark D., Engstroem A., Bennich H., Kapur R., Boman H.G.;
+RT   "Insect immunity: isolation and structure of cecropin D and four minor
+RT   antibacterial components from Cecropia pupae.";
+RL   Eur. J. Biochem. 127:207-217(1982).
+RN   [4]
+RP   PRELIMINARY PROTEIN SEQUENCE OF 27-63.
+RX   MEDLINE=81245158; PubMed=7019715;
+RA   Steiner H., Hultmark D., Engstroem A., Bennich H., Boman H.G.;
+RT   "Sequence and specificity of two antibacterial proteins involved in
+RT   insect immunity.";
+RL   Nature 292:246-248(1981).
+RN   [5]
+RP   STRUCTURE BY NMR OF 27-63.
+RX   MEDLINE=89088132; PubMed=3207693;
+RA   Holak T.A., Engstroem A., Kraulis P.J., Lindeberg G., Bennich H.,
+RA   Jones T.A., Gronenborn A.M., Clore G.M.;
+RT   "The solution conformation of the antibacterial peptide cecropin A: a
+RT   nuclear magnetic resonance and dynamical simulated annealing study.";
+RL   Biochemistry 27:7620-7629(1988).
+CC   -!- FUNCTION: Cecropins have lytic and antibacterial activity against
+CC       several Gram-positive and Gram-negative bacteria.
+CC   -!- SUBCELLULAR LOCATION: Secreted.
+CC   -!- PTM: A protein with the same sequence as cecropin A, but lacking
+CC       the carboxyl blocking group, has been isolated and called cecropin
+CC       C (Ref.3).
+CC   -!- SIMILARITY: Belongs to the cecropin family.
+CC   --------------------------------------------------------------------------
+CC   This Swiss-Prot entry is copyright. It is produced through a collaboration
+CC   between  the Swiss Institute of Bioinformatics  and the  EMBL outstation -
+CC   the European Bioinformatics Institute.  There are no  restrictions on  its
+CC   use as long as its content is in no way modified and this statement is not
+CC   removed.
+CC   --------------------------------------------------------------------------
+DR   EMBL; X06672; CAA29871.1; -; mRNA.
+DR   EMBL; M63845; AAA29185.1; -; Genomic_DNA.
+DR   PIR; A40420; CKWKA.
+DR   PDB; 1D9J; NMR; A=-.
+DR   PDB; 1D9L; NMR; A=-.
+DR   PDB; 1D9M; NMR; A=-.
+DR   PDB; 1D9O; NMR; A=-.
+DR   PDB; 1D9P; NMR; A=-.
+DR   PDB; 1F0D; NMR; A=-.
+DR   PDB; 1F0E; NMR; A=-.
+DR   PDB; 1F0F; NMR; A=-.
+DR   PDB; 1F0G; NMR; A=-.
+DR   PDB; 1F0H; NMR; A=-.
+DR   InterPro; IPR000875; Cecropin.
+DR   InterPro; IPR003254; IIP_cecropin.
+DR   Pfam; PF00272; Cecropin; 1.
+DR   ProDom; PD003996; IIP_cecropin; 1.
+DR   PROSITE; PS00268; CECROPIN; 1.
+KW   3D-structure; Amidation; Antibiotic; Direct protein sequencing;
+KW   Hemolymph; Immune response; Innate immunity; Multigene family; Signal.
+FT   SIGNAL        1     22
+FT   PROPEP       23     26       Removed by a dipeptidylpeptidase.
+FT   CHAIN        27     63       Cecropin A.
+FT   MOD_RES      63     63       Lysine amide (G-64 provides amide group).
+SQ   SEQUENCE   64 AA;  6952 MW;  0B3AEA15C32DB3A4 CRC64;
+     MNFSRIFFFV FACLTALAMV NAAPEPKWKL FKKIEKVGQN IRDGIIKAGP AVAVVGQATQ
+     IAKG
+//
+ID   SRP09_MOUSE    STANDARD;      PRT;    85 AA.
+AC   P49962; Q9D085;
+DT   01-OCT-1996 (Rel. 34, Created)
+DT   01-OCT-1996 (Rel. 34, Last sequence update)
+DT   10-MAY-2005 (Rel. 47, Last annotation update)
+DE   Signal recognition particle 9 kDa protein (SRP9).
+GN   Name=Srp9;
+OS   Mus musculus (Mouse).
+OC   Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+OC   Mammalia; Eutheria; Euarchontoglires; Glires; Rodentia; Sciurognathi;
+OC   Muridae; Murinae; Mus.
+OX   NCBI_TaxID=10090;
+RN   [1]
+RP   NUCLEOTIDE SEQUENCE.
+RX   MEDLINE=94301784; PubMed=7518078;
+RA   Bovia F., Bui N., Strub K.;
+RT   "The heterodimeric subunit SRP9/14 of the signal recognition particle
+RT   functions as permuted single polypeptide chain.";
+RL   Nucleic Acids Res. 22:2028-2035(1994).
+RN   [2]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA].
+RC   STRAIN=C57BL/6J; TISSUE=Embryo, and Urinary bladder;
+RX   MEDLINE=22354683; PubMed=12466851; DOI=10.1038/nature01266;
+RA   Okazaki Y., Furuno M., Kasukawa T., Adachi J., Bono H., Kondo S.,
+RA   Nikaido I., Osato N., Saito R., Suzuki H., Yamanaka I., Kiyosawa H.,
+RA   Yagi K., Tomaru Y., Hasegawa Y., Nogami A., Schonbach C., Gojobori T.,
+RA   Baldarelli R., Hill D.P., Bult C., Hume D.A., Quackenbush J.,
+RA   Schriml L.M., Kanapin A., Matsuda H., Batalov S., Beisel K.W.,
+RA   Blake J.A., Bradt D., Brusic V., Chothia C., Corbani L.E., Cousins S.,
+RA   Dalla E., Dragani T.A., Fletcher C.F., Forrest A., Frazer K.S.,
+RA   Gaasterland T., Gariboldi M., Gissi C., Godzik A., Gough J.,
+RA   Grimmond S., Gustincich S., Hirokawa N., Jackson I.J., Jarvis E.D.,
+RA   Kanai A., Kawaji H., Kawasawa Y., Kedzierski R.M., King B.L.,
+RA   Konagaya A., Kurochkin I.V., Lee Y., Lenhard B., Lyons P.A.,
+RA   Maglott D.R., Maltais L., Marchionni L., McKenzie L., Miki H.,
+RA   Nagashima T., Numata K., Okido T., Pavan W.J., Pertea G., Pesole G.,
+RA   Petrovsky N., Pillai R., Pontius J.U., Qi D., Ramachandran S.,
+RA   Ravasi T., Reed J.C., Reed D.J., Reid J., Ring B.Z., Ringwald M.,
+RA   Sandelin A., Schneider C., Semple C.A., Setou M., Shimada K.,
+RA   Sultana R., Takenaka Y., Taylor M.S., Teasdale R.D., Tomita M.,
+RA   Verardo R., Wagner L., Wahlestedt C., Wang Y., Watanabe Y., Wells C.,
+RA   Wilming L.G., Wynshaw-Boris A., Yanagisawa M., Yang I., Yang L.,
+RA   Yuan Z., Zavolan M., Zhu Y., Zimmer A., Carninci P., Hayatsu N.,
+RA   Hirozane-Kishikawa T., Konno H., Nakamura M., Sakazume N., Sato K.,
+RA   Shiraki T., Waki K., Kawai J., Aizawa K., Arakawa T., Fukuda S.,
+RA   Hara A., Hashizume W., Imotani K., Ishii Y., Itoh M., Kagawa I.,
+RA   Miyazaki A., Sakai K., Sasaki D., Shibata K., Shinagawa A.,
+RA   Yasunishi A., Yoshino M., Waterston R., Lander E.S., Rogers J.,
+RA   Birney E., Hayashizaki Y.;
+RT   "Analysis of the mouse transcriptome based on functional annotation of
+RT   60,770 full-length cDNAs.";
+RL   Nature 420:563-573(2002).
+RN   [3]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA].
+RC   STRAIN=FVB/N; TISSUE=Mammary gland;
+RX   MEDLINE=22388257; PubMed=12477932; DOI=10.1073/pnas.242603899;
+RA   Strausberg R.L., Feingold E.A., Grouse L.H., Derge J.G.,
+RA   Klausner R.D., Collins F.S., Wagner L., Shenmen C.M., Schuler G.D.,
+RA   Altschul S.F., Zeeberg B., Buetow K.H., Schaefer C.F., Bhat N.K.,
+RA   Hopkins R.F., Jordan H., Moore T., Max S.I., Wang J., Hsieh F.,
+RA   Diatchenko L., Marusina K., Farmer A.A., Rubin G.M., Hong L.,
+RA   Stapleton M., Soares M.B., Bonaldo M.F., Casavant T.L., Scheetz T.E.,
+RA   Brownstein M.J., Usdin T.B., Toshiyuki S., Carninci P., Prange C.,
+RA   Raha S.S., Loquellano N.A., Peters G.J., Abramson R.D., Mullahy S.J.,
+RA   Bosak S.A., McEwan P.J., McKernan K.J., Malek J.A., Gunaratne P.H.,
+RA   Richards S., Worley K.C., Hale S., Garcia A.M., Gay L.J., Hulyk S.W.,
+RA   Villalon D.K., Muzny D.M., Sodergren E.J., Lu X., Gibbs R.A.,
+RA   Fahey J., Helton E., Ketteman M., Madan A., Rodrigues S., Sanchez A.,
+RA   Whiting M., Madan A., Young A.C., Shevchenko Y., Bouffard G.G.,
+RA   Blakesley R.W., Touchman J.W., Green E.D., Dickson M.C.,
+RA   Rodriguez A.C., Grimwood J., Schmutz J., Myers R.M.,
+RA   Butterfield Y.S.N., Krzywinski M.I., Skalska U., Smailus D.E.,
+RA   Schnerch A., Schein J.E., Jones S.J.M., Marra M.A.;
+RT   "Generation and initial analysis of more than 15,000 full-length human
+RT   and mouse cDNA sequences.";
+RL   Proc. Natl. Acad. Sci. U.S.A. 99:16899-16903(2002).
+RN   [4]
+RP   X-RAY CRYSTALLOGRAPHY (2.53 ANGSTROMS) IN COMPLEX WITH SRP14.
+RX   MEDLINE=97377014; PubMed=9233785; DOI=10.1093/emboj/16.13.3757;
+RA   Birse D.E., Kapp U., Strub K., Cusack S., Aaberg A.;
+RT   "The crystal structure of the signal recognition particle Alu RNA
+RT   binding heterodimer, SRP9/14.";
+RL   EMBO J. 16:3757-3766(1997).
+CC   -!- FUNCTION: Signal-recognition-particle assembly has a crucial role
+CC       in targeting secretory proteins to the rough endoplasmic reticulum
+CC       membrane. SRP9 together with SRP14 and the Alu portion of the SRP
+CC       RNA, constitutes the elongation arrest domain of SRP. The complex
+CC       of SRP9 and SRP14 is required for SRP RNA binding.
+CC   -!- SUBUNIT: Signal recognition particle consists of a 7S RNA molecule
+CC       of 300 nucleotides and six protein subunits: SRP72, SRP68, SRP54,
+CC       SRP19, SRP14 and SRP9.
+CC   -!- SUBCELLULAR LOCATION: Cytoplasmic.
+CC   -!- SIMILARITY: Belongs to the SRP9 family.
+CC   --------------------------------------------------------------------------
+CC   This Swiss-Prot entry is copyright. It is produced through a collaboration
+CC   between  the Swiss Institute of Bioinformatics  and the  EMBL outstation -
+CC   the European Bioinformatics Institute.  There are no  restrictions on  its
+CC   use as long as its content is in no way modified and this statement is not
+CC   removed.
+CC   --------------------------------------------------------------------------
+DR   EMBL; X78304; CAA55114.1; -; mRNA.
+DR   EMBL; AK011720; BAB27800.1; -; mRNA.
+DR   EMBL; AK020583; BAB32138.1; -; mRNA.
+DR   EMBL; AK020620; BAB32151.1; -; mRNA.
+DR   EMBL; BC039648; AAH39648.1; -; mRNA.
+DR   PIR; S57500; S57500.
+DR   PDB; 1914; X-ray; @=-.
+DR   SMR; P49962; 3-80.
+DR   MGI; MGI:1350930; Srp9.
+DR   InterPro; IPR008832; SRP9.
+DR   InterPro; IPR009018; SRP9/14.
+DR   PANTHER; PTHR12834; SRP9; 1.
+DR   Pfam; PF05486; SRP9; 1.
+KW   3D-structure; RNA-binding; Signal recognition particle.
+FT   INIT_MET      0      0       By similarity.
+FT   CONFLICT     21     21       P -> S (in Ref. 2; BAB27800).
+FT   HELIX         6     19
+FT   TURN         21     23
+FT   STRAND       25     31
+FT   TURN         32     35
+FT   STRAND       36     42
+FT   STRAND       47     52
+FT   STRAND       54     54
+FT   HELIX        55     57
+FT   HELIX        58     73
+SQ   SEQUENCE   85 AA;  10063 MW;  01C529D4714C62AD CRC64;
+     PQFQTWEEFS RAAEKLYLAD PMKVRVVLKY RHVDGNLCIK VTDDLVCLVY RTDQAQDVKK
+     IEKFHSQLMR LMVAKESRNV TMETE
+//
+ID   SRP14_MOUSE    STANDARD;      PRT;   110 AA.
+AC   P16254;
+DT   01-AUG-1990 (Rel. 15, Created)
+DT   01-AUG-1990 (Rel. 15, Last sequence update)
+DT   10-MAY-2005 (Rel. 47, Last annotation update)
+DE   Signal recognition particle 14 kDa protein (SRP14).
+GN   Name=Srp14;
+OS   Mus musculus (Mouse).
+OC   Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+OC   Mammalia; Eutheria; Euarchontoglires; Glires; Rodentia; Sciurognathi;
+OC   Muridae; Murinae; Mus.
+OX   NCBI_TaxID=10090;
+RN   [1]
+RP   NUCLEOTIDE SEQUENCE, AND PROTEIN SEQUENCE OF 1-19 AND 77-95.
+RX   MEDLINE=90099341; PubMed=2557625;
+RA   Strub K., Walter P.;
+RT   "Isolation of a cDNA clone of the 14-kDa subunit of the signal
+RT   recognition particle by cross-hybridization of differently primed
+RT   polymerase chain reactions.";
+RL   Proc. Natl. Acad. Sci. U.S.A. 86:9747-9751(1989).
+RN   [2]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA].
+RC   STRAIN=C57BL/6J; TISSUE=Hippocampus;
+RX   MEDLINE=22354683; PubMed=12466851; DOI=10.1038/nature01266;
+RA   Okazaki Y., Furuno M., Kasukawa T., Adachi J., Bono H., Kondo S.,
+RA   Nikaido I., Osato N., Saito R., Suzuki H., Yamanaka I., Kiyosawa H.,
+RA   Yagi K., Tomaru Y., Hasegawa Y., Nogami A., Schonbach C., Gojobori T.,
+RA   Baldarelli R., Hill D.P., Bult C., Hume D.A., Quackenbush J.,
+RA   Schriml L.M., Kanapin A., Matsuda H., Batalov S., Beisel K.W.,
+RA   Blake J.A., Bradt D., Brusic V., Chothia C., Corbani L.E., Cousins S.,
+RA   Dalla E., Dragani T.A., Fletcher C.F., Forrest A., Frazer K.S.,
+RA   Gaasterland T., Gariboldi M., Gissi C., Godzik A., Gough J.,
+RA   Grimmond S., Gustincich S., Hirokawa N., Jackson I.J., Jarvis E.D.,
+RA   Kanai A., Kawaji H., Kawasawa Y., Kedzierski R.M., King B.L.,
+RA   Konagaya A., Kurochkin I.V., Lee Y., Lenhard B., Lyons P.A.,
+RA   Maglott D.R., Maltais L., Marchionni L., McKenzie L., Miki H.,
+RA   Nagashima T., Numata K., Okido T., Pavan W.J., Pertea G., Pesole G.,
+RA   Petrovsky N., Pillai R., Pontius J.U., Qi D., Ramachandran S.,
+RA   Ravasi T., Reed J.C., Reed D.J., Reid J., Ring B.Z., Ringwald M.,
+RA   Sandelin A., Schneider C., Semple C.A., Setou M., Shimada K.,
+RA   Sultana R., Takenaka Y., Taylor M.S., Teasdale R.D., Tomita M.,
+RA   Verardo R., Wagner L., Wahlestedt C., Wang Y., Watanabe Y., Wells C.,
+RA   Wilming L.G., Wynshaw-Boris A., Yanagisawa M., Yang I., Yang L.,
+RA   Yuan Z., Zavolan M., Zhu Y., Zimmer A., Carninci P., Hayatsu N.,
+RA   Hirozane-Kishikawa T., Konno H., Nakamura M., Sakazume N., Sato K.,
+RA   Shiraki T., Waki K., Kawai J., Aizawa K., Arakawa T., Fukuda S.,
+RA   Hara A., Hashizume W., Imotani K., Ishii Y., Itoh M., Kagawa I.,
+RA   Miyazaki A., Sakai K., Sasaki D., Shibata K., Shinagawa A.,
+RA   Yasunishi A., Yoshino M., Waterston R., Lander E.S., Rogers J.,
+RA   Birney E., Hayashizaki Y.;
+RT   "Analysis of the mouse transcriptome based on functional annotation of
+RT   60,770 full-length cDNAs.";
+RL   Nature 420:563-573(2002).
+RN   [3]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA].
+RC   STRAIN=FVB/N; TISSUE=Mammary gland;
+RX   MEDLINE=22388257; PubMed=12477932; DOI=10.1073/pnas.242603899;
+RA   Strausberg R.L., Feingold E.A., Grouse L.H., Derge J.G.,
+RA   Klausner R.D., Collins F.S., Wagner L., Shenmen C.M., Schuler G.D.,
+RA   Altschul S.F., Zeeberg B., Buetow K.H., Schaefer C.F., Bhat N.K.,
+RA   Hopkins R.F., Jordan H., Moore T., Max S.I., Wang J., Hsieh F.,
+RA   Diatchenko L., Marusina K., Farmer A.A., Rubin G.M., Hong L.,
+RA   Stapleton M., Soares M.B., Bonaldo M.F., Casavant T.L., Scheetz T.E.,
+RA   Brownstein M.J., Usdin T.B., Toshiyuki S., Carninci P., Prange C.,
+RA   Raha S.S., Loquellano N.A., Peters G.J., Abramson R.D., Mullahy S.J.,
+RA   Bosak S.A., McEwan P.J., McKernan K.J., Malek J.A., Gunaratne P.H.,
+RA   Richards S., Worley K.C., Hale S., Garcia A.M., Gay L.J., Hulyk S.W.,
+RA   Villalon D.K., Muzny D.M., Sodergren E.J., Lu X., Gibbs R.A.,
+RA   Fahey J., Helton E., Ketteman M., Madan A., Rodrigues S., Sanchez A.,
+RA   Whiting M., Madan A., Young A.C., Shevchenko Y., Bouffard G.G.,
+RA   Blakesley R.W., Touchman J.W., Green E.D., Dickson M.C.,
+RA   Rodriguez A.C., Grimwood J., Schmutz J., Myers R.M.,
+RA   Butterfield Y.S.N., Krzywinski M.I., Skalska U., Smailus D.E.,
+RA   Schnerch A., Schein J.E., Jones S.J.M., Marra M.A.;
+RT   "Generation and initial analysis of more than 15,000 full-length human
+RT   and mouse cDNA sequences.";
+RL   Proc. Natl. Acad. Sci. U.S.A. 99:16899-16903(2002).
+RN   [4]
+RP   X-RAY CRYSTALLOGRAPHY (2.53 ANGSTROMS) IN COMPLEX WITH SRP9.
+RX   MEDLINE=97377014; PubMed=9233785; DOI=10.1093/emboj/16.13.3757;
+RA   Birse D.E., Kapp U., Strub K., Cusack S., Aaberg A.;
+RT   "The crystal structure of the signal recognition particle Alu RNA
+RT   binding heterodimer, SRP9/14.";
+RL   EMBO J. 16:3757-3766(1997).
+CC   -!- FUNCTION: Signal-recognition-particle assembly has a crucial role
+CC       in targeting secretory proteins to the rough endoplasmic reticulum
+CC       membrane. SRP9 together with SRP14 and the Alu portion of the SRP
+CC       RNA, constitutes the elongation arrest domain of SRP. The complex
+CC       of SRP9 and SRP14 is required for SRP RNA binding.
+CC   -!- SUBUNIT: Signal recognition particle consists of a 7S RNA molecule
+CC       of 300 nucleotides and six protein subunits: SRP72, SRP68, SRP54,
+CC       SRP19, SRP14 and SRP9.
+CC   -!- SUBCELLULAR LOCATION: Cytoplasmic.
+CC   -!- SIMILARITY: Belongs to the SRP14 family.
+CC   --------------------------------------------------------------------------
+CC   This Swiss-Prot entry is copyright. It is produced through a collaboration
+CC   between  the Swiss Institute of Bioinformatics  and the  EMBL outstation -
+CC   the European Bioinformatics Institute.  There are no  restrictions on  its
+CC   use as long as its content is in no way modified and this statement is not
+CC   removed.
+CC   --------------------------------------------------------------------------
+DR   EMBL; M29264; AAA40136.1; -; mRNA.
+DR   EMBL; AK019310; BAB31658.1; -; mRNA.
+DR   EMBL; BC021537; AAH21537.1; -; mRNA.
+DR   PIR; B34501; B34501.
+DR   PDB; 1914; X-ray; @=-.
+DR   Ensembl; ENSMUSG00000009549; Mus musculus.
+DR   MGI; MGI:107169; Srp14.
+DR   InterPro; IPR003210; SRP14.
+DR   InterPro; IPR009018; SRP9/14.
+DR   PANTHER; PTHR12013; SRP14; 1.
+DR   Pfam; PF02290; SRP14; 1.
+DR   ProDom; PD009170; SRP14; 1.
+KW   3D-structure; Direct protein sequencing; RNA-binding;
+KW   Signal recognition particle.
+FT   STRAND        3      4
+FT   HELIX         6     19
+FT   TURN         20     20
+FT   STRAND       26     33
+FT   STRAND       55     61
+FT   STRAND       66     72
+FT   TURN         73     74
+FT   HELIX        76     90
+FT   STRAND       95     95
+SQ   SEQUENCE   110 AA;  12510 MW;  95EB062DBC0CCA25 CRC64;
+     MVLLESEQFL TELTRLFQKC RSSGSVFITL KKYDGRTKPI PRKSSVEGLE PAENKCLLRA
+     TDGKRKISTV VSSKEVNKFQ MAYSNLLRAN MDGLKKRDKK NKSKKSKPAQ
+//
+ID   RGS9_BOVIN     STANDARD;      PRT;   484 AA.
+AC   O46469;
+DT   15-DEC-1998 (Rel. 37, Created)
+DT   15-DEC-1998 (Rel. 37, Last sequence update)
+DT   10-MAY-2005 (Rel. 47, Last annotation update)
+DE   Regulator of G-protein signaling 9 (RGS9).
+GN   Name=RGS9;
+OS   Bos taurus (Bovine).
+OC   Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+OC   Mammalia; Eutheria; Laurasiatheria; Cetartiodactyla; Ruminantia;
+OC   Pecora; Bovidae; Bovinae; Bos.
+OX   NCBI_TaxID=9913;
+RN   [1]
+RP   NUCLEOTIDE SEQUENCE.
+RX   MEDLINE=98119533; PubMed=9459445; DOI=10.1016/S0896-6273(00)80437-7;
+RA   He W., Cowan C.W., Wensel T.G.;
+RT   "RGS9, a GTPase accelerator for phototransduction.";
+RL   Neuron 20:95-102(1998).
+RN   [2]
+RP   INTERACTION WITH GBETA5.
+RX   MEDLINE=99162538; PubMed=10051575; DOI=10.1073/pnas.96.5.1947;
+RA   Makino E.R., Handy J.W., Li T., Arshavsky V.Y.;
+RT   "The GTPase activating factor for transducin in rod photoreceptors is
+RT   the complex between RGS9 and type 5 G protein beta subunit.";
+RL   Proc. Natl. Acad. Sci. U.S.A. 96:1947-1952(1999).
+RN   [3]
+RP   X-RAY CRYSTALLOGRAPHY (1.94 ANGSTROMS) OF 276-422.
+RX   MEDLINE=21128750; PubMed=11234020; DOI=10.1038/35059138;
+RA   Slep K.C., Kercher M.A., He W., Cowan C.W., Wensel T.G., Sigler P.B.;
+RT   "Structural determinants for regulation of phosphodiesterase by a G
+RT   protein at 2.0 A.";
+RL   Nature 409:1071-1077(2001).
+CC   -!- FUNCTION: Inhibits signal transduction by increasing the GTPase
+CC       activity of G protein alpha subunits thereby driving them into
+CC       their inactive GDP-bound form. Binds to G(t)-alpha. Involved in
+CC       phototransduction; key element in the recovery phase of visual
+CC       transduction.
+CC   -!- SUBUNIT: Heterodimer with Gbeta5.
+CC   -!- TISSUE SPECIFICITY: Photoreceptor outer segments.
+CC   -!- PTM: Phosphorylation is decreased by light exposition.
+CC   -!- SIMILARITY: Contains 1 DEP domain.
+CC   -!- SIMILARITY: Contains 1 G protein gamma domain.
+CC   -!- SIMILARITY: Contains 1 RGS domain.
+CC   --------------------------------------------------------------------------
+CC   This Swiss-Prot entry is copyright. It is produced through a collaboration
+CC   between  the Swiss Institute of Bioinformatics  and the  EMBL outstation -
+CC   the European Bioinformatics Institute.  There are no  restrictions on  its
+CC   use as long as its content is in no way modified and this statement is not
+CC   removed.
+CC   --------------------------------------------------------------------------
+DR   EMBL; AF011357; AAC99480.1; -; mRNA.
+DR   PDB; 1FQI; X-ray; A=276-422.
+DR   PDB; 1FQJ; X-ray; B/E=-.
+DR   PDB; 1FQK; X-ray; B/D=-.
+DR   Reactome; O46469; -.
+DR   InterPro; IPR000591; DEP.
+DR   InterPro; IPR001770; G-gamma.
+DR   InterPro; IPR000342; Regl_Gprotein.
+DR   InterPro; IPR009058; Wing_hlx_DNA_bnd.
+DR   Pfam; PF00610; DEP; 1.
+DR   Pfam; PF00631; G-gamma; 1.
+DR   Pfam; PF00615; RGS; 1.
+DR   PRINTS; PR01301; RGSPROTEIN.
+DR   ProDom; PD001580; Regl_Gprotein; 1.
+DR   SMART; SM00049; DEP; 1.
+DR   SMART; SM00224; GGL; 1.
+DR   SMART; SM00315; RGS; 1.
+DR   PROSITE; PS50186; DEP; 1.
+DR   PROSITE; PS50058; G_PROTEIN_GAMMA; FALSE_NEG.
+DR   PROSITE; PS50132; RGS; 1.
+KW   3D-structure; Phosphorylation; Sensory transduction;
+KW   Signal transduction inhibitor; Vision.
+FT   DOMAIN       30    105       DEP.
+FT   DOMAIN      219    280       G protein gamma-like.
+FT   DOMAIN      299    414       RGS.
+FT   MOD_RES     475    475       Phosphoserine (By similarity).
+FT   HELIX       290    295
+FT   TURN        296    298
+FT   HELIX       300    304
+FT   TURN        305    305
+FT   HELIX       307    319
+FT   TURN        320    321
+FT   TURN        323    323
+FT   HELIX       324    336
+FT   TURN        337    337
+FT   HELIX       340    342
+FT   HELIX       343    354
+FT   TURN        355    355
+FT   TURN        357    358
+FT   TURN        360    361
+FT   HELIX       367    376
+FT   TURN        377    378
+FT   TURN        382    385
+FT   HELIX       386    399
+FT   TURN        400    400
+FT   HELIX       401    405
+FT   TURN        406    406
+FT   HELIX       408    416
+SQ   SEQUENCE   484 AA;  56680 MW;  3D8C61CEC1E22949 CRC64;
+     MTIRHQGQQY RPRMAFLRKI EALVKDMQDP DTGVRVQNQK VKVVSIPHAM TGSDVLQWIS
+     QRLWISGLEA QNLGNFIVKY GYIYPLQDPR NLTLKPDSSL YRFQTPYFWP TQQWPAEDVD
+     YAIYLAKRNI KKKGILEEYE KENYNFLNKK INYKWDFVIM QAREQYRAGK ERNKVDRCAL
+     DCQEKAYWLV HRCPPGANNV LDYGLDRVTN PNEDQKQTVV SVRKEIMYYR QALMRSTVKS
+     SVSLGGIVKY SEQFSSNDAI MSGCLPSNPW ITDDTQFWDL NAKLVDIPTK MRVERWAFNF
+     SELIRDPKGR QSFQHFLRKE FSGENLGFWE ACEDLKYGDQ SKVKEKAEEI YKLFLAPGAR
+     RWINIDGKTM DITVKGLKHP HRYVLDAAQT HIYMLMKKDS YARYLKSPIY KEMLAKAIEP
+     QGTTRKSSSL PFMRRHLRSS PSPVILRQLE EEAKAREAAT TVDITQVMSK LDRRSQLRKE
+     PPPK
+//
+ID   GNAT1_BOVIN    STANDARD;      PRT;   349 AA.
+AC   P04695;
+DT   13-AUG-1987 (Rel. 05, Created)
+DT   01-OCT-1994 (Rel. 30, Last sequence update)
+DT   10-MAY-2005 (Rel. 47, Last annotation update)
+DE   Guanine nucleotide-binding protein G(t), alpha-1 subunit (Transducin
+DE   alpha-1 chain).
+GN   Name=GNAT1;
+OS   Bos taurus (Bovine).
+OC   Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+OC   Mammalia; Eutheria; Laurasiatheria; Cetartiodactyla; Ruminantia;
+OC   Pecora; Bovidae; Bovinae; Bos.
+OX   NCBI_TaxID=9913;
+RN   [1]
+RP   NUCLEOTIDE SEQUENCE.
+RX   MEDLINE=85242674; PubMed=2409555;
+RA   Medynski D.C., Sullivan K., Smith D., van Dop C., Chang F.-H.,
+RA   Fung B.K.-K., Seeburg P.H., Bourne H.R.;
+RT   "Amino acid sequence of the alpha subunit of transducin deduced from
+RT   the cDNA sequence.";
+RL   Proc. Natl. Acad. Sci. U.S.A. 82:4311-4315(1985).
+RN   [2]
+RP   NUCLEOTIDE SEQUENCE.
+RX   MEDLINE=85242675; PubMed=2989813;
+RA   Yatsunami K., Khorana H.G.;
+RT   "GTPase of bovine rod outer segments: the amino acid sequence of the
+RT   alpha subunit as derived from the cDNA sequence.";
+RL   Proc. Natl. Acad. Sci. U.S.A. 82:4316-4320(1985).
+RN   [3]
+RP   NUCLEOTIDE SEQUENCE.
+RX   MEDLINE=85213821; PubMed=3923359;
+RA   Tanaba T., Nukada T., Nishikawa Y., Sugimoto K., Suzuki H.,
+RA   Takahashi H., Noda M., Haga T., Ichiyama A., Kangawa K., Minamino N.,
+RA   Matsuo H., Numa S.;
+RT   "Primary structure of the alpha-subunit of transducin and its
+RT   relationship to ras proteins.";
+RL   Nature 315:242-245(1985).
+RN   [4]
+RP   PARTIAL PROTEIN SEQUENCE.
+RX   MEDLINE=86130762; PubMed=3867352;
+RA   Lipkin V.M., Obukhov A.N., Bogachuk A.P., Telezhinskaya I.N.,
+RA   Shemyakin V.V.;
+RT   "Isolation and characteristics of cyanogen bromide peptides of
+RT   transducin alpha and beta subunits.";
+RL   Bioorg. Khim. 11:1481-1492(1985).
+RN   [5]
+RP   X-RAY CRYSTALLOGRAPHY (2.2 ANGSTROMS).
+RX   MEDLINE=94081949; PubMed=8259210; DOI=10.1038/366654a0;
+RA   Noel J.P., Hamm H.E., Sigler P.B.;
+RT   "The 2.2 A crystal structure of transducin-alpha complexed with GTP
+RT   gamma S.";
+RL   Nature 366:654-663(1993).
+RN   [6]
+RP   X-RAY CRYSTALLOGRAPHY (1.8 ANGSTROMS).
+RX   MEDLINE=94268548; PubMed=8208289; DOI=10.1038/369621a0;
+RA   Lambright D.G., Noel J.P., Hamm H.E., Sigler P.B.;
+RT   "Structural determinants for activation of the alpha-subunit of a
+RT   heterotrimeric G protein.";
+RL   Nature 369:621-628(1994).
+RN   [7]
+RP   X-RAY CRYSTALLOGRAPHY (1.7 ANGSTROMS).
+RX   MEDLINE=95059455; PubMed=7969474; DOI=10.1038/372276a0;
+RA   Sondek J., Lambright D.G., Noel J.P., Hamm H.E., Sigler P.B.;
+RT   "GTPase mechanism of Gproteins from the 1.7-A crystal structure of
+RT   transducin alpha-GDP-AIF-4.";
+RL   Nature 372:276-279(1994).
+RN   [8]
+RP   STRUCTURE BY NMR OF 339-349.
+RC   TISSUE=Retina;
+RX   MEDLINE=98208529; PubMed=9539726; DOI=10.1073/pnas.95.8.4270;
+RA   Kisselev O.G., Kao J., Ponder J.W., Fann Y.C., Gautam N.,
+RA   Marshall G.R.;
+RT   "Light-activated rhodopsin induces structural binding motif in G
+RT   protein alpha subunit.";
+RL   Proc. Natl. Acad. Sci. U.S.A. 95:4270-4275(1998).
+RN   [9]
+RP   MYRISTOYLATION.
+RX   MEDLINE=93063268; PubMed=1436039; DOI=10.1038/359749a0;
+RA   Kokame K., Fukada Y., Yoshizawa T., Takao T., Shimonishi Y.;
+RT   "Lipid modification at the N terminus of photoreceptor G-protein
+RT   alpha-subunit.";
+RL   Nature 359:749-752(1992).
+CC   -!- FUNCTION: Guanine nucleotide-binding proteins (G proteins) are
+CC       involved as modulators or transducers in various transmembrane
+CC       signaling systems. Transducin is an amplifier and one of the
+CC       transducers of a visual impulse that performs the coupling between
+CC       rhodopsin and cGMP-phosphodiesterase.
+CC   -!- SUBUNIT: G proteins are composed of 3 units; alpha, beta and
+CC       gamma. The alpha chain contains the guanine nucleotide binding
+CC       site.
+CC   -!- TISSUE SPECIFICITY: Rod.
+CC   --------------------------------------------------------------------------
+CC   This Swiss-Prot entry is copyright. It is produced through a collaboration
+CC   between  the Swiss Institute of Bioinformatics  and the  EMBL outstation -
+CC   the European Bioinformatics Institute.  There are no  restrictions on  its
+CC   use as long as its content is in no way modified and this statement is not
+CC   removed.
+CC   --------------------------------------------------------------------------
+DR   EMBL; K03253; AAA30787.1; -; mRNA.
+DR   EMBL; K03254; AAA30791.1; -; mRNA.
+DR   EMBL; X02440; CAA26285.1; -; mRNA.
+DR   PIR; A22244; RGBOT1.
+DR   PDB; 1AQG; NMR; @=339-349.
+DR   PDB; 1FQJ; X-ray; A/D=-.
+DR   PDB; 1FQK; X-ray; A/C=-.
+DR   PDB; 1LVZ; NMR; A=341-349.
+DR   PDB; 1TAD; X-ray; A/B/C=26-349.
+DR   PDB; 1TAG; X-ray; @=26-349.
+DR   PDB; 1TND; X-ray; A/B/C=26-349.
+DR   Reactome; P04695; -.
+DR   InterPro; IPR001019; Gprotein_alpha.
+DR   InterPro; IPR001408; Gprotein_alpha_I.
+DR   InterPro; IPR011025; GproteinA_insert.
+DR   Pfam; PF00503; G-alpha; 1.
+DR   PRINTS; PR00318; GPROTEINA.
+DR   PRINTS; PR00441; GPROTEINAI.
+DR   ProDom; PD000281; Gprotein_alpha; 1.
+KW   3D-structure; ADP-ribosylation; Direct protein sequencing;
+KW   GTP-binding; Lipoprotein; Multigene family; Myristate;
+KW   Sensory transduction; Transducer; Vision.
+FT   INIT_MET      0      0
+FT   NP_BIND      35     42       GTP.
+FT   NP_BIND     195    199       GTP.
+FT   NP_BIND     264    267       GTP.
+FT   MOD_RES     173    173       ADP-ribosylarginine (by cholera toxin).
+FT   MOD_RES     346    346       ADP-ribosylcysteine (by pertussis toxin).
+FT   LIPID         1      1       N-myristoyl glycine.
+FT   STRAND       27     34
+FT   TURN         37     38
+FT   HELIX        41     52
+FT   HELIX        58     85
+FT   TURN         86     87
+FT   TURN         93     94
+FT   HELIX        95    108
+FT   TURN        111    112
+FT   HELIX       116    127
+FT   HELIX       129    135
+FT   TURN        136    137
+FT   HELIX       138    141
+FT   TURN        142    142
+FT   TURN        145    146
+FT   HELIX       147    151
+FT   TURN        152    153
+FT   HELIX       154    157
+FT   TURN        158    158
+FT   TURN        160    161
+FT   HELIX       166    171
+FT   STRAND      181    186
+FT   TURN        187    188
+FT   STRAND      189    196
+FT   HELIX       200    207
+FT   TURN        208    212
+FT   STRAND      215    221
+FT   HELIX       222    226
+FT   STRAND      228    228
+FT   TURN        233    234
+FT   STRAND      236    236
+FT   HELIX       237    249
+FT   TURN        250    250
+FT   HELIX       252    254
+FT   TURN        255    256
+FT   STRAND      258    264
+FT   HELIX       266    272
+FT   TURN        273    275
+FT   HELIX       278    280
+FT   TURN        281    281
+FT   TURN        283    284
+FT   HELIX       291    303
+FT   TURN        304    305
+FT   TURN        307    311
+FT   STRAND      315    318
+FT   TURN        321    322
+FT   HELIX       324    338
+SQ   SEQUENCE   349 AA;  39834 MW;  594593ED3AEDBC09 CRC64;
+     GAGASAEEKH SRELEKKLKE DAEKDARTVK LLLLGAGESG KSTIVKQMKI IHQDGYSLEE
+     CLEFIAIIYG NTLQSILAIV RAMTTLNIQY GDSARQDDAR KLMHMADTIE EGTMPKEMSD
+     IIQRLWKDSG IQACFDRASE YQLNDSAGYY LSDLERLVTP GYVPTEQDVL RSRVKTTGII
+     ETQFSFKDLN FRMFDVGGQR SERKKWIHCF EGVTCIIFIA ALSAYDMVLV EDDEVNRMHE
+     SLHLFNSICN HRYFATTSIV LFLNKKDVFS EKIKKAHLSI CFPDYNGPNT YEDAGNYIKV
+     QFLELNMRRD VKEIYSHMTC ATDTQNVKFV FDAVTDIIIK ENLKDCGLF
+//
+ID   GNAI1_BOVIN    STANDARD;      PRT;   353 AA.
+AC   P63097; P04898; P11015; P31871;
+DT   13-AUG-1987 (Rel. 05, Created)
+DT   01-OCT-1994 (Rel. 30, Last sequence update)
+DT   10-MAY-2005 (Rel. 47, Last annotation update)
+DE   Guanine nucleotide-binding protein G(i), alpha-1 subunit (Adenylate
+DE   cyclase-inhibiting G alpha protein).
+GN   Name=GNAI1;
+OS   Bos taurus (Bovine).
+OC   Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+OC   Mammalia; Eutheria; Laurasiatheria; Cetartiodactyla; Ruminantia;
+OC   Pecora; Bovidae; Bovinae; Bos.
+OX   NCBI_TaxID=9913;
+RN   [1]
+RP   NUCLEOTIDE SEQUENCE.
+RX   MEDLINE=86136587; PubMed=2419165; DOI=10.1016/0014-5793(86)80347-7;
+RA   Nukada T., Tanabe T., Takahashi H., Noda M., Haga K., Haga T.,
+RA   Ichiyama A., Kangawa K., Hiranaga M., Matsuo H., Numa S.;
+RT   "Primary structure of the alpha-subunit of bovine adenylate cyclase-
+RT   inhibiting G-protein deduced from the cDNA sequence.";
+RL   FEBS Lett. 197:305-310(1986).
+RN   [2]
+RP   NUCLEOTIDE SEQUENCE OF 105-353.
+RX   MEDLINE=87017009; PubMed=3094012;
+RA   Michel T., Winslow J.W., Smith J.A., Seidman J.G., Neer E.J.;
+RT   "Molecular cloning and characterization of cDNA encoding the GTP-
+RT   binding protein alpha i and identification of a related protein, alpha
+RT   h.";
+RL   Proc. Natl. Acad. Sci. U.S.A. 83:7663-7667(1986).
+CC   -!- FUNCTION: Guanine nucleotide-binding proteins (G proteins) are
+CC       involved as modulators or transducers in various transmembrane
+CC       signaling systems. The G(i) proteins are involved in hormonal
+CC       regulation of adenylate cyclase: they inhibit the cyclase in
+CC       response to beta-adrenergic stimuli.
+CC   -!- SUBUNIT: G proteins are composed of 3 units; alpha, beta and
+CC       gamma. The alpha chain contains the guanine nucleotide binding
+CC       site.
+CC   -!- SIMILARITY: Belongs to the G-alpha family. G(i/o/t/z) subfamily.
+CC   --------------------------------------------------------------------------
+CC   This Swiss-Prot entry is copyright. It is produced through a collaboration
+CC   between  the Swiss Institute of Bioinformatics  and the  EMBL outstation -
+CC   the European Bioinformatics Institute.  There are no  restrictions on  its
+CC   use as long as its content is in no way modified and this statement is not
+CC   removed.
+CC   --------------------------------------------------------------------------
+DR   EMBL; X03642; CAA27288.1; -; mRNA.
+DR   EMBL; M14207; AAA30561.1; -; mRNA.
+DR   PIR; A23631; RGBOI1.
+DR   SMR; P63097; 31-346.
+DR   InterPro; IPR001019; Gprotein_alpha.
+DR   InterPro; IPR001408; Gprotein_alpha_I.
+DR   Pfam; PF00503; G-alpha; 1.
+KW   ADP-ribosylation; GTP-binding; Lipoprotein; Multigene family;
+KW   Myristate; Palmitate; Transducer.
+FT   INIT_MET      0      0       By similarity.
+FT   NP_BIND      39     46       GTP (By similarity).
+FT   NP_BIND     199    203       GTP (By similarity).
+FT   NP_BIND     268    271       GTP (By similarity).
+FT   MOD_RES     177    177       ADP-ribosylarginine (by cholera toxin).
+FT   MOD_RES     350    350       ADP-ribosylcysteine (by pertussis toxin).
+FT   LIPID         1      1       N-myristoyl glycine (By similarity).
+FT   LIPID         2      2       S-palmitoyl cysteine (By similarity).
+FT   CONFLICT    112    112       A -> S (in Ref. 2).
+FT   CONFLICT    329    329       K -> N (in Ref. 2).
+FT   CONFLICT    336    336       D -> E (in Ref. 2).
+SQ   SEQUENCE   353 AA;  40230 MW;  B456C4E189530A6D CRC64;
+     GCTLSAEDKA AVERSKMIDR NLREDGEKAA REVKLLLLGA GESGKSTIVK QMKIIHEAGY
+     SEEECKQYKA VVYSNTIQSI IAIIRAMGRL KIDFGDSARA DDARQLFVLA GAAEEGFMTA
+     ELAGVIKRLW KDSGVQACFN RSREYQLNDS AAYYLNDLDR IAQPNYIPTQ QDVLRTRVKT
+     TGIVETHFTF KDLHFKMFDV GGQRSERKKW IHCFEGVTAI IFCVALSDYD LVLAEDEEMN
+     RMHESMKLFD SICNNKWFTD TSIILFLNKK DLFEEKIKKS PLTICYPEYA GSNTYEEAAA
+     YIQCQFEDLN KRKDTKEIYT HFTCATDTKN VQFVFDAVTD VIIKNNLKDC GLF
+//
+ID   MONA_DIOCU     STANDARD;      PRT;    45 AA.
+AC   P02881;
+DT   21-JUL-1986 (Rel. 01, Created)
+DT   21-JUL-1986 (Rel. 01, Last sequence update)
+DT   10-MAY-2005 (Rel. 47, Last annotation update)
+DE   Monellin chain A (Monellin chain I).
+OS   Dioscoreophyllum cumminsii (Serendipity berry).
+OC   Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Tracheophyta;
+OC   Spermatophyta; Magnoliophyta; eudicotyledons; Ranunculales;
+OC   Menispermaceae; Dioscoreophyllum.
+OX   NCBI_TaxID=3457;
+RN   [1]
+RP   PROTEIN SEQUENCE.
+RX   MEDLINE=91136778; PubMed=1368575;
+RA   Kohmura M., Nio N., Ariyoshi Y.;
+RT   "Complete amino acid sequence of the sweet protein monellin.";
+RL   Agric. Biol. Chem. 54:2219-2224(1990).
+RN   [2]
+RP   PROTEIN SEQUENCE.
+RX   MEDLINE=77004858; PubMed=964918;
+RA   Frank G., Zuber H.;
+RT   "The complete amino acid sequences of both subunits of the sweet
+RT   protein monellin.";
+RL   Hoppe-Seyler's Z. Physiol. Chem. 357:585-592(1976).
+RN   [3]
+RP   PROTEIN SEQUENCE.
+RX   MEDLINE=76277941; PubMed=962914;
+RA   Hudson G., Biemann K.;
+RT   "Mass spectrometric sequencing of proteins. The structure of subunit I
+RT   of monellin.";
+RL   Biochem. Biophys. Res. Commun. 71:212-220(1976).
+RN   [4]
+RP   PROTEIN SEQUENCE OF 2-28.
+RX   MEDLINE=76161292; PubMed=4107; DOI=10.1016/0005-2795(76)90293-2;
+RA   Bohak Z., Li S.-L.;
+RT   "The structure of monellin and its relation to the sweetness of the
+RT   protein.";
+RL   Biochim. Biophys. Acta 427:153-170(1976).
+RN   [5]
+RP   X-RAY CRYSTALLOGRAPHY (3.0 ANGSTROMS).
+RX   MEDLINE=87287292; PubMed=3614382; DOI=10.1038/328739a0;
+RA   Ogata C., Hatada M., Tomlinson G., Shin W.-C., Kim S.-H.;
+RT   "Crystal structure of the intensely sweet protein monellin.";
+RL   Nature 328:739-742(1987).
+RN   [6]
+RP   X-RAY CRYSTALLOGRAPHY (2.3 ANGSTROMS).
+RX   PubMed=15299859; DOI=10.1107/S0907444997006860;
+RA   Bujacz G., Miller M., Harrison R., Thanki N., Gilliland G.L.,
+RA   Ogata C., Kim S.-H., Wlodawer A.;
+RT   "Structure of monellin refined to 2.3-A resolution in the orthorhombic
+RT   crystal form.";
+RL   Acta Crystallogr. D 53:713-719(1997).
+RN   [7]
+RP   SIMILARITY TO CYSTATINS.
+RX   MEDLINE=93218009; PubMed=8464079;
+RA   Murzin A.G.;
+RT   "Sweet-tasting protein monellin is related to the cystatin family of
+RT   thiol proteinase inhibitors.";
+RL   J. Mol. Biol. 230:689-694(1993).
+CC   -!- FUNCTION: Taste-modifying protein; intensely sweet-tasting
+CC       protein.
+CC   -!- SUBUNIT: Heterodimer of an A chain and a B chain.
+CC   -!- BIOTECHNOLOGY: Natural monellin has not been mass marketed to the
+CC       food industry, primarily due to the challenge of large-scale
+CC       purification of the protein which is relatively sensitive to heat
+CC       or acid treatment.
+CC   --------------------------------------------------------------------------
+CC   This Swiss-Prot entry is copyright. It is produced through a collaboration
+CC   between  the Swiss Institute of Bioinformatics  and the  EMBL outstation -
+CC   the European Bioinformatics Institute.  There are no  restrictions on  its
+CC   use as long as its content is in no way modified and this statement is not
+CC   removed.
+CC   --------------------------------------------------------------------------
+DR   PIR; JH0209; MLDIA.
+DR   PDB; 1FA3; NMR; A=-.
+DR   PDB; 1FUW; NMR; A=-.
+DR   PDB; 1IV7; X-ray; A/B=-.
+DR   PDB; 1IV9; X-ray; A/B=-.
+DR   PDB; 1KRL; X-ray; A/C=2-45.
+DR   PDB; 1M9G; NMR; A=-.
+DR   PDB; 1MNL; NMR; @=-.
+DR   PDB; 3MON; X-ray; A/C/E/G=2-45.
+DR   PDB; 4MON; X-ray; A/C=1-45.
+DR   InterPro; IPR000828; Monellin_A.
+DR   PRINTS; PR00630; MONELLINA.
+KW   3D-structure; Direct protein sequencing; Taste-modifying protein.
+FT   VARIANT       1      1       Missing (in 90% of the chains).
+FT   CONFLICT     23     23       D -> N (in Ref. 3).
+FT   CONFLICT     26     27       ED -> QN (in Ref. 3).
+FT   STRAND        4     10
+FT   STRAND       13     15
+FT   TURN         16     17
+FT   STRAND       18     27
+FT   TURN         28     30
+FT   STRAND       33     33
+FT   STRAND       37     39
+SQ   SEQUENCE   45 AA;  5398 MW;  E086DF18521EC5B6 CRC64;
+     FREIKGYEYQ LYVYASDKLF RADISEDYKT RGRKLLRFNG PVPPP
+//
+ID   MONB_DIOCU     STANDARD;      PRT;    50 AA.
+AC   P02882;
+DT   21-JUL-1986 (Rel. 01, Created)
+DT   01-AUG-1991 (Rel. 19, Last sequence update)
+DT   10-MAY-2005 (Rel. 47, Last annotation update)
+DE   Monellin chain B (Monellin chain II).
+OS   Dioscoreophyllum cumminsii (Serendipity berry).
+OC   Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Tracheophyta;
+OC   Spermatophyta; Magnoliophyta; eudicotyledons; Ranunculales;
+OC   Menispermaceae; Dioscoreophyllum.
+OX   NCBI_TaxID=3457;
+RN   [1]
+RP   PROTEIN SEQUENCE.
+RX   MEDLINE=91136778; PubMed=1368575;
+RA   Kohmura M., Nio N., Ariyoshi Y.;
+RT   "Complete amino acid sequence of the sweet protein monellin.";
+RL   Agric. Biol. Chem. 54:2219-2224(1990).
+RN   [2]
+RP   PROTEIN SEQUENCE.
+RX   MEDLINE=77004858; PubMed=964918;
+RA   Frank G., Zuber H.;
+RT   "The complete amino acid sequences of both subunits of the sweet
+RT   protein monellin.";
+RL   Hoppe-Seyler's Z. Physiol. Chem. 357:585-592(1976).
+RN   [3]
+RP   PROTEIN SEQUENCE.
+RX   MEDLINE=76161292; PubMed=4107; DOI=10.1016/0005-2795(76)90293-2;
+RA   Bohak Z., Li S.-L.;
+RT   "The structure of monellin and its relation to the sweetness of the
+RT   protein.";
+RL   Biochim. Biophys. Acta 427:153-170(1976).
+RN   [4]
+RP   X-RAY CRYSTALLOGRAPHY (3.0 ANGSTROMS).
+RX   MEDLINE=87287292; PubMed=3614382; DOI=10.1038/328739a0;
+RA   Ogata C., Hatada M., Tomlinson G., Shin W.-C., Kim S.-H.;
+RT   "Crystal structure of the intensely sweet protein monellin.";
+RL   Nature 328:739-742(1987).
+RN   [5]
+RP   X-RAY CRYSTALLOGRAPHY (1.7 ANGSTROMS).
+RX   MEDLINE=94047088; PubMed=8230222;
+RA   Somoza J.R., Jiang F., Tong L., Kang C.-H., Cho J.M., Kim S.-H.;
+RT   "Two crystal structures of a potently sweet protein. Natural monellin
+RT   at 2.75-A resolution and single-chain monellin at 1.7-A resolution.";
+RL   J. Mol. Biol. 234:390-404(1993).
+RN   [6]
+RP   X-RAY CRYSTALLOGRAPHY (2.3 ANGSTROMS).
+RX   PubMed=15299859; DOI=10.1107/S0907444997006860;
+RA   Bujacz G., Miller M., Harrison R., Thanki N., Gilliland G.L.,
+RA   Ogata C., Kim S.-H., Wlodawer A.;
+RT   "Structure of monellin refined to 2.3-A resolution in the orthorhombic
+RT   crystal form.";
+RL   Acta Crystallogr. D 53:713-719(1997).
+RN   [7]
+RP   SIMILARITY TO CYSTATINS.
+RX   MEDLINE=93218009; PubMed=8464079;
+RA   Murzin A.G.;
+RT   "Sweet-tasting protein monellin is related to the cystatin family of
+RT   thiol proteinase inhibitors.";
+RL   J. Mol. Biol. 230:689-694(1993).
+CC   -!- FUNCTION: Taste-modifying protein; intensely sweet-tasting
+CC       protein.
+CC   -!- SUBUNIT: Heterodimer of an A chain and a B chain.
+CC   -!- BIOTECHNOLOGY: Natural monellin has not been mass marketed to the
+CC       food industry, primarily due to the challenge of large-scale
+CC       purification of the protein which is relatively sensitive to heat
+CC       or acid treatment.
+CC   --------------------------------------------------------------------------
+CC   This Swiss-Prot entry is copyright. It is produced through a collaboration
+CC   between  the Swiss Institute of Bioinformatics  and the  EMBL outstation -
+CC   the European Bioinformatics Institute.  There are no  restrictions on  its
+CC   use as long as its content is in no way modified and this statement is not
+CC   removed.
+CC   --------------------------------------------------------------------------
+DR   PIR; JH0210; MLDIB.
+DR   PDB; 1FA3; NMR; A=-.
+DR   PDB; 1FUW; NMR; A=-.
+DR   PDB; 1IV7; X-ray; A/B=-.
+DR   PDB; 1IV9; X-ray; A/B=-.
+DR   PDB; 1KRL; X-ray; B/D=1-50.
+DR   PDB; 1M9G; NMR; A=-.
+DR   PDB; 1MNL; NMR; @=-.
+DR   PDB; 1MOL; X-ray; A/B=1-48.
+DR   PDB; 3MON; X-ray; B/D/F/H=1-48.
+DR   PDB; 4MON; X-ray; B/D=1-48.
+DR   InterPro; IPR002095; Monellin_B.
+DR   PRINTS; PR00631; MONELLINB.
+KW   3D-structure; Direct protein sequencing; Taste-modifying protein.
+FT   SITE         41     41       Blocking, abolishes the sweet taste.
+FT   CONFLICT     49     50       EN -> NE (in Ref. 2).
+FT   STRAND        2      6
+FT   HELIX        10     26
+FT   TURN         28     29
+FT   STRAND       34     48
+FT   TURN         49     50
+SQ   SEQUENCE   50 AA;  5835 MW;  F08396DFCD480C81 CRC64;
+     GEWEIIDIGP FTQNLGKFAV DEENKIGQYG RLTFNKVIRP CMKKTIYEEN
+//
+ID   UL47_VZVD      STANDARD;      PRT;   819 AA.
+AC   P09263;
+DT   01-MAR-1989 (Rel. 10, Created)
+DT   01-MAR-1989 (Rel. 10, Last sequence update)
+DT   10-MAY-2005 (Rel. 47, Last annotation update)
+DE   Alpha trans-inducing factor 91.8 kDa protein.
+GN   Name=11;
+OS   Varicella-zoster virus (strain Dumas) (VZV).
+OC   Viruses; dsDNA viruses, no RNA stage; Herpesviridae;
+OC   Alphaherpesvirinae; Varicellovirus.
+OX   NCBI_TaxID=10338;
+RN   [1]
+RP   NUCLEOTIDE SEQUENCE.
+RX   MEDLINE=86306657; PubMed=3018124;
+RA   Davison A.J., Scott J.E.;
+RT   "The complete DNA sequence of varicella-zoster virus.";
+RL   J. Gen. Virol. 67:1759-1816(1986).
+CC   -!- FUNCTION: Modulates alpha trans-inducing factor-dependent
+CC       activation of alpha genes.
+CC   -!- SIMILARITY: Belongs to the herpesviruses UL47 family.
+CC   --------------------------------------------------------------------------
+CC   This Swiss-Prot entry is copyright. It is produced through a collaboration
+CC   between  the Swiss Institute of Bioinformatics  and the  EMBL outstation -
+CC   the European Bioinformatics Institute.  There are no  restrictions on  its
+CC   use as long as its content is in no way modified and this statement is not
+CC   removed.
+CC   --------------------------------------------------------------------------
+DR   EMBL; X04370; CAA27894.1; -; Genomic_DNA.
+DR   PIR; B27342; TNBE11.
+DR   InterPro; IPR005029; Herpes_UL47.
+DR   Pfam; PF03362; Herpes_UL47; 1.
+KW   Repeat; Trans-acting factor; Transcription; Transcription regulation.
+FT   REPEAT      117    132       1-1.
+FT   REPEAT      133    148       1-2.
+FT   REPEAT      149    164       1-3.
+FT   REPEAT      165    180       1-4.
+FT   REPEAT      181    185       2-1.
+FT   REPEAT      186    190       2-2.
+FT   REPEAT      191    206       1-5.
+FT   REPEAT      207    218       1-6 (incomplete).
+FT   REGION      117    218       5.5 X 16 AA tandem repeats.
+FT   REGION      181    190       2 X 5 AA tandem repeats of G-E-A-E-E.
+SQ   SEQUENCE   819 AA;  91830 MW;  1814DA0D5493B8C8 CRC64;
+     MQSGHYNRRQ SRRQRISSNT TDSPRHTHGT RYRSTNWYTH PPQILSNSET LVAVQELLNS
+     EMDQDSSSDA SDDFPGYALH HSTYNGSEQN TSTSRHENRI FKLTEREANE EININTDAID
+     DEGEAEEGEA EEDAIDDEGE AEEGEAEEDA IDDEGEAEEG EAEEDAIDDE GEAEEGEAEE
+     GEAEEGEAEE DAIDDEGEAE EDAAEEDAID DEGEAEEDYF SVSQVCSRDA DEVYFTLDPE
+     ISYSTDLRIA KVMEPAVSKE LNVSKRCVEP VTLTGSMLAH NGFDESWFAM RECTRREYIT
+     VQGLYDPIHL RYQFDTSRMT PPQILRTIPA LPNMTLGELL LIFPIEFMAQ PISIERILVE
+     DVFLDRRASS KTHKYGPRWN SVYALPYNAG KMYVQHIPGF YDVSLRAVGQ GTAIWHHMIL
+     STAACAISNR ISHGDGLGFL LDAAIRISAN CIFLGRNDNF GVGDPCWLED HLAGLPREAV
+     PDVLQVTQLV LPNRGPTVAI MRGFFGALAY WPELRIAISE PSTSLVRYAT GHMELAEWFL
+     FSRTHSLKPQ FTPTEREMLA SFFTLYVTLG GGMLNWICRA TAMYLAAPYH SRSAYIAVCE
+     SLPYYYIPVN SDLLCDLEVL LLGEVDLPTV CESYATIAHE LTGYEAVRTA ATNFMIEFAD
+     CYKESETDLM VSAYLGAVLL LQRVLGHANL LLLLLSGAAL YGGCSIYIPR GILDAYNTLM
+     LAASPLYAHQ TLTSFWKDRD DAMQTLGIRP TTDVLPKEQD RIVQASPIEM NFRFVGLETI
+     YPREQPIPSV DLAENLMQYR NEILGLDWKS VAMHLLRKY
+//
+ID   GSTP1_HUMAN    STANDARD;      PRT;   209 AA.
+AC   P09211; O00460; Q15690;
+DT   01-MAR-1989 (Rel. 10, Created)
+DT   01-MAR-1989 (Rel. 10, Last sequence update)
+DT   10-MAY-2005 (Rel. 47, Last annotation update)
+DE   Glutathione S-transferase P (EC 2.5.1.18) (GST class-pi) (GSTP1-1).
+GN   Name=GSTP1; Synonyms=GST3;
+OS   Homo sapiens (Human).
+OC   Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+OC   Mammalia; Eutheria; Euarchontoglires; Primates; Catarrhini; Hominidae;
+OC   Homo.
+OX   NCBI_TaxID=9606;
+RN   [1]
+RP   NUCLEOTIDE SEQUENCE.
+RX   MEDLINE=88026724; PubMed=3664469;
+RA   Kano T., Sakai M., Muramatsu M.;
+RT   "Structure and expression of a human class pi glutathione S-
+RT   transferase messenger RNA.";
+RL   Cancer Res. 47:5626-5630(1987).
+RN   [2]
+RP   NUCLEOTIDE SEQUENCE.
+RX   MEDLINE=89061690; PubMed=3196325;
+RA   Cowell I.G., Dixon K.H., Pemble S.E., Ketterer B., Taylor J.B.;
+RT   "The structure of the human glutathione S-transferase pi gene.";
+RL   Biochem. J. 255:79-83(1988).
+RN   [3]
+RP   NUCLEOTIDE SEQUENCE.
+RX   MEDLINE=89252918; PubMed=2542132; DOI=10.1016/0378-1119(89)90377-6;
+RA   Morrow C.S., Cowan K.H., Goldsmith M.E.;
+RT   "Structure of the human genomic glutathione S-transferase-pi gene.";
+RL   Gene 75:3-11(1989).
+RN   [4]
+RP   NUCLEOTIDE SEQUENCE.
+RX   MEDLINE=89168166; PubMed=2466554;
+RA   Moscow J.A., Fairchild C.R., Madden M.J., Ransom D.T., Wieand H.S.,
+RA   O'Brien E.E., Poplack D.G., Cossman J., Myers C.E., Cowan K.H.;
+RT   "Expression of anionic glutathione-S-transferase and P-glycoprotein
+RT   genes in human tissues and tumors.";
+RL   Cancer Res. 49:1422-1428(1989).
+RN   [5]
+RP   NUCLEOTIDE SEQUENCE.
+RA   Bora P.S., Smith C., Lange L.G., Bora N.S., Jones C., Gerhard D.S.;
+RL   Submitted (JUL-1994) to the EMBL/GenBank/DDBJ databases.
+RN   [6]
+RP   NUCLEOTIDE SEQUENCE, AND VARIANTS VAL-104 AND VAL-113.
+RX   MEDLINE=97248556; PubMed=9092542; DOI=10.1074/jbc.272.15.10004;
+RA   Ali-Osman F., Akande O., Antoun G., Mao J.X., Buolamwini J.;
+RT   "Molecular cloning, characterization, and expression in Escherichia
+RT   coli of full-length cDNAs of three human glutathione S-transferase Pi
+RT   gene variants. Evidence for differential catalytic activity of the
+RT   encoded proteins.";
+RL   J. Biol. Chem. 272:10004-10012(1997).
+RN   [7]
+RP   NUCLEOTIDE SEQUENCE [GENOMIC DNA], AND VARIANTS VAL-104 AND VAL-113.
+RA   Rieder M.J., Livingston R.J., Daniels M.R., Chung M.-W.,
+RA   Miyamoto K.E., Nguyen C.P., Nguyen D.A., Poel C.L., Robertson P.D.,
+RA   Schackwitz W.S., Sherwood J.K., Witrak L.A., Nickerson D.A.;
+RT   "NIEHS-SNPs, environmental genome project, NIEHS ES15478, Department
+RT   of Genome Sciences, Seattle, WA (URL: http://egp.gs.washington.edu).";
+RL   Submitted (JUN-2003) to the EMBL/GenBank/DDBJ databases.
+RN   [8]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA], AND VARIANT VAL-104.
+RC   TISSUE=Urinary bladder;
+RX   MEDLINE=22388257; PubMed=12477932; DOI=10.1073/pnas.242603899;
+RA   Strausberg R.L., Feingold E.A., Grouse L.H., Derge J.G.,
+RA   Klausner R.D., Collins F.S., Wagner L., Shenmen C.M., Schuler G.D.,
+RA   Altschul S.F., Zeeberg B., Buetow K.H., Schaefer C.F., Bhat N.K.,
+RA   Hopkins R.F., Jordan H., Moore T., Max S.I., Wang J., Hsieh F.,
+RA   Diatchenko L., Marusina K., Farmer A.A., Rubin G.M., Hong L.,
+RA   Stapleton M., Soares M.B., Bonaldo M.F., Casavant T.L., Scheetz T.E.,
+RA   Brownstein M.J., Usdin T.B., Toshiyuki S., Carninci P., Prange C.,
+RA   Raha S.S., Loquellano N.A., Peters G.J., Abramson R.D., Mullahy S.J.,
+RA   Bosak S.A., McEwan P.J., McKernan K.J., Malek J.A., Gunaratne P.H.,
+RA   Richards S., Worley K.C., Hale S., Garcia A.M., Gay L.J., Hulyk S.W.,
+RA   Villalon D.K., Muzny D.M., Sodergren E.J., Lu X., Gibbs R.A.,
+RA   Fahey J., Helton E., Ketteman M., Madan A., Rodrigues S., Sanchez A.,
+RA   Whiting M., Madan A., Young A.C., Shevchenko Y., Bouffard G.G.,
+RA   Blakesley R.W., Touchman J.W., Green E.D., Dickson M.C.,
+RA   Rodriguez A.C., Grimwood J., Schmutz J., Myers R.M.,
+RA   Butterfield Y.S.N., Krzywinski M.I., Skalska U., Smailus D.E.,
+RA   Schnerch A., Schein J.E., Jones S.J.M., Marra M.A.;
+RT   "Generation and initial analysis of more than 15,000 full-length human
+RT   and mouse cDNA sequences.";
+RL   Proc. Natl. Acad. Sci. U.S.A. 99:16899-16903(2002).
+RN   [9]
+RP   PROTEIN SEQUENCE OF 1-23.
+RX   MEDLINE=85154554; PubMed=3979555; DOI=10.1016/0014-5793(85)80324-0;
+RA   Alin P., Mannervik B., Joernvall H.;
+RT   "Structural evidence for three different types of glutathione
+RT   transferase in human tissues.";
+RL   FEBS Lett. 182:319-322(1985).
+RN   [10]
+RP   PROTEIN SEQUENCE OF 1-23.
+RX   MEDLINE=86042634; PubMed=3864155;
+RA   Mannervik B., Alin P., Guthenberg C., Jensson H., Tahir M.K.,
+RA   Warholm M., Joernvall H.;
+RT   "Identification of three classes of cytosolic glutathione transferase
+RT   common to several mammalian species: correlation between structural
+RT   data and enzymatic properties.";
+RL   Proc. Natl. Acad. Sci. U.S.A. 82:7202-7206(1985).
+RN   [11]
+RP   PROTEIN SEQUENCE OF 1-13.
+RX   MEDLINE=88280250; PubMed=3395118;
+RA   Singh S.V., Ahmad H., Kurosky A., Awasthi Y.C.;
+RT   "Purification and characterization of unique glutathione S-
+RT   transferases from human muscle.";
+RL   Arch. Biochem. Biophys. 264:13-22(1988).
+RN   [12]
+RP   PROTEIN SEQUENCE OF 1-11.
+RC   TISSUE=Platelet;
+RX   MEDLINE=22608298; PubMed=12665801; DOI=10.1038/nbt810;
+RA   Gevaert K., Goethals M., Martens L., Van Damme J., Staes A.,
+RA   Thomas G.R., Vandekerckhove J.;
+RT   "Exploring proteomes and analyzing protein processing by mass
+RT   spectrometric identification of sorted N-terminal peptides.";
+RL   Nat. Biotechnol. 21:566-569(2003).
+RN   [13]
+RP   PARTIAL PROTEIN SEQUENCE.
+RC   TISSUE=Colon carcinoma;
+RX   MEDLINE=97295306; PubMed=9150948;
+RA   Ji H., Reid G.E., Moritz R.L., Eddes J.S., Burgess A.W., Simpson R.J.;
+RT   "A two-dimensional gel database of human colon carcinoma proteins.";
+RL   Electrophoresis 18:605-613(1997).
+RN   [14]
+RP   PRIMARY AND SECONDARY STRUCTURAL ANALYZES.
+RX   MEDLINE=90225809; PubMed=2327795;
+RA   Ahmad H., Wilson D.E., Fritz R.R., Singh S.V., Medh R.D., Nagle G.T.,
+RA   Awasthi Y.C., Kurosky A.;
+RT   "Primary and secondary structural analyses of glutathione S-
+RT   transferase pi from human placenta.";
+RL   Arch. Biochem. Biophys. 278:398-408(1990).
+RN   [15]
+RP   X-RAY CRYSTALLOGRAPHY (2.8 ANGSTROMS).
+RX   MEDLINE=92395662; PubMed=1522586;
+RA   Reinemer P., Dirr H.W., Ladenstein R., Huber R., Lo Bello M.,
+RA   Federici G., Parker M.W.;
+RT   "Three-dimensional structure of class pi glutathione S-transferase
+RT   from human placenta in complex with S-hexylglutathione at 2.8-A
+RT   resolution.";
+RL   J. Mol. Biol. 227:214-226(1992).
+RN   [16]
+RP   X-RAY CRYSTALLOGRAPHY (1.9 ANGSTROMS).
+RX   MEDLINE=97164911; PubMed=9012673; DOI=10.1021/bi962316i;
+RA   Oakley A.J., Rossjohn J., Lo Bello M., Caccuri A.M., Federici G.,
+RA   Parker M.W.;
+RT   "The three-dimensional structure of the human Pi class glutathione
+RT   transferase P1-1 in complex with the inhibitor ethacrynic acid and its
+RT   glutathione conjugate.";
+RL   Biochemistry 36:576-585(1997).
+RN   [17]
+RP   X-RAY CRYSTALLOGRAPHY (1.8 ANGSTROMS).
+RX   MEDLINE=97392635; PubMed=9245401; DOI=10.1021/bi970805s;
+RA   Ji X., Tordova M., O'Donnell R., Parsons J.F., Hayden J.B.,
+RA   Gilliland G.L., Zimniak P.;
+RT   "Structure and function of the xenobiotic substrate-binding site and
+RT   location of a potential non-substrate-binding site in a class pi
+RT   glutathione S-transferase.";
+RL   Biochemistry 36:9690-9702(1997).
+RN   [18]
+RP   X-RAY CRYSTALLOGRAPHY (1.9 ANGSTROMS).
+RX   MEDLINE=98062356; PubMed=9398518; DOI=10.1006/jmbi.1997.1364;
+RA   Oakley A.J., Lo Bello M., Battistoni A., Ricci G., Rossjohn J.,
+RA   Villar H.O., Parker M.W.;
+RT   "The structures of human glutathione transferase P1-1 in complex with
+RT   glutathione and various inhibitors at high resolution.";
+RL   J. Mol. Biol. 274:84-100(1997).
+RN   [19]
+RP   X-RAY CRYSTALLOGRAPHY (1.8 ANGSTROMS).
+RX   MEDLINE=98035452; PubMed=9351803; DOI=10.1016/S0969-2126(97)00281-5;
+RA   Prade L., Huber R., Manoharan T.H., Fahl W.E., Reuter W.;
+CC   -!- FUNCTION: Conjugation of reduced glutathione to a wide number of
+CC       exogenous and endogenous hydrophobic electrophiles.
+CC   -!- CATALYTIC ACTIVITY: RX + glutathione = HX + R-S-glutathione.
+CC   -!- SUBUNIT: Homodimer.
+CC   -!- SIMILARITY: Belongs to the GST superfamily. Pi family.
+CC   --------------------------------------------------------------------------
+CC   This Swiss-Prot entry is copyright. It is produced through a collaboration
+CC   between  the Swiss Institute of Bioinformatics  and the  EMBL outstation -
+CC   the European Bioinformatics Institute.  There are no  restrictions on  its
+CC   use as long as its content is in no way modified and this statement is not
+CC   removed.
+CC   --------------------------------------------------------------------------
+DR   EMBL; M24485; AAA56823.1; -; Genomic_DNA.
+DR   EMBL; X06547; CAA29794.1; -; mRNA.
+DR   EMBL; X08094; CAA30894.1; -; Genomic_DNA.
+DR   EMBL; X08095; CAA30894.1; JOINED; Genomic_DNA.
+DR   EMBL; X08096; CAA30894.1; JOINED; Genomic_DNA.
+DR   EMBL; X08058; CAA30847.1; -; Genomic_DNA.
+DR   EMBL; X15480; CAA33508.1; -; mRNA.
+DR   EMBL; U12472; AAA64919.1; -; Genomic_DNA.
+DR   EMBL; U30897; AAC51280.1; -; mRNA.
+DR   EMBL; U21689; AAC13869.1; -; Genomic_DNA.
+DR   EMBL; U62589; AAC51237.1; -; mRNA.
+DR   EMBL; AY324387; AAP72967.1; -; Genomic_DNA.
+DR   EMBL; BC010915; AAH10915.1; -; mRNA.
+DR   PIR; JS0153; A37378.
+DR   PDB; 10GS; X-ray; A/B=1-209.
+DR   PDB; 11GS; X-ray; A/B=1-209.
+DR   PDB; 12GS; X-ray; A/B=1-209.
+DR   PDB; 13GS; X-ray; A/B=1-209.
+DR   PDB; 14GS; X-ray; A/B=1-209.
+DR   PDB; 16GS; X-ray; A/B=1-209.
+DR   PDB; 17GS; X-ray; A/B=1-209.
+DR   PDB; 18GS; X-ray; A/B=1-209.
+DR   PDB; 19GS; X-ray; A/B=1-209.
+DR   PDB; 1AQV; X-ray; A/B=1-209.
+DR   PDB; 1AQW; X-ray; A/B/C/D=1-209.
+DR   PDB; 1AQX; X-ray; A/B/C/D=1-209.
+DR   PDB; 1EOG; X-ray; A/B=2-209.
+DR   PDB; 1EOH; X-ray; A/B/C/D/E/F/G/H=1-209.
+DR   PDB; 1GSS; X-ray; A/B=1-209.
+DR   PDB; 1KBN; X-ray; A/B=1-209.
+DR   PDB; 1LBK; X-ray; A/B=-.
+DR   PDB; 1MD3; X-ray; A/B=1-209.
+DR   PDB; 1MD4; X-ray; A/B=1-209.
+DR   PDB; 1PGT; X-ray; A/B=1-209.
+DR   PDB; 1PX6; X-ray; A/B=1-209.
+DR   PDB; 1PX7; X-ray; A/B=1-209.
+DR   PDB; 20GS; X-ray; A/B=1-209.
+DR   PDB; 21GS; X-ray; A/B=1-209.
+DR   PDB; 22GS; X-ray; A/B=1-209.
+DR   PDB; 2GSS; X-ray; A/B=1-209.
+DR   PDB; 2PGT; X-ray; A/B=1-209.
+DR   PDB; 3GSS; X-ray; A/B=1-209.
+DR   PDB; 3PGT; X-ray; A/B=1-209.
+DR   PDB; 4GSS; X-ray; A/B=1-209.
+DR   PDB; 4PGT; X-ray; A/B=1-209.
+DR   PDB; 5GSS; X-ray; A/B=1-209.
+DR   PDB; 6GSS; X-ray; A/B=1-209.
+DR   PDB; 7GSS; X-ray; A/B=1-209.
+DR   PDB; 8GSS; X-ray; A/B/C=1-209.
+DR   PDB; 9GSS; X-ray; A/B=1-209.
+DR   IntAct; P09211; -.
+DR   SWISS-2DPAGE; P09211; HUMAN.
+DR   Aarhus/Ghent-2DPAGE; 5101; IEF.
+DR   HSC-2DPAGE; P09211; HUMAN.
+DR   OGP; P09211; -.
+DR   PHCI-2DPAGE; P09211; -.
+DR   Siena-2DPAGE; P09211; -.
+DR   Ensembl; ENSG00000084207; Homo sapiens.
+DR   Genew; HGNC:4638; GSTP1.
+DR   H-InvDB; HIX0009866; -.
+DR   MIM; 134660; -.
+DR   GO; GO:0007417; P:central nervous system development; TAS.
+DR   InterPro; IPR010987; GST_C_like.
+DR   InterPro; IPR004046; GST_Cterm.
+DR   InterPro; IPR004045; GST_Nterm.
+DR   InterPro; IPR003082; GST_pi.
+DR   Pfam; PF00043; GST_C; 1.
+DR   Pfam; PF02798; GST_N; 1.
+DR   PRINTS; PR01268; GSTRNSFRASEP.
+KW   3D-structure; Direct protein sequencing; Multigene family;
+KW   Polymorphism; Transferase.
+FT   INIT_MET      0      0
+FT   VARIANT     104    104       I -> V (in allele GSTP1*B and allele
+FT                                GSTP1*C; dbSNP:1695).
+FT                                /FTId=VAR_014499.
+FT   VARIANT     113    113       A -> V (in allele GSTP1*C;
+FT                                dbSNP:1799811).
+FT                                /FTId=VAR_014500.
+FT   CONFLICT    185    185       A -> P (in Ref. 2).
+FT   STRAND        3      7
+FT   HELIX        12     14
+FT   HELIX        15     23
+FT   TURN         24     25
+FT   STRAND       28     32
+FT   HELIX        35     40
+FT   HELIX        42     46
+FT   TURN         48     49
+FT   STRAND       54     57
+FT   TURN         58     59
+FT   STRAND       60     63
+FT   HELIX        65     76
+FT   TURN         77     77
+FT   HELIX        83    109
+FT   HELIX       111    134
+FT   TURN        135    136
+FT   HELIX       137    139
+FT   TURN        140    140
+FT   TURN        145    146
+FT   HELIX       150    165
+FT   TURN        167    172
+FT   HELIX       174    184
+FT   TURN        185    185
+FT   HELIX       187    194
+FT   HELIX       196    199
+FT   TURN        200    200
+FT   TURN        205    206
+SQ   SEQUENCE   209 AA;  23225 MW;  247DB5D4B67D058A CRC64;
+     PPYTVVYFPV RGRCAALRML LADQGQSWKE EVVTVETWQE GSLKASCLYG QLPKFQDGDL
+     TLYQSNTILR HLGRTLGLYG KDQQEAALVD MVNDGVEDLR CKYISLIYTN YEAGKDDYVK
+     ALPGQLKPFE TLLSQNQGGK TFIVGDQISF ADYNLLDLLL IHEVLAPGCL DAFPLLSAYV
+     GRLSARPKLK AFLASPEYVN LPINGNGKQ
+//
+ID   Q6Q757_BOVIN PRELIMINARY;      PRT;   307 AA.
+AC   Q6Q757;
+DT   05-JUL-2004 (TrEMBLrel. 27, Created)
+DT   05-JUL-2004 (TrEMBLrel. 27, Last sequence update)
+DT   05-JUL-2004 (TrEMBLrel. 27, Last annotation update)
+DE   Myocyte enhancer factor 2A (Fragment).
+OS   Bos taurus (Bovine).
+OC   Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+OC   Mammalia; Eutheria; Laurasiatheria; Cetartiodactyla; Ruminantia;
+OC   Pecora; Bovidae; Bovinae; Bos.
+OX   NCBI_TaxID=9913;
+RN   [1]
+RP   NUCLEOTIDE SEQUENCE.
+RC   TISSUE=Skeletal muscle;
+RA   Yu S.L., Chung H.J., Jung K.C., Lee J.H., Yoon D.H., Lee S.H.,
+RA   Sang B.C.;
+RL   Submitted (FEB-2004) to the EMBL/GenBank/DDBJ databases.
+DR   EMBL; AY555276; AAS50178.1; -; mRNA.
+FT   NON_TER       1      1
+FT   NON_TER     307    307
+SQ   SEQUENCE   307 AA;  31709 MW;  9DC18B5260309E63 CRC64;
+     KEHRGCDSPD PDTSYVLTPH TEEKYKKINE EFDNMMRNHK IAPGLPPQNF SMSVTVPVTS
+     PSALSYTNPG SSLVSPSLAA SSALADTSML SPPQATLHRN VSPGAPQRPP STGSAGGMLS
+     TSDLTVPNGA GSSPVGNGFV NSRASPNLIG TTGANSLGKV MPTKSPPPPG GGSLGMNSRK
+     PDLRVVIPPS SKGMMPPLSE EEELELNTQR ISSSQATQPL ATPVVSVTTP SLPPQGLVYS
+     AMPTAYNTDY SLTSADLSAL QGFNSPGMLS LGQVSAWQQH HLGQAALNSL VAGGQLSQGS
+     NLSINTN
+//
+ID   MEF2A_HUMAN    STANDARD;      PRT;   507 AA.
+AC   Q02078; O43814; Q14223; Q14224; Q96D14;
+DT   01-NOV-1995 (Rel. 32, Created)
+DT   01-NOV-1995 (Rel. 32, Last sequence update)
+DT   10-MAY-2005 (Rel. 47, Last annotation update)
+DE   Myocyte-specific enhancer factor 2A (Serum response factor-like
+DE   protein 1).
+GN   Name=MEF2A; Synonyms=MEF2;
+OS   Homo sapiens (Human).
+OC   Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+OC   Mammalia; Eutheria; Euarchontoglires; Primates; Catarrhini; Hominidae;
+OC   Homo.
+OX   NCBI_TaxID=9606;
+RN   [1]
+RP   NUCLEOTIDE SEQUENCE.
+RC   TISSUE=Heart, and Skeletal muscle;
+RX   MEDLINE=92387551; PubMed=1516833;
+RA   Yu Y.-T., Breitbart R.E., Smoot L.B., Lee Y., Mahdavi V.,
+RA   Nadal-Ginard B.;
+RT   "Human myocyte-specific enhancer factor 2 comprises a group of tissue-
+RT   restricted MADS box transcription factors.";
+RL   Genes Dev. 6:1783-1798(1992).
+RN   [2]
+RP   NUCLEOTIDE SEQUENCE.
+RC   TISSUE=Placenta;
+RX   MEDLINE=92084105; PubMed=1748287;
+RA   Pollock R., Treisman R.;
+RT   "Human SRF-related proteins: DNA-binding properties and potential
+RT   regulatory targets.";
+RL   Genes Dev. 5:2327-2341(1991).
+RN   [3]
+RP   NUCLEOTIDE SEQUENCE (ISOFORM RSFRC9), AND SEQUENCE REVISION.
+RA   Treisman R.;
+RL   Submitted (NOV-1993) to the EMBL/GenBank/DDBJ databases.
+RN   [4]
+RP   NUCLEOTIDE SEQUENCE (RSRFC4 AND RSFRC9).
+RA   Suzuki E., Lowry J., Sonoda G., Testa J.R., Walsh K.;
+RL   Submitted (FEB-1996) to the EMBL/GenBank/DDBJ databases.
+RN   [5]
+RP   NUCLEOTIDE SEQUENCE (ISOFORM RSFRC9).
+RC   TISSUE=Placenta;
+RA   Pollock R.M.;
+RL   Submitted (NOV-1991) to the EMBL/GenBank/DDBJ databases.
+RN   [6]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA] (ISOFORM 5).
+RC   TISSUE=Pancreas;
+RX   MEDLINE=22388257; PubMed=12477932; DOI=10.1073/pnas.242603899;
+RA   Strausberg R.L., Feingold E.A., Grouse L.H., Derge J.G.,
+RA   Klausner R.D., Collins F.S., Wagner L., Shenmen C.M., Schuler G.D.,
+RA   Altschul S.F., Zeeberg B., Buetow K.H., Schaefer C.F., Bhat N.K.,
+RA   Hopkins R.F., Jordan H., Moore T., Max S.I., Wang J., Hsieh F.,
+RA   Diatchenko L., Marusina K., Farmer A.A., Rubin G.M., Hong L.,
+RA   Stapleton M., Soares M.B., Bonaldo M.F., Casavant T.L., Scheetz T.E.,
+RA   Brownstein M.J., Usdin T.B., Toshiyuki S., Carninci P., Prange C.,
+RA   Raha S.S., Loquellano N.A., Peters G.J., Abramson R.D., Mullahy S.J.,
+RA   Bosak S.A., McEwan P.J., McKernan K.J., Malek J.A., Gunaratne P.H.,
+RA   Richards S., Worley K.C., Hale S., Garcia A.M., Gay L.J., Hulyk S.W.,
+RA   Villalon D.K., Muzny D.M., Sodergren E.J., Lu X., Gibbs R.A.,
+RA   Fahey J., Helton E., Ketteman M., Madan A., Rodrigues S., Sanchez A.,
+RA   Whiting M., Madan A., Young A.C., Shevchenko Y., Bouffard G.G.,
+RA   Blakesley R.W., Touchman J.W., Green E.D., Dickson M.C.,
+RA   Rodriguez A.C., Grimwood J., Schmutz J., Myers R.M.,
+RA   Butterfield Y.S.N., Krzywinski M.I., Skalska U., Smailus D.E.,
+RA   Schnerch A., Schein J.E., Jones S.J.M., Marra M.A.;
+RT   "Generation and initial analysis of more than 15,000 full-length human
+RT   and mouse cDNA sequences.";
+RL   Proc. Natl. Acad. Sci. U.S.A. 99:16899-16903(2002).
+RN   [7]
+RP   INTERACTION WITH HDAC4.
+RX   MEDLINE=99417590; PubMed=10487761; DOI=10.1093/emboj/18.18.5099;
+RA   Miska E.A., Karlsson C., Langley E., Nielsen S.J., Pines J.,
+RA   Kouzarides T.;
+RT   "HDAC4 deacetylase associates with and represses the MEF2
+RT   transcription factor.";
+RL   EMBO J. 18:5099-5107(1999).
+RN   [8]
+RP   VARIANT ADCAD1 440-GLN--PRO-446 DEL.
+RX   PubMed=14645853; DOI=10.1126/science.1088477;
+RA   Wang L., Fan C., Topol S.E., Topol E.J., Wang Q.;
+RT   "Mutation of MEF2A in an inherited disorder with features of coronary
+RT   artery disease.";
+RL   Science 302:1578-1581(2003).
+CC   -!- FUNCTION: Transcription factor which binds specifically to the
+CC       MEF2 element present in the regulatory regions of many muscle-
+CC       specific genes. Activates transcription via this element. May be
+CC       involved in muscle-specific and/or growth factor-related
+CC       transcription.
+CC   -!- SUBUNIT: Interacts with HDAC7 (By similarity). Heterodimer.
+CC       Interacts with HDAC4.
+CC   -!- SUBCELLULAR LOCATION: Nuclear.
+CC   -!- ALTERNATIVE PRODUCTS:
+CC       Event=Alternative splicing; Named isoforms=5;
+CC       Name=MEF2;
+CC         IsoId=Q02078-1; Sequence=Displayed;
+CC       Name=MEFA;
+CC         IsoId=Q02078-2; Sequence=VSP_006240;
+CC       Name=RSRFC4;
+CC         IsoId=Q02078-3; Sequence=VSP_006241, VSP_006242;
+CC       Name=RSRFC9;
+CC         IsoId=Q02078-4; Sequence=VSP_006240, VSP_006241, VSP_006242;
+CC       Name=5;
+CC         IsoId=Q02078-5; Sequence=VSP_006241;
+CC         Note=No experimental confirmation available;
+CC   -!- TISSUE SPECIFICITY: Isoform MEF2 and isoform MEFA are expressed
+CC       only in skeletal and cardiac muscle and in the brain while isoform
+CC       RSRFC4 and isoform RSRFC9 are expressed in all tissues examined.
+CC   -!- DISEASE: Defects in MEF2A are a cause of autosomal dominant
+CC       coronary artery disease 1 with myocardial infarction (ADCAD1)
+CC       [MIM:608320].
+CC   -!- SIMILARITY: Belongs to the MEF2 family.
+CC   -!- SIMILARITY: Contains 1 MADS-box domain.
+CC   --------------------------------------------------------------------------
+CC   This Swiss-Prot entry is copyright. It is produced through a collaboration
+CC   between  the Swiss Institute of Bioinformatics  and the  EMBL outstation -
+CC   the European Bioinformatics Institute.  There are no  restrictions on  its
+CC   use as long as its content is in no way modified and this statement is not
+CC   removed.
+CC   --------------------------------------------------------------------------
+DR   EMBL; X68505; CAA48517.1; -; mRNA.
+DR   EMBL; X63381; CAA44979.1; -; mRNA.
+DR   EMBL; X68503; CAA48516.1; -; mRNA.
+DR   EMBL; U49020; AAB17195.1; -; Genomic_DNA.
+DR   EMBL; U44889; AAB17195.1; JOINED; Genomic_DNA.
+DR   EMBL; U49012; AAB17195.1; JOINED; Genomic_DNA.
+DR   EMBL; U49013; AAB17195.1; JOINED; Genomic_DNA.
+DR   EMBL; U49015; AAB17195.1; JOINED; Genomic_DNA.
+DR   EMBL; U49016; AAB17195.1; JOINED; Genomic_DNA.
+DR   EMBL; U49017; AAB17195.1; JOINED; Genomic_DNA.
+DR   EMBL; U49018; AAB17195.1; JOINED; Genomic_DNA.
+DR   EMBL; U49019; AAB17195.1; JOINED; Genomic_DNA.
+DR   EMBL; U49020; AAB17196.1; -; Genomic_DNA.
+DR   EMBL; U44889; AAB17196.1; JOINED; Genomic_DNA.
+DR   EMBL; U49012; AAB17196.1; JOINED; Genomic_DNA.
+DR   EMBL; U49013; AAB17196.1; JOINED; Genomic_DNA.
+DR   EMBL; U49015; AAB17196.1; JOINED; Genomic_DNA.
+DR   EMBL; U49016; AAB17196.1; JOINED; Genomic_DNA.
+DR   EMBL; U49017; AAB17196.1; JOINED; Genomic_DNA.
+DR   EMBL; U49018; AAB17196.1; JOINED; Genomic_DNA.
+DR   EMBL; U49019; AAB17196.1; JOINED; Genomic_DNA.
+DR   EMBL; Y16312; CAA76175.1; -; mRNA.
+DR   EMBL; BC013437; AAH13437.1; -; mRNA.
+DR   PIR; S25831; S25831.
+DR   PDB; 1C7U; NMR; A/B=2-86.
+DR   PDB; 1EGW; X-ray; A/B/C/D=2-78.
+DR   TRANSFAC; T01005; -.
+DR   TRANSFAC; T01010; -.
+DR   Ensembl; ENSG00000068305; Homo sapiens.
+DR   Genew; HGNC:6993; MEF2A.
+DR   H-InvDB; HIX0012611; -.
+DR   MIM; 600660; -.
+DR   MIM; 608320; -.
+DR   GO; GO:0005634; C:nucleus; TAS.
+DR   GO; GO:0003700; F:transcription factor activity; NAS.
+DR   GO; GO:0007517; P:muscle development; TAS.
+DR   InterPro; IPR002100; TF_MADSbox.
+DR   Pfam; PF00319; SRF-TF; 1.
+DR   PRINTS; PR00404; MADSDOMAIN.
+DR   PROSITE; PS00350; MADS_BOX_1; 1.
+DR   PROSITE; PS50066; MADS_BOX_2; 1.
+KW   3D-structure; Activator; Alternative splicing; Disease mutation;
+KW   DNA-binding; Multigene family; Nuclear protein; Phosphorylation;
+KW   Transcription; Transcription regulation.
+FT   DOMAIN        3     57       MADS-box.
+FT   DNA_BIND     58     86       Mef2-type (Potential).
+FT   COMPBIAS      4     31       Lys-rich (basic).
+FT   COMPBIAS    141    186       Ser/Thr-rich.
+FT   COMPBIAS    420    446       Gln/Pro-rich.
+FT   MOD_RES     289    289       Phosphoserine (by CK2) (Potential).
+FT   VARSPLIC     87    132       ALNKKEHRGCDSPDPDTSYVLTPHTEEKYKKINEEFDNMMR
+FT                                NHKIA -> TLRKKGLNGCESPDADDYFEHSPLSEDRFSKL
+FT                                NEDSDFIFKRGP (in isoform MEFA and isoform
+FT                                RSRFC9).
+FT                                /FTId=VSP_006240.
+FT   VARSPLIC    288    295       Missing (in isoform RSRFC4, isoform
+FT                                RSRFC9 and isoform 5).
+FT                                /FTId=VSP_006241.
+FT   VARSPLIC    420    421       Missing (in isoform RSRFC4 and isoform
+FT                                RSRFC9).
+FT                                /FTId=VSP_006242.
+FT   VARIANT     440    446       Missing (in ADCAD1; loss of nuclear
+FT                                localization; 66% decrease in
+FT                                transcription activation; loss of
+FT                                synergistic activation by MEF2A and GATA1
+FT                                through a dominant-negative mechanism).
+FT                                /FTId=VAR_017743.
+FT   CONFLICT    430    430       Missing (in Ref. 4).
+FT   HELIX        14     38
+FT   TURN         39     40
+FT   STRAND       42     48
+FT   TURN         50     51
+FT   STRAND       54     58
+FT   HELIX        62     72
+SQ   SEQUENCE   507 AA;  54811 MW;  362BA4FBCC792CE2 CRC64;
+     MGRKKIQITR IMDERNRQVT FTKRKFGLMK KAYELSVLCD CEIALIIFNS SNKLFQYAST
+     DMDKVLLKYT EYNEPHESRT NSDIVEALNK KEHRGCDSPD PDTSYVLTPH TEEKYKKINE
+     EFDNMMRNHK IAPGLPPQNF SMSVTVPVTS PNALSYTNPG SSLVSPSLAA SSTLTDSSML
+     SPPQTTLHRN VSPGAPQRPP STGNAGGMLS TTDLTVPNGA GSSPVGNGFV NSRASPNLIG
+     ATGANSLGKV MPTKSPPPPG GGNLGMNSRK PDLRVVIPPS SKGMMPPLSE EEELELNTQR
+     ISSSQATQPL ATPVVSVTTP SLPPQGLVYS AMPTAYNTDY SLTSADLSAL QGFNSPGMLS
+     LGQVSAWQQH HLGQAALSSL VAGGQLSQGS NLSINTNQNI SIKSEPISPP RDRMTPSGFQ
+     QQQQQQQQQQ PPPPPQPQPQ PPQPQPRQEM GRSPVDSLSS SSSSYDGSDR EDPRGDFHSP
+     IVLGRPPNTE DRESPSVKRM RMDAWVT
+//
+ID   MK14_MOUSE     STANDARD;      PRT;   359 AA.
+AC   P47811; O08666; Q8C289; Q9JLV8; Q9QZ80;
+DT   01-FEB-1996 (Rel. 33, Created)
+DT   05-JUL-2004 (Rel. 44, Last sequence update)
+DT   10-MAY-2005 (Rel. 47, Last annotation update)
+DE   Mitogen-activated protein kinase 14 (EC 2.7.1.37) (Mitogen-activated
+DE   protein kinase p38 alpha) (MAP kinase p38 alpha) (CRK1).
+GN   Name=Mapk14; Synonyms=Crk1, Csbp1, Csbp2;
+OS   Mus musculus (Mouse).
+OC   Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+OC   Mammalia; Eutheria; Euarchontoglires; Glires; Rodentia; Sciurognathi;
+OC   Muridae; Murinae; Mus.
+OX   NCBI_TaxID=10090;
+RN   [1]
+RP   NUCLEOTIDE SEQUENCE (ISOFORM 1), AND PARTIAL PROTEIN SEQUENCE.
+RC   TISSUE=Liver;
+RX   MEDLINE=94323764; PubMed=7914033;
+RA   Han J., Lee J.-D., Bibbs L., Ulevitch R.J.;
+RT   "A MAP kinase targeted by endotoxin and hyperosmolarity in mammalian
+RT   cells.";
+RL   Science 265:808-811(1994).
+RN   [2]
+RP   NUCLEOTIDE SEQUENCE (ISOFORM 3).
+RC   STRAIN=C57BL/6; TISSUE=Brain;
+RA   Higashitsuji H., Fujita J.;
+RL   Submitted (FEB-1996) to the EMBL/GenBank/DDBJ databases.
+RN   [3]
+RP   NUCLEOTIDE SEQUENCE (ISOFORM 2).
+RC   STRAIN=C57BL/6; TISSUE=Kidney;
+RA   Faccio L., Fusco C., Zervos S.A.;
+RT   "Piccolo, a new alternative spliced form of p38/CSBP1/Mxi2 that is
+RT   specifically expressed in kidney and liver.";
+RL   Submitted (FEB-1999) to the EMBL/GenBank/DDBJ databases.
+RN   [4]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA] (ISOFORM 3).
+RC   TISSUE=Thymus;
+RX   MEDLINE=22354683; PubMed=12466851; DOI=10.1038/nature01266;
+RA   Okazaki Y., Furuno M., Kasukawa T., Adachi J., Bono H., Kondo S.,
+RA   Nikaido I., Osato N., Saito R., Suzuki H., Yamanaka I., Kiyosawa H.,
+RA   Yagi K., Tomaru Y., Hasegawa Y., Nogami A., Schonbach C., Gojobori T.,
+RA   Baldarelli R., Hill D.P., Bult C., Hume D.A., Quackenbush J.,
+RA   Schriml L.M., Kanapin A., Matsuda H., Batalov S., Beisel K.W.,
+RA   Blake J.A., Bradt D., Brusic V., Chothia C., Corbani L.E., Cousins S.,
+RA   Dalla E., Dragani T.A., Fletcher C.F., Forrest A., Frazer K.S.,
+RA   Gaasterland T., Gariboldi M., Gissi C., Godzik A., Gough J.,
+RA   Grimmond S., Gustincich S., Hirokawa N., Jackson I.J., Jarvis E.D.,
+RA   Kanai A., Kawaji H., Kawasawa Y., Kedzierski R.M., King B.L.,
+RA   Konagaya A., Kurochkin I.V., Lee Y., Lenhard B., Lyons P.A.,
+RA   Maglott D.R., Maltais L., Marchionni L., McKenzie L., Miki H.,
+RA   Nagashima T., Numata K., Okido T., Pavan W.J., Pertea G., Pesole G.,
+RA   Petrovsky N., Pillai R., Pontius J.U., Qi D., Ramachandran S.,
+RA   Ravasi T., Reed J.C., Reed D.J., Reid J., Ring B.Z., Ringwald M.,
+RA   Sandelin A., Schneider C., Semple C.A., Setou M., Shimada K.,
+RA   Sultana R., Takenaka Y., Taylor M.S., Teasdale R.D., Tomita M.,
+RA   Verardo R., Wagner L., Wahlestedt C., Wang Y., Watanabe Y., Wells C.,
+RA   Wilming L.G., Wynshaw-Boris A., Yanagisawa M., Yang I., Yang L.,
+RA   Yuan Z., Zavolan M., Zhu Y., Zimmer A., Carninci P., Hayatsu N.,
+RA   Hirozane-Kishikawa T., Konno H., Nakamura M., Sakazume N., Sato K.,
+RA   Shiraki T., Waki K., Kawai J., Aizawa K., Arakawa T., Fukuda S.,
+RA   Hara A., Hashizume W., Imotani K., Ishii Y., Itoh M., Kagawa I.,
+RA   Miyazaki A., Sakai K., Sasaki D., Shibata K., Shinagawa A.,
+RA   Yasunishi A., Yoshino M., Waterston R., Lander E.S., Rogers J.,
+RA   Birney E., Hayashizaki Y.;
+RT   "Analysis of the mouse transcriptome based on functional annotation of
+RT   60,770 full-length cDNAs.";
+RL   Nature 420:563-573(2002).
+RN   [5]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA] (ISOFORM 1).
+RC   TISSUE=Liver;
+RX   MEDLINE=22388257; PubMed=12477932; DOI=10.1073/pnas.242603899;
+RA   Strausberg R.L., Feingold E.A., Grouse L.H., Derge J.G.,
+RA   Klausner R.D., Collins F.S., Wagner L., Shenmen C.M., Schuler G.D.,
+RA   Altschul S.F., Zeeberg B., Buetow K.H., Schaefer C.F., Bhat N.K.,
+RA   Hopkins R.F., Jordan H., Moore T., Max S.I., Wang J., Hsieh F.,
+RA   Diatchenko L., Marusina K., Farmer A.A., Rubin G.M., Hong L.,
+RA   Stapleton M., Soares M.B., Bonaldo M.F., Casavant T.L., Scheetz T.E.,
+RA   Brownstein M.J., Usdin T.B., Toshiyuki S., Carninci P., Prange C.,
+RA   Raha S.S., Loquellano N.A., Peters G.J., Abramson R.D., Mullahy S.J.,
+RA   Bosak S.A., McEwan P.J., McKernan K.J., Malek J.A., Gunaratne P.H.,
+RA   Richards S., Worley K.C., Hale S., Garcia A.M., Gay L.J., Hulyk S.W.,
+RA   Villalon D.K., Muzny D.M., Sodergren E.J., Lu X., Gibbs R.A.,
+RA   Fahey J., Helton E., Ketteman M., Madan A., Rodrigues S., Sanchez A.,
+RA   Whiting M., Madan A., Young A.C., Shevchenko Y., Bouffard G.G.,
+RA   Blakesley R.W., Touchman J.W., Green E.D., Dickson M.C.,
+RA   Rodriguez A.C., Grimwood J., Schmutz J., Myers R.M.,
+RA   Butterfield Y.S.N., Krzywinski M.I., Skalska U., Smailus D.E.,
+RA   Schnerch A., Schein J.E., Jones S.J.M., Marra M.A.;
+RT   "Generation and initial analysis of more than 15,000 full-length human
+RT   and mouse cDNA sequences.";
+RL   Proc. Natl. Acad. Sci. U.S.A. 99:16899-16903(2002).
+RN   [6]
+RP   NUCLEOTIDE SEQUENCE OF 93-317 (ISOFORM 3).
+RC   TISSUE=Testis;
+RA   Yin Z., Li J., Sha J., Zhou Z., Lin M., Wang L.;
+RL   Submitted (OCT-1999) to the EMBL/GenBank/DDBJ databases.
+RN   [7]
+RP   NUCLEOTIDE SEQUENCE OF 153-185.
+RC   STRAIN=CBA; TISSUE=Bone marrow;
+RX   MEDLINE=93185941; PubMed=8444355; DOI=10.1016/0378-1119(93)90411-U;
+RA   Ershler M.A., Nagorskaya T.V., Visser J.W.M., Belyavsky A.V.;
+RT   "Novel CDC2-related protein kinases produced in murine hematopoietic
+RT   stem cells.";
+RL   Gene 124:305-306(1993).
+RN   [8]
+RP   MUTAGENESIS.
+RX   MEDLINE=95141073; PubMed=7839144;
+RA   Derijard B., Raingeaud J., Barrett T., Wu I.-H., Han J.,
+RA   Ulevitch R.J., Davis R.J.;
+RT   "Independent human MAP-kinase signal transduction pathways defined by
+RT   MEK and MKK isoforms.";
+RL   Science 267:682-685(1995).
+RN   [9]
+RP   INTERACTION WITH PTPRR, AND SUBCELLULAR LOCATION.
+RX   MEDLINE=20069779; PubMed=10601328; DOI=10.1083/jcb.147.6.1129;
+RA   Blanco-Aparicio C., Torres J., Pulido R.;
+RT   "A novel regulatory mechanism of MAP kinases activation and nuclear
+RT   translocation mediated by PKA and the PTP-SL tyrosine phosphatase.";
+RL   J. Cell Biol. 147:1129-1136(1999).
+RN   [10]
+RP   FUNCTION, AND ENZYME REGULATION.
+RC   TISSUE=Embryonic stem cells;
+RX   MEDLINE=20171471; PubMed=10704466;
+RA   Allen M., Svensson L., Roach M., Hambor J., McNeish J., Gabel C.A.;
+RT   "Deficiency of the stress kinase p38alpha results in embryonic
+RT   lethality: characterization of the kinase dependence of stress
+RT   responses of enzyme-deficient embryonic stem cells.";
+RL   J. Exp. Med. 191:859-870(2000).
+RN   [11]
+RP   FUNCTION, AND SUBUNIT.
+RC   STRAIN=C57BL/6J;
+RX   MEDLINE=20397758; PubMed=10943842; DOI=10.1016/S0092-8674(00)00027-1;
+RA   Tamura K., Sudo T., Senftleben U., Dadak A.M., Johnson R., Karin M.;
+RT   "Requirement for p38alpha in erythropoietin expression: a role for
+RT   stress kinases in erythropoiesis.";
+RL   Cell 102:221-231(2000).
+RN   [12]
+RP   X-RAY CRYSTALLOGRAPHY (2.1 ANGSTROMS).
+RX   MEDLINE=97225952; PubMed=9122194; DOI=10.1073/pnas.94.6.2327;
+RA   Wang Z., Harkins P.C., Ulevitch R.J., Han J., Cobb M.H.,
+RA   Goldsmith E.J.;
+RT   "The structure of mitogen-activated protein kinase p38 at 2.1-A
+RT   resolution.";
+RL   Proc. Natl. Acad. Sci. U.S.A. 94:2327-2332(1997).
+CC   -!- FUNCTION: Responds to activation by environmental stress, pro-
+CC       inflammatory cytokines and lipopolysaccharide (LPS) by
+CC       phosphorylating a number of transcription factors, such as ELK1
+CC       and ATF2 and several downstream kinases, such as MAPKAPK2 and
+CC       MAPKAPK5. Plays a critical role in the production of some
+CC       cytokines, for example IL-6. Required in mid-fetal development for
+CC       the growth of embryo-derived blood vessels in the labyrinth layer
+CC       of the placenta. Also plays an essential role in developmental and
+CC       stress-induced erythropoiesis, through regulation of EPO gene
+CC       expression.
+CC   -!- CATALYTIC ACTIVITY: ATP + a protein = ADP + a phosphoprotein.
+CC   -!- COFACTOR: Magnesium.
+CC   -!- ENZYME REGULATION: Activated by threonine and tyrosine
+CC       phosphorylation by either of two dual
+DR   EMBL; U10871; AAA20888.1; -; mRNA.
+DR   EMBL; D83073; BAA19741.1; -; mRNA.
+DR   EMBL; AF128892; AAF34818.1; -; mRNA.
+DR   EMBL; AK089059; BAC40726.1; -; mRNA.
+DR   EMBL; BC012235; AAH12235.1; -; mRNA.
+DR   EMBL; AF195850; AAF06348.1; -; mRNA.
+DR   EMBL; X65067; CAA46200.1; -; mRNA.
+DR   PIR; I49066; I49066.
+DR   PDB; 1LEW; X-ray; A=-.
+DR   PDB; 1LEZ; X-ray; A=1-359.
+DR   PDB; 1P38; X-ray; @=1-359.
+DR   IntAct; P47811; -.
+DR   Ensembl; ENSMUSG00000053436; Mus musculus.
+DR   MGI; MGI:1346865; Mapk14.
+DR   GO; GO:0005623; C:cell; IDA.
+DR   GO; GO:0005737; C:cytoplasm; IDA.
+DR   GO; GO:0005634; C:nucleus; IDA.
+DR   GO; GO:0000922; C:spindle pole; IDA.
+DR   GO; GO:0016301; F:kinase activity; IDA.
+DR   GO; GO:0004708; F:MAP kinase kinase activity; ISS.
+DR   GO; GO:0008339; F:MP kinase activity; IDA.
+DR   GO; GO:0001525; P:angiogenesis; IMP.
+DR   GO; GO:0019735; P:antimicrobial humoral response (sensu Verte...; ISS.
+DR   GO; GO:0006928; P:cell motility; ISS.
+DR   GO; GO:0007166; P:cell surface receptor linked signal transdu...; ISS.
+DR   GO; GO:0006935; P:chemotaxis; ISS.
+DR   GO; GO:0000077; P:DNA damage checkpoint; IMP.
+DR   GO; GO:0019395; P:fatty acid oxidation; IMP.
+DR   GO; GO:0006006; P:glucose metabolism; IMP.
+DR   GO; GO:0007243; P:protein kinase cascade; IDA.
+DR   GO; GO:0006950; P:response to stress; IDA.
+DR   InterPro; IPR003527; MAP_kin.
+DR   InterPro; IPR008352; p38_MAPK.
+DR   InterPro; IPR000719; Prot_kinase.
+DR   InterPro; IPR008271; Ser_thr_pkin_AS.
+DR   InterPro; IPR002290; Ser_thr_pkinase.
+DR   Pfam; PF00069; Pkinase; 1.
+DR   PRINTS; PR01773; P38MAPKINASE.
+DR   ProDom; PD000001; Prot_kinase; 1.
+DR   SMART; SM00220; S_TKc; 1.
+DR   SMART; SM00219; TyrKc; 1.
+DR   PROSITE; PS01351; MAPK; 1.
+DR   PROSITE; PS00107; PROTEIN_KINASE_ATP; 1.
+DR   PROSITE; PS50011; PROTEIN_KINASE_DOM; 1.
+DR   PROSITE; PS00108; PROTEIN_KINASE_ST; FALSE_NEG.
+KW   3D-structure; Alternative splicing; ATP-binding;
+KW   Direct protein sequencing; Kinase; Nuclear protein; Phosphorylation;
+KW   Serine/threonine-protein kinase; Transferase.
+FT   INIT_MET      0      0       By similarity.
+FT   DOMAIN       23    307       Protein kinase.
+FT   NP_BIND      29     37       ATP (By similarity).
+FT   ACT_SITE    167    167       Proton acceptor (By similarity).
+FT   BINDING      52     52       ATP (By similarity).
+FT   MOD_RES     179    179       Phosphothreonine.
+FT   MOD_RES     181    181       Phosphotyrosine.
+FT   VARSPLIC    229    253       DQLKLILRLVGTPGAELLKKISSES -> NQLQQIMRMTGT
+FT                                PPAYLINRMPSHE (in isoform 3).
+FT                                /FTId=VSP_007544.
+FT   VARSPLIC    254    277       ARNYIQSLAQMPKMNFANVFIGAN -> DAK (in
+FT                                isoform 2).
+FT                                /FTId=VSP_004846.
+FT   VARSPLIC    278    359       Missing (in isoform 2).
+FT                                /FTId=VSP_007545.
+FT   MUTAGEN     179    179       T->A: Phosphorylation blocked.
+FT   MUTAGEN     181    181       Y->F: Phosphorylation blocked.
+FT   CONFLICT     97     97       E -> G (in Ref. 6).
+FT   CONFLICT    106    107       HL -> LS (in Ref. 6).
+FT   CONFLICT    114    114       N -> R (in Ref. 6).
+FT   CONFLICT    123    123       D -> G (in Ref. 6).
+FT   CONFLICT    158    161       NEDC -> TQVI (in Ref. 6).
+FT   CONFLICT    165    165       I -> L (in Ref. 6).
+FT   CONFLICT    201    201       Q -> R (in Ref. 6).
+FT   CONFLICT    210    211       CI -> GF (in Ref. 6).
+FT   CONFLICT    223    223       P -> L (in Ref. 6).
+FT   CONFLICT    270    270       A -> P (in Ref. 6).
+FT   CONFLICT    298    298       A -> V (in Ref. 6).
+FT   CONFLICT    314    314       D -> Y (in Ref. 6).
+FT   STRAND        7     12
+FT   TURN         13     14
+FT   STRAND       15     20
+FT   TURN         21     22
+FT   STRAND       23     30
+FT   STRAND       35     42
+FT   TURN         43     45
+FT   STRAND       48     54
+FT   TURN         57     58
+FT   HELIX        61     76
+FT   TURN         80     81
+FT   STRAND       82     82
+FT   STRAND       87     89
+FT   TURN         96     97
+FT   STRAND      102    106
+FT   STRAND      111    111
+FT   HELIX       112    118
+FT   HELIX       123    142
+FT   TURN        143    144
+FT   HELIX       152    154
+FT   STRAND      155    157
+FT   TURN        159    160
+FT   STRAND      163    165
+FT   HELIX       183    186
+FT   TURN        187    187
+FT   HELIX       190    193
+FT   TURN        194    195
+FT   TURN        201    202
+FT   HELIX       203    217
+FT   HELIX       227    238
+FT   HELIX       243    246
+FT   TURN        247    248
+FT   HELIX       252    260
+FT   HELIX       269    271
+FT   TURN        272    272
+FT   TURN        274    275
+FT   HELIX       278    287
+FT   HELIX       292    294
+FT   HELIX       298    302
+FT   TURN        303    303
+FT   HELIX       305    307
+FT   TURN        308    310
+FT   HELIX       313    315
+FT   HELIX       325    328
+FT   HELIX       333    345
+FT   TURN        346    346
+SQ   SEQUENCE   359 AA;  41156 MW;  415763DEABBBBEC4 CRC64;
+     SQERPTFYRQ ELNKTIWEVP ERYQNLSPVG SGAYGSVCAA FDTKTGHRVA VKKLSRPFQS
+     IIHAKRTYRE LRLLKHMKHE NVIGLLDVFT PARSLEEFND VYLVTHLMGA DLNNIVKCQK
+     LTDDHVQFLI YQILRGLKYI HSADIIHRDL KPSNLAVNED CELKILDFGL ARHTDDEMTG
+     YVATRWYRAP EIMLNWMHYN QTVDIWSVGC IMAELLTGRT LFPGTDHIDQ LKLILRLVGT
+     PGAELLKKIS SESARNYIQS LAQMPKMNFA NVFIGANPLA VDLLEKMLVL DSDKRITAAQ
+     ALAHAYFAQY HDPDDEPVAD PYDQSFESRD LLIDEWKSLT YDEVISFVPP PLDQEEMES
+//
+ID   TGFA_HUMAN     STANDARD;      PRT;   160 AA.
+AC   P01135; Q15577;
+DT   21-JUL-1986 (Rel. 01, Created)
+DT   21-JUL-1986 (Rel. 01, Last sequence update)
+DT   10-MAY-2005 (Rel. 47, Last annotation update)
+DE   Transforming growth factor alpha precursor (TGF-alpha) (EGF-like TGF)
+DE   (ETGF) (TGF type 1).
+GN   Name=TGFA;
+OS   Homo sapiens (Human).
+OC   Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+OC   Mammalia; Eutheria; Euarchontoglires; Primates; Catarrhini; Hominidae;
+OC   Homo.
+OX   NCBI_TaxID=9606;
+RN   [1]
+RP   NUCLEOTIDE SEQUENCE.
+RX   MEDLINE=84282712; PubMed=6088071; DOI=10.1016/0092-8674(84)90550-6;
+RA   Derynck R., Roberts A.B., Winkler M.E., Chen E.Y., Goeddel D.V.;
+RT   "Human transforming growth factor-alpha: precursor structure and
+RT   expression in E. coli.";
+RL   Cell 38:287-297(1984).
+RN   [2]
+RP   NUCLEOTIDE SEQUENCE.
+RX   MEDLINE=89127251; PubMed=2464748;
+RA   Jakowlew S.B., Kondaiah P., Dillard P.J., Sporn M.B., Roberts A.B.;
+RT   "A novel low molecular weight ribonucleic acid (RNA) related to
+RT   transforming growth factor alpha messenger RNA.";
+RL   Mol. Endocrinol. 2:1056-1063(1988).
+RN   [3]
+RP   NUCLEOTIDE SEQUENCE.
+RC   TISSUE=Colon;
+RX   MEDLINE=94040776; PubMed=8224876; DOI=10.1016/0378-1119(93)90210-T;
+RA   Qian J.F., Lazar-Wesley E., Breugnot C., May E.;
+RT   "Human transforming growth factor alpha: sequence analysis of the 4.5-
+RT   kb and 1.6-kb mRNA species.";
+RL   Gene 132:291-296(1993).
+RN   [4]
+RP   NUCLEOTIDE SEQUENCE.
+RX   MEDLINE=93304410; PubMed=8100397;
+RA   Qian J.F., Feingold J., Stoll C., May E.;
+RT   "Transforming growth factor-alpha: characterization of the BamHI,
+RT   RsaI, and TaqI polymorphic regions.";
+RL   Am. J. Hum. Genet. 53:168-175(1993).
+RN   [5]
+RP   NUCLEOTIDE SEQUENCE.
+RX   MEDLINE=20021761; PubMed=10552925; DOI=10.1006/geno.1999.5962;
+RA   Machida J., Yoshiura K.-I., Funkhauser C.D., Natsume N., Kawai T.,
+RA   Murray J.C.;
+RT   "Transforming growth factor-alpha (TGFA): genomic structure, boundary
+RT   sequences, and mutation analysis in nonsyndromic cleft lip/palate and
+RT   cleft palate only.";
+RL   Genomics 61:237-242(1999).
+RN   [6]
+RP   NUCLEOTIDE SEQUENCE OF 1-58.
+RX   MEDLINE=89219018; PubMed=2907605;
+RA   Jakobovits E.B., Schlokat U., Vannice J.L., Derynck R., Levinson A.D.;
+RT   "The human transforming growth factor alpha promoter directs
+RT   transcription initiation from a single site in the absence of a TATA
+RT   sequence.";
+RL   Mol. Cell. Biol. 8:5549-5554(1988).
+RN   [7]
+RP   DISULFIDE BONDS.
+RX   MEDLINE=92337137; PubMed=1632509;
+RA   Bean M.F., Carr S.A.;
+RT   "Characterization of disulfide bond position in proteins and sequence
+RT   analysis of cystine-bridged peptides by tandem mass spectrometry.";
+RL   Anal. Biochem. 201:216-226(1992).
+RN   [8]
+RP   PALMITOYLATION OF CYS-153 AND CYS-154.
+RX   MEDLINE=97067076; PubMed=8910478; DOI=10.1074/jbc.271.45.28502;
+RA   Shum L., Turck C.W., Derynck R.;
+RT   "Cysteines 153 and 154 of transmembrane transforming growth factor-
+RT   alpha are palmitoylated and mediate cytoplasmic protein association.";
+RL   J. Biol. Chem. 271:28502-28508(1996).
+RN   [9]
+RP   INTERACTIONS WITH SNTA1 AND SDCBP.
+RX   MEDLINE=99247010; PubMed=10230395; DOI=10.1016/S1097-2765(00)80470-0;
+RA   Fernandez-Larrea J., Merlos-Suarez A., Urena J.M., Baselga J.,
+RA   Arribas J.;
+RT   "A role for a PDZ protein in the early secretory pathway for the
+RT   targeting of proTGF-alpha to the cell surface.";
+RL   Mol. Cell 3:423-433(1999).
+RN   [10]
+RP   STRUCTURE BY NMR OF TGF-ALPHA.
+RX   MEDLINE=91084439; PubMed=2261437;
+RA   Kline T.P., Brown F.K., Brown S.C., Jeffs P.W., Kopple K.D.,
+RA   Mueller L.;
+RT   "Solution structures of human transforming growth factor alpha derived
+RT   from 1H NMR data.";
+RL   Biochemistry 29:7805-7813(1990).
+RN   [11]
+RP   STRUCTURE BY NMR OF TGF-ALPHA.
+RX   MEDLINE=91266935; PubMed=2050136;
+RA   Harvey T.S., Wilkinson A.J., Tappin M.J., Cooke R.M., Campbell I.D.;
+RT   "The solution structure of human transforming growth factor alpha.";
+RL   Eur. J. Biochem. 198:555-562(1991).
+RN   [12]
+RP   STRUCTURE BY NMR OF TGF-ALPHA.
+RX   MEDLINE=93332939; PubMed=8338831;
+RA   Moy F.J., Li Y.C., Rauenbuehler P., Winkler M.E., Scheraga H.A.,
+RA   Montelione G.T.;
+RT   "Solution structure of human type-alpha transforming growth factor
+RT   determined by heteronuclear NMR spectroscopy and refined by energy
+RT   minimization with restraints.";
+RL   Biochemistry 32:7334-7353(1993).
+CC   -!- FUNCTION: TGF alpha is a mitogenic polypeptide that is able to
+CC       bind to the EGF receptor and to act synergistically with TGF beta
+CC       to promote anchorage-independent cell proliferation in soft agar.
+CC   -!- SUBUNIT: Interacts with the PDZ domains of SDCBP and SNTA1. The
+CC       interaction with SDCBP, is required for the targeting to the cell
+CC       surface.
+CC   -!- SUBCELLULAR LOCATION: Type I membrane protein (precursor form);
+CC       extracellular (mature form).
+CC   -!- SIMILARITY: Contains 1 EGF-like domain.
+CC   --------------------------------------------------------------------------
+CC   This Swiss-Prot entry is copyright. It is produced through a collaboration
+CC   between  the Swiss Institute of Bioinformatics  and the  EMBL outstation -
+CC   the European Bioinformatics Institute.  There are no  restrictions on  its
+CC   use as long as its content is in no way modified and this statement is not
+CC   removed.
+CC   --------------------------------------------------------------------------
+DR   EMBL; K03222; AAA61159.1; -; mRNA.
+DR   EMBL; M31172; AAA61157.1; -; mRNA.
+DR   EMBL; X70340; CAA49806.1; -; mRNA.
+DR   EMBL; AF123243; AAF13491.1; -; Genomic_DNA.
+DR   EMBL; AF123238; AAF13491.1; JOINED; Genomic_DNA.
+DR   EMBL; AF123239; AAF13491.1; JOINED; Genomic_DNA.
+DR   EMBL; AF123240; AAF13491.1; JOINED; Genomic_DNA.
+DR   EMBL; AF123241; AAF13491.1; JOINED; Genomic_DNA.
+DR   EMBL; AF123242; AAF13491.1; JOINED; Genomic_DNA.
+DR   EMBL; M22440; AAA52530.1; -; Genomic_DNA.
+DR   PIR; JN0876; WFHU1.
+DR   PDB; 1GK5; NMR; A=-.
+DR   PDB; 1MOX; X-ray; C/D=40-89.
+DR   PDB; 1YUF; NMR; @=40-89.
+DR   PDB; 1YUG; NMR; @=40-89.
+DR   PDB; 2TGF; NMR; @=40-89.
+DR   PDB; 3TGF; NMR; @=40-89.
+DR   PDB; 4TGF; NMR; @=40-89.
+DR   Ensembl; ENSG00000163235; Homo sapiens.
+DR   Genew; HGNC:11765; TGFA.
+DR   H-InvDB; HIX0002140; -.
+DR   MIM; 190170; -.
+DR   GO; GO:0005886; C:plasma membrane; NAS.
+DR   GO; GO:0005515; F:protein binding; TAS.
+DR   GO; GO:0004713; F:protein-tyrosine kinase activity; TAS.
+DR   GO; GO:0004871; F:signal transducer activity; TAS.
+DR   GO; GO:0008283; P:cell proliferation; TAS.
+DR   InterPro; IPR001336; EGF_1.
+DR   InterPro; IPR000742; EGF_2.
+DR   InterPro; IPR006209; EGF_like.
+DR   InterPro; IPR006210; IEGF.
+DR   PRINTS; PR00009; EGFTGF.
+DR   SMART; SM00181; EGF; 1.
+DR   PROSITE; PS00022; EGF_1; 1.
+DR   PROSITE; PS01186; EGF_2; 1.
+DR   PROSITE; PS50026; EGF_3; 1.
+KW   3D-structure; EGF-like domain; Glycoprotein; Growth factor;
+KW   Lipoprotein; Mitogen; Palmitate; Signal; Transmembrane.
+FT   SIGNAL        1     23       Potential.
+FT   PROPEP       24     39       Removed in mature form.
+FT   CHAIN        40     89       Transforming growth factor alpha.
+FT   PROPEP       90    160       Removed in mature form.
+FT   TOPO_DOM     24     98       Extracellular (Potential).
+FT   TRANSMEM     99    124       Potential.
+FT   TOPO_DOM    125    160       Cytoplasmic (Potential).
+FT   DOMAIN       43     83       EGF-like.
+FT   LIPID       153    153       S-palmitoyl cysteine.
+FT   LIPID       154    154       S-palmitoyl cysteine.
+FT   CARBOHYD     25     25       N-linked (GlcNAc...) (Potential).
+FT   DISULFID     47     60
+FT   DISULFID     55     71
+FT   DISULFID     73     82
+FT   CONFLICT     58     58       G -> A (in Ref. 2).
+FT   CONFLICT     65     65       Q -> H (in Ref. 2).
+FT   CONFLICT    159    159       V -> L (in Ref. 2).
+FT   TURN         41     44
+FT   STRAND       50     50
+FT   TURN         51     51
+FT   TURN         56     56
+FT   STRAND       57     63
+FT   HELIX        64     66
+FT   TURN         67     67
+FT   STRAND       68     73
+FT   TURN         75     76
+FT   STRAND       77     78
+FT   TURN         79     82
+FT   STRAND       84     85
+SQ   SEQUENCE   160 AA;  17006 MW;  D692184F9353DE47 CRC64;
+     MVPSAGQLAL FALGIVLAAC QALENSTSPL SADPPVAAAV VSHFNDCPDS HTQFCFHGTC
+     RFLVQEDKPA CVCHSGYVGA RCEHADLLAV VAASQKKQAI TALVVVSIVA LAVLIITCVL
+     IHCCQVRKHC EWCRALICRH EKPSALLKGR TACCHSETVV
+//
+ID   EGF_MOUSE      STANDARD;      PRT;  1217 AA.
+AC   P01132; Q6P9J2;
+DT   21-JUL-1986 (Rel. 01, Created)
+DT   21-JUL-1986 (Rel. 01, Last sequence update)
+DT   10-MAY-2005 (Rel. 47, Last annotation update)
+DE   Pro-epidermal growth factor precursor (EGF) [Contains: Epidermal
+DE   growth factor].
+GN   Name=Egf;
+OS   Mus musculus (Mouse).
+OC   Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+OC   Mammalia; Eutheria; Euarchontoglires; Glires; Rodentia; Sciurognathi;
+OC   Muridae; Murinae; Mus.
+OX   NCBI_TaxID=10090;
+RN   [1]
+RP   NUCLEOTIDE SEQUENCE.
+RX   MEDLINE=83223630; PubMed=6602382;
+RA   Scott J., Urdea M., Quiroga M., Sanchez-Pescador R., Fong N.M.,
+RA   Selby M., Rutter W.J., Bell G.I.;
+RT   "Structure of a mouse submaxillary messenger RNA encoding epidermal
+RT   growth factor and seven related proteins.";
+RL   Science 221:236-240(1983).
+RN   [2]
+RP   NUCLEOTIDE SEQUENCE.
+RX   MEDLINE=83219309; PubMed=6304537;
+RA   Gray A., Dull T.J., Ullrich A.;
+RT   "Nucleotide sequence of epidermal growth factor cDNA predicts a
+RT   128,000-molecular weight protein precursor.";
+RL   Nature 303:722-725(1983).
+RN   [3]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA].
+RC   STRAIN=FVB/N; TISSUE=Salivary gland;
+RX   MEDLINE=22388257; PubMed=12477932; DOI=10.1073/pnas.242603899;
+RA   Strausberg R.L., Feingold E.A., Grouse L.H., Derge J.G.,
+RA   Klausner R.D., Collins F.S., Wagner L., Shenmen C.M., Schuler G.D.,
+RA   Altschul S.F., Zeeberg B., Buetow K.H., Schaefer C.F., Bhat N.K.,
+RA   Hopkins R.F., Jordan H., Moore T., Max S.I., Wang J., Hsieh F.,
+RA   Diatchenko L., Marusina K., Farmer A.A., Rubin G.M., Hong L.,
+RA   Stapleton M., Soares M.B., Bonaldo M.F., Casavant T.L., Scheetz T.E.,
+RA   Brownstein M.J., Usdin T.B., Toshiyuki S., Carninci P., Prange C.,
+RA   Raha S.S., Loquellano N.A., Peters G.J., Abramson R.D., Mullahy S.J.,
+RA   Bosak S.A., McEwan P.J., McKernan K.J., Malek J.A., Gunaratne P.H.,
+RA   Richards S., Worley K.C., Hale S., Garcia A.M., Gay L.J., Hulyk S.W.,
+RA   Villalon D.K., Muzny D.M., Sodergren E.J., Lu X., Gibbs R.A.,
+RA   Fahey J., Helton E., Ketteman M., Madan A., Rodrigues S., Sanchez A.,
+RA   Whiting M., Madan A., Young A.C., Shevchenko Y., Bouffard G.G.,
+RA   Blakesley R.W., Touchman J.W., Green E.D., Dickson M.C.,
+RA   Rodriguez A.C., Grimwood J., Schmutz J., Myers R.M.,
+RA   Butterfield Y.S.N., Krzywinski M.I., Skalska U., Smailus D.E.,
+RA   Schnerch A., Schein J.E., Jones S.J.M., Marra M.A.;
+RT   "Generation and initial analysis of more than 15,000 full-length human
+RT   and mouse cDNA sequences.";
+RL   Proc. Natl. Acad. Sci. U.S.A. 99:16899-16903(2002).
+RN   [4]
+RP   PROTEIN SEQUENCE OF 977-1029.
+RX   MEDLINE=73048516; PubMed=4636327;
+RA   Savage C.R. Jr., Inagami T., Cohen S.;
+RT   "The primary structure of epidermal growth factor.";
+RL   J. Biol. Chem. 247:7612-7621(1972).
+RN   [5]
+RP   DISULFIDE BONDS.
+RX   MEDLINE=74025498; PubMed=4750422;
+RA   Savage C.R. Jr., Hash J.H., Cohen S.;
+RT   "Epidermal growth factor. Location of disulfide bonds.";
+RL   J. Biol. Chem. 248:7669-7672(1973).
+RN   [6]
+RP   STRUCTURE BY NMR OF 977-1029.
+RX   MEDLINE=92118798; PubMed=1731873;
+RA   Montelione G.T., Wuethrich K., Burgess A.W., Nice E.C., Wagner G.,
+RA   Gibson K.D., Scheraga H.A.;
+RT   "Solution structure of murine epidermal growth factor determined by
+RT   NMR spectroscopy and refined by energy minimization with restraints.";
+RL   Biochemistry 31:236-249(1992).
+RN   [7]
+RP   STRUCTURE BY NMR OF 977-1029.
+RX   MEDLINE=93075811; PubMed=1445923;
+RA   Kohda D., Inagaki F.;
+RT   "Three-dimensional nuclear magnetic resonance structures of mouse
+RT   epidermal growth factor in acidic and physiological pH solutions.";
+RL   Biochemistry 31:11928-11939(1992).
+RN   [8]
+RP   STRUCTURE BY NMR OF 980-1024.
+RX   MEDLINE=99180407; PubMed=10082370;
+RA   Barnham K.J., Torres A.M., Alewood D., Alewood P.F., Domagala T.,
+RA   Nice E.C., Norton R.S.;
+RT   "Role of the 6-20 disulfide bridge in the structure and activity of
+RT   epidermal growth factor.";
+RL   Protein Sci. 7:1738-1749(1998).
+CC   -!- FUNCTION: EGF stimulates the growth of various epidermal and
+CC       epithelial tissues in vivo and in vitro and of some fibroblasts in
+CC       cell culture.
+CC   -!- SUBCELLULAR LOCATION: Type I membrane protein.
+CC   -!- SIMILARITY: Contains 9 EGF-like domains.
+CC   -!- CAUTION: Ref.2 sequence differs from that shown in positions 1134
+CC       to 1168 due to a frameshift.
+CC   --------------------------------------------------------------------------
+CC   This Swiss-Prot entry is copyright. It is produced through a collaboration
+CC   between  the Swiss Institute of Bioinformatics  and the  EMBL outstation -
+CC   the European Bioinformatics Institute.  There are no  restrictions on  its
+CC   use as long as its content is in no way modified and this statement is not
+CC   removed.
+CC   --------------------------------------------------------------------------
+DR   EMBL; J00380; AAA37539.1; -; mRNA.
+DR   EMBL; V00741; CAA24115.1; ALT_FRAME; mRNA.
+DR   EMBL; V00741; CAA24116.1; -; mRNA.
+DR   EMBL; BC060741; AAH60741.1; -; mRNA.
+DR   PIR; A94272; EGMSMG.
+DR   PDB; 1A3P; NMR; @=981-1024.
+DR   PDB; 1EGF; NMR; @=977-1029.
+DR   PDB; 1EPG; NMR; @=977-1029.
+DR   PDB; 1EPH; NMR; @=977-1029.
+DR   PDB; 1EPI; NMR; @=977-1029.
+DR   PDB; 1EPJ; NMR; @=977-1029.
+DR   PDB; 1GK5; NMR; A=-.
+DR   PDB; 3EGF; NMR; @=977-1029.
+DR   Ensembl; ENSMUSG00000028017; Mus musculus.
+DR   MGI; MGI:95290; Egf.
+DR   GO; GO:0005615; C:extracellular space; TAS.
+DR   GO; GO:0016021; C:integral to membrane; TAS.
+DR   GO; GO:0050730; P:regulation of peptidyl-tyrosine phosphoryla...; IDA.
+DR   InterPro; IPR000152; Asx_hydroxyl_S.
+DR   InterPro; IPR001336; EGF_1.
+DR   InterPro; IPR000742; EGF_2.
+DR   InterPro; IPR001881; EGF_Ca.
+DR   InterPro; IPR006209; EGF_like.
+DR   InterPro; IPR009030; Grow_fac_recept.
+DR   InterPro; IPR000033; Ldl_receptor_rep.
+DR   Pfam; PF00008; EGF; 8.
+DR   Pfam; PF00058; Ldl_recept_b; 7.
+DR   PRINTS; PR00009; EGFTGF.
+DR   SMART; SM00179; EGF_CA; 2.
+DR   SMART; SM00135; LY; 9.
+DR   PROSITE; PS00010; ASX_HYDROXYL; 3.
+DR   PROSITE; PS00022; EGF_1; 1.
+DR   PROSITE; PS01186; EGF_2; 6.
+DR   PROSITE; PS50026; EGF_3; 5.
+DR   PROSITE; PS01187; EGF_CA; 3.
+KW   3D-structure; Direct protein sequencing; EGF-like domain;
+KW   Glycoprotein; Growth factor; Repeat; Signal; Transmembrane.
+FT   SIGNAL        1     28       Potential.
+FT   CHAIN        29   1217       Pro-epidermal growth factor.
+FT   CHAIN       977   1029       Epidermal growth factor.
+FT   TOPO_DOM     29   1038       Extracellular (Potential).
+FT   TRANSMEM   1039   1058       Potential.
+FT   TOPO_DOM   1059   1217       Cytoplasmic (Potential).
+FT   DOMAIN      327    361       EGF-like 1 (incomplete).
+FT   DOMAIN      362    402       EGF-like 2, calcium-binding (Potential).
+FT   DOMAIN      403    443       EGF-like 3.
+FT   DOMAIN      441    483       EGF-like 4.
+FT   DOMAIN      747    787       EGF-like 5.
+FT   DOMAIN      838    876       EGF-like 6.
+FT   DOMAIN      877    918       EGF-like 7, calcium-binding (Potential).
+FT   DOMAIN      919    959       EGF-like 8, calcium-binding (Potential).
+FT   DOMAIN      978   1019       EGF-like 9.
+FT   REGION     1024   1029       Not required for full biological
+FT                                activity.
+FT   CARBOHYD    111    111       N-linked (GlcNAc...) (Potential).
+FT   CARBOHYD    410    410       N-linked (GlcNAc...) (Potential).
+FT   CARBOHYD    810    810       N-linked (GlcNAc...) (Potential).
+FT   CARBOHYD    944    944       N-linked (GlcNAc...) (Potential).
+FT   DISULFID    366    377       By similarity.
+FT   DISULFID    373    386       By similarity.
+FT   DISULFID    388    401       By similarity.
+FT   DISULFID    407    418       By similarity.
+FT   DISULFID    414    427       By similarity.
+FT   DISULFID    429    442       By similarity.
+FT   DISULFID    445    457       By similarity.
+FT   DISULFID    453    467       By similarity.
+FT   DISULFID    469    482       By similarity.
+FT   DISULFID    751    762       By similarity.
+FT   DISULFID    758    771       By similarity.
+FT   DISULFID    773    786       By similarity.
+FT   DISULFID    930    945       By similarity.
+FT   DISULFID    947    958       By similarity.
+FT   DISULFID    982    996
+FT   DISULFID    990   1007
+FT   DISULFID   1009   1018
+FT   CONFLICT    790    790       D -> Y (in Ref. 2).
+FT   CONFLICT   1048   1048       A -> S (in Ref. 2).
+FT   CONFLICT   1217   1217       K -> Q (in Ref. 3).
+FT   TURN        983    984
+FT   STRAND      995    998
+FT   TURN       1000   1002
+FT   STRAND     1005   1008
+FT   TURN       1011   1012
+FT   STRAND     1013   1014
+FT   TURN       1015   1018
+FT   STRAND     1020   1021
+SQ   SEQUENCE   1217 AA;  133144 MW;  A9C7F3D512F82873 CRC64;
+     MPWGRRPTWL LLAFLLVFLK ISILSVTAWQ TGNCQPGPLE RSERSGTCAG PAPFLVFSQG
+     KSISRIDPDG TNHQQLVVDA GISADMDIHY KKERLYWVDV ERQVLLRVFL NGTGLEKVCN
+     VERKVSGLAI DWIDDEVLWV DQQNGVITVT DMTGKNSRVL LSSLKHPSNI AVDPIERLMF
+     WSSEVTGSLH RAHLKGVDVK TLLETGGISV LTLDVLDKRL FWVQDSGEGS HAYIHSCDYE
+     GGSVRLIRHQ ARHSLSSMAF FGDRIFYSVL KSKAIWIANK HTGKDTVRIN LHPSFVTPGK
+     LMVVHPRAQP RTEDAAKDPD PELLKQRGRP CRFGLCERDP KSHSSACAEG YTLSRDRKYC
+     EDVNECATQN HGCTLGCENT PGSYHCTCPT GFVLLPDGKQ CHELVSCPGN VSKCSHGCVL
+     TSDGPRCICP AGSVLGRDGK TCTGCSSPDN GGCSQICLPL RPGSWECDCF PGYDLQSDRK
+     SCAASGPQPL LLFANSQDIR HMHFDGTDYK VLLSRQMGMV FALDYDPVES KIYFAQTALK
+     WIERANMDGS QRERLITEGV DTLEGLALDW IGRRIYWTDS GKSVVGGSDL SGKHHRIIIQ
+     ERISRPRGIA VHPRARRLFW TDVGMSPRIE SASLQGSDRV LIASSNLLEP SGITIDYLTD
+     TLYWCDTKRS VIEMANLDGS KRRRLIQNDV GHPFSLAVFE DHLWVSDWAI PSVIRVNKRT
+     GQNRVRLQGS MLKPSSLVVV HPLAKPGADP CLYRNGGCEH ICQESLGTAR CLCREGFVKA
+     WDGKMCLPQD YPILSGENAD LSKEVTSLSN STQAEVPDDD GTESSTLVAE IMVSGMNYED
+     DCGPGGCGSH ARCVSDGETA ECQCLKGFAR DGNLCSDIDE CVLARSDCPS TSSRCINTEG
+     GYVCRCSEGY EGDGISCFDI DECQRGAHNC AENAACTNTE GGYNCTCAGR PSSPGRSCPD
+     STAPSLLGED GHHLDRNSYP GCPSSYDGYC LNGGVCMHIE SLDSYTCNCV IGYSGDRCQT
+     RDLRWWELRH AGYGQKHDIM VVAVCMVALV LLLLLGMWGT YYYRTRKQLS NPPKNPCDEP
+     SGSVSSSGPD SSSGAAVASC PQPWFVVLEK HQDPKNGSLP ADGTNGAVVD AGLSPSLQLG
+     SVHLTSWRQK PHIDGMGTGQ SCWIPPSSDR GPQEIEGNSH LPSYRPVGPE KLHSLQSANG
+     SCHERAPDLP RQTEPVK
+//
+ID   LYS_BPT4       STANDARD;      PRT;   164 AA.
+AC   P00720; Q38170; Q94N07;
+DT   21-JUL-1986 (Rel. 01, Created)
+DT   21-JUL-1986 (Rel. 01, Last sequence update)
+DT   10-MAY-2005 (Rel. 47, Last annotation update)
+DE   Lysozyme (EC 3.2.1.17) (Lysis protein) (Muramidase) (Endolysin).
+GN   Name=E;
+OS   Bacteriophage T4.
+OC   Viruses; dsDNA viruses, no RNA stage; Caudovirales; Myoviridae;
+OC   T4-like viruses.
+OX   NCBI_TaxID=10665;
+RN   [1]
+RP   PROTEIN SEQUENCE.
+RX   MEDLINE=71007898; PubMed=5470817;
+RA   Inouye M., Imada M., Tsugita A.;
+RT   "The amino acid sequence of T4 phage lysozyme. IV. Dilute acid
+RT   hydrolysis and the order of tryptic peptides.";
+RL   J. Biol. Chem. 245:3479-3484(1970).
+RN   [2]
+RP   NUCLEOTIDE SEQUENCE.
+RX   MEDLINE=83189145; PubMed=6302287;
+RA   Owen J.E., Schultz D.W., Taylor A., Smith G.R.;
+RT   "Nucleotide sequence of the lysozyme gene of bacteriophage T4.
+RT   Analysis of mutations involving repeated sequences.";
+RL   J. Mol. Biol. 165:229-248(1983).
+RN   [3]
+RP   NUCLEOTIDE SEQUENCE.
+RX   MEDLINE=87066735; PubMed=3024113;
+RA   Valerie K., Stevens J., Lynch M., Henderson E.E., de Riel J.K.;
+RT   "Nucleotide sequence and analysis of the 58.3 to 65.5-kb early region
+RT   of bacteriophage T4.";
+RL   Nucleic Acids Res. 14:8637-8654(1986).
+RN   [4]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RX   MEDLINE=22514363; PubMed=12626685; DOI=10.1128/MMBR.67.1.86-156.2003;
+RA   Miller E.S., Kutter E., Mosig G., Arisaka F., Kunisawa T., Ruger W.;
+RT   "Bacteriophage T4 genome.";
+RL   Microbiol. Mol. Biol. Rev. 67:86-156(2003).
+RN   [5]
+RP   X-RAY CRYSTALLOGRAPHY (1.7 ANGSTROMS).
+RX   PubMed=4530293;
+RA   Matthews B.W., Remington S.J.;
+RT   "The three dimensional structure of the lysozyme from bacteriophage
+RT   T4.";
+RL   Proc. Natl. Acad. Sci. U.S.A. 71:4178-4182(1974).
+RN   [6]
+RP   X-RAY CRYSTALLOGRAPHY (1.7 ANGSTROMS).
+RX   MEDLINE=87226186; PubMed=3586019;
+RA   Weaver L.H., Matthews B.W.;
+RT   "Structure of bacteriophage T4 lysozyme refined at 1.7-A resolution.";
+RL   J. Mol. Biol. 193:189-200(1987).
+RN   [7]
+RP   X-RAY CRYSTALLOGRAPHY (2.4 ANGSTROMS).
+RX   MEDLINE=77157239; PubMed=322662;
+RA   Remington S.J., ten Eyck L.F., Matthews B.W.;
+RT   "Atomic coordinates for T4 phage lysozyme.";
+RL   Biochem. Biophys. Res. Commun. 75:265-270(1977).
+RN   [8]
+RP   X-RAY CRYSTALLOGRAPHY (1.7 ANGSTROMS) OF MUTANT ILE-3.
+RX   MEDLINE=88302415; PubMed=3405287; DOI=10.1038/334406a0;
+RA   Matsumura M., Becktel W.J., Matthews B.W.;
+RT   "Hydrophobic stabilization in T4 lysozyme determined directly by
+RT   multiple substitutions of Ile 3.";
+RL   Nature 334:406-410(1988).
+RN   [9]
+RP   X-RAY CRYSTALLOGRAPHY (1.8 ANGSTROMS) OF MUTANT.
+RX   MEDLINE=91043097; PubMed=2234094; DOI=10.1038/348263a0;
+RA   Faber H.R., Matthews B.W.;
+RT   "A mutant T4 lysozyme displays five different crystal conformations.";
+RL   Nature 348:263-266(1990).
+RN   [10]
+RP   X-RAY CRYSTALLOGRAPHY (1.7 ANGSTROMS) OF MUTANT.
+RX   MEDLINE=92115004; PubMed=1731252; DOI=10.1038/355371a0;
+RA   Eriksson A.E., Baase W.A., Wozniak J.A., Matthews B.W.;
+RT   "A cavity-containing mutant of T4 lysozyme is stabilized by buried
+RT   benzene.";
+RL   Nature 355:371-373(1992).
+RN   [11]
+RP   STRUCTURE BY NMR.
+RX   MEDLINE=91002526; PubMed=2207079;
+RA   McIntosh L.P., Wand A.J., Lowry D.F., Redfield A.G., Dahlquist F.W.;
+RT   "Assignment of the backbone 1H and 15N NMR resonances of bacteriophage
+RT   T4 lysozyme.";
+RL   Biochemistry 29:6341-6362(1990).
+CC   -!- FUNCTION: Helps to release the mature phage particles from the
+CC       cell wall by breaking down the peptidoglycan.
+CC   -!- CATALYTIC ACTIVITY: Hydrolysis of 1,4-beta-linkages between N-
+CC       acetylmuramic acid and N-acetyl-D-glucosamine residues in a
+CC       peptidoglycan and between N-acetyl-D-glucosamine residues in
+CC       chitodextrins.
+CC   -!- SIMILARITY: Belongs to the glycosyl hydrolase 24 family.
+CC   --------------------------------------------------------------------------
+CC   This Swiss-Prot entry is copyright. It is produced through a collaboration
+CC   between  the Swiss Institute of Bioinformatics  and the  EMBL outstation -
+CC   the European Bioinformatics Institute.  There are no  restrictions on  its
+CC   use as long as its content is in no way modified and this statement is not
+CC   removed.
+CC   --------------------------------------------------------------------------
+DR   EMBL; X04567; CAA28212.1; -; Genomic_DNA.
+DR   EMBL; AF158101; AAD42568.1; -; Genomic_DNA.
+DR   PIR; A92896; LZBPT4.
+DR   PDB; 102L; X-ray; @=1-164.
+DR   PDB; 103L; X-ray; @=1-164.
+DR   PDB; 104L; X-ray; A/B=1-164.
+DR   PDB; 107L; X-ray; @=1-164.
+DR   PDB; 108L; X-ray; @=1-164.
+DR   PDB; 109L; X-ray; @=1-164.
+DR   PDB; 110L; X-ray; @=1-164.
+DR   PDB; 111L; X-ray; @=1-164.
+DR   PDB; 112L; X-ray; @=1-164.
+DR   PDB; 113L; X-ray; @=1-164.
+DR   PDB; 114L; X-ray; @=1-164.
+DR   PDB; 115L; X-ray; @=1-164.
+DR   PDB; 118L; X-ray; @=1-164.
+DR   PDB; 119L; X-ray; @=1-164.
+DR   PDB; 120L; X-ray; @=1-164.
+DR   PDB; 122L; X-ray; @=1-164.
+DR   PDB; 123L; X-ray; @=1-164.
+DR   PDB; 125L; X-ray; @=1-164.
+DR   PDB; 126L; X-ray; @=1-164.
+DR   PDB; 127L; X-ray; @=1-164.
+DR   PDB; 128L; X-ray; @=1-164.
+DR   PDB; 129L; X-ray; @=1-164.
+DR   PDB; 130L; X-ray; @=1-164.
+DR   PDB; 131L; X-ray; @=1-164.
+DR   PDB; 137L; X-ray; A/B=1-164.
+DR   PDB; 138L; X-ray; @=1-164.
+DR   PDB; 139L; X-ray; @=1-164.
+DR   PDB; 140L; X-ray; @=1-164.
+DR   PDB; 141L; X-ray; @=1-164.
+DR   PDB; 142L; X-ray; @=1-164.
+DR   PDB; 143L; X-ray; @=1-164.
+DR   PDB; 144L; X-ray; @=1-164.
+DR   PDB; 145L; X-ray; @=1-164.
+DR   PDB; 146L; X-ray; @=1-164.
+DR   PDB; 147L; X-ray; @=1-164.
+DR   PDB; 148L; X-ray; E=1-164.
+DR   PDB; 149L; X-ray; @=2-164.
+DR   PDB; 150L; X-ray; A/B/C/D=1-164.
+DR   PDB; 151L; X-ray; @=1-164.
+DR   PDB; 152L; X-ray; @=2-163.
+DR   PDB; 155L; X-ray; @=1-164.
+DR   PDB; 156L; X-ray; @=1-164.
+DR   PDB; 157L; X-ray; @=1-164.
+DR   PDB; 158L; X-ray; @=1-164.
+DR   PDB; 159L; X-ray; @=1-164.
+DR   PDB; 160L; X-ray; @=1-164.
+DR   PDB; 161L; X-ray; @=1-164.
+DR   PDB; 162L; X-ray; @=1-164.
+DR   PDB; 163L; X-ray; @=1-164.
+DR   PDB; 164L; X-ray; @=1-164.
+DR   PDB; 165L; X-ray; @=1-164.
+DR   PDB; 166L; X-ray; @=1-164.
+DR   PDB; 167L; X-ray; A/B=2-163.
+DR   PDB; 168L; X-ray; A/B/C/D/E=1-164.
+DR   PDB; 169L; X-ray; A/B/C/D/E=1-164.
+DR   PDB; 170L; X-ray; @=1-164.
+DR   PDB; 171L; X-ray; @=1-164.
+DR   PDB; 172L; X-ray; @=2-164.
+DR   PDB; 173L; X-ray; @=1-164.
+DR   PDB; 174L; X-ray; A/B=1-164.
+DR   PDB; 175L; X-ray; A/B=1-164.
+DR   PDB; 176L; X-ray; A/B=1-164.
+DR   PDB; 177L; X-ray; @=1-164.
+DR   PDB; 178L; X-ray; @=1-164.
+DR   PDB; 179L; X-ray; @=1-164.
+DR   PDB; 180L; X-ray; A/B=1-164.
+DR   PDB; 181L; X-ray; @=1-164.
+DR   PDB; 182L; X-ray; @=1-164.
+DR   PDB; 183L; X-ray; @=1-164.
+DR   PDB; 184L; X-ray; @=1-164.
+DR   PDB; 185L; X-ray; @=1-164.
+DR   PDB; 186L; X-ray; @=1-164.
+DR   PDB; 187L; X-ray; @=1-164.
+DR   PDB; 188L; X-ray; @=1-164.
+DR   PDB; 189L; X-ray; @=2-164.
+DR   PDB; 190L; X-ray; @=1-164.
+DR   PDB; 191L; X-ray; @=1-164.
+DR   PDB; 192L; X-ray; @=1-164.
+DR   PDB; 195L; X-ray; @=1-164.
+DR   PDB; 196L; X-ray; @=1-164.
+DR   PDB; 197L; X-ray; @=1-164.
+DR   PDB; 198L; X-ray; @=1-164.
+DR   PDB; 199L; X-ray; @=1-164.
+DR   PDB; 1B6I; X-ray; A=1-164.
+DR   PDB; 1C60; X-ray; A=1-164.
+DR   PDB; 1C61; X-ray; A=1-164.
+DR   PDB; 1C62; X-ray; A=1-164.
+DR   PDB; 1C63; X-ray; A=1-164.
+DR   PDB; 1C64; X-ray; A=1-164.
+DR   PDB; 1C65; X-ray; A=1-164.
+DR   PDB; 1C66; X-ray; A=1-164.
+DR   PDB; 1C67; X-ray; A=1-164.
+DR   PDB; 1C68; X-ray; A=1-164.
+DR   PDB; 1C69; X-ray; A=1-164.
+DR   PDB; 1C6A; X-ray; A=1-164.
+DR   PDB; 1C6B; X-ray; A=1-164.
+DR   PDB; 1C6C; X-ray; A=1-164.
+DR   PDB; 1C6D; X-ray; A=1-164.
+DR   PDB; 1C6E; X-ray; A=1-164.
+DR   PDB; 1C6F; X-ray; A=1-164.
+DR   PDB; 1C6G; X-ray; A=1-164.
+DR   PDB; 1C6H; X-ray; A=1-164.
+DR   PDB; 1C6I; X-ray; A=1-164.
+DR   PDB; 1C6J; X-ray; A=1-164.
+DR   PDB; 1C6K; X-ray; A=1-164.
+DR   PDB; 1C6L; X-ray; A=1-164.
+DR   PDB; 1C6M; X-ray; A=1-164.
+DR   PDB; 1C6N; X-ray; A=1-164.
+DR   PDB; 1C6P; X-ray; A=1-164.
+DR   PDB; 1C6Q; X-ray; A=1-164.
+DR   PDB; 1C6T; X-ray; A=1-164.
+DR   PDB; 1CTW; X-ray; A=1-164.
+DR   PDB; 1CU0; X-ray; A=1-164.
+DR   PDB; 1CU2; X-ray; A=1-164.
+DR   PDB; 1CU3; X-ray; A=1-164.
+DR   PDB; 1CU5; X-ray; A=1-164.
+DR   PDB; 1CU6; X-ray; A=1-164.
+DR   PDB; 1CUP; X-ray; A=1-164.
+DR   PDB; 1CUQ; X-ray; A=1-164.
+DR   PDB; 1CV0; X-ray; A=1-164.
+DR   PDB; 1CV1; X-ray; A=1-164.
+DR   PDB; 1CV3; X-ray; A=1-164.
+DR   PDB; 1CV4; X-ray; A=1-164.
+DR   PDB; 1CV5; X-ray; A=1-164.
+DR   PDB; 1CV6; X-ray; A=1-164.
+DR   PDB; 1CVK; X-ray; A=1-164.
+DR   PDB; 1CX6; X-ray; A=2-164.
+DR   PDB; 1CX7; X-ray; A=1-164.
+DR   PDB; 1D2W; X-ray; A=1-164.
+DR   PDB; 1D2Y; X-ray; A=1-164.
+DR   PDB; 1D3F; X-ray; A=1-164.
+DR   PDB; 1D3J; X-ray; A=1-164.
+DR   PDB; 1D3M; X-ray; A=1-164.
+DR   PDB; 1D3N; X-ray; A=2-164.
+DR   PDB; 1D9W; X-ray; A=1-164.
+DR   PDB; 1DYA; X-ray; @=1-164.
+DR   PDB; 1DYB; X-ray; @=1-164.
+DR   PDB; 1DYC; X-ray; @=1-164.
+DR   PDB; 1DYD; X-ray; @=1-164.
+DR   PDB; 1DYE; X-ray; @=1-164.
+DR   PDB; 1DYF; X-ray; @=1-164.
+DR   PDB; 1DYG; X-ray; @=1-164.
+DR   PDB; 1EPY; X-ray; A=1-164.
+DR   PDB; 1G06; X-ray; A=1-164.
+DR   PDB; 1G07; X-ray; A=1-164.
+DR   PDB; 1G0G; X-ray; A=1-164.
+DR   PDB; 1G0J; X-ray; A=1-164.
+DR   PDB; 1G0K; X-ray; A=1-164.
+DR   PDB; 1G0L; X-ray; A=1-164.
+DR   PDB; 1G0M; X-ray; A=1-164.
+DR   PDB; 1G0P; X-ray; A=1-164.
+DR   PDB; 1G0Q; X-ray; A=1-164.
+DR   PDB; 1G1V; X-ray; A=1-164.
+DR   PDB; 1G1W; X-ray; A=1-164.
+DR   PDB; 1I6S; X-ray; A=1-164.
+DR   PDB; 1JQU; X-ray; A/B/C/D=1-164.
+DR   PDB; 1JTM; X-ray; A=1-164.
+DR   PDB; 1KNI; X-ray; A=1-164.
+DR   PDB; 1KS3; X-ray; A=1-162.
+DR   PDB; 1KW5; X-ray; A=1-162.
+DR   PDB; 1KW7; X-ray; A=1-162.
+DR   PDB; 1KY0; X-ray; A=1-162.
+DR   PDB; 1KY1; X-ray; A=1-162.
+DR   PDB; 1L00; X-ray; @=1-164.
+DR   PDB; 1L01; X-ray; @=1-164.
+DR   PDB; 1L02; X-ray; @=1-164.
+DR   PDB; 1L03; X-ray; @=1-164.
+DR   PDB; 1L04; X-ray; @=1-164.
+DR   PDB; 1L05; X-ray; @=1-164.
+DR   PDB; 1L06; X-ray; @=1-164.
+DR   PDB; 1L07; X-ray; @=1-164.
+DR   PDB; 1L08; X-ray; @=1-164.
+DR   PDB; 1L09; X-ray; @=1-164.
+DR   PDB; 1L0J; X-ray; A=1-162.
+DR   PDB; 1L0K; X-ray; A=1-162.
+DR   PDB; 1L10; X-ray; @=1-164.
+DR   PDB; 1L11; X-ray; @=1-164.
+DR   PDB; 1L12; X-ray; @=1-164.
+DR   PDB; 1L13; X-ray; @=1-164.
+DR   PDB; 1L14; X-ray; @=1-164.
+DR   PDB; 1L15; X-ray; @=1-164.
+DR   PDB; 1L16; X-ray; @=1-164.
+DR   PDB; 1L17; X-ray; @=2-164.
+DR   PDB; 1L18; X-ray; @=2-164.
+DR   PDB; 1L19; X-ray; @=1-164.
+DR   PDB; 1L20; X-ray; @=1-164.
+DR   PDB; 1L21; X-ray; @=1-164.
+DR   PDB; 1L22; X-ray; @=1-164.
+DR   PDB; 1L23; X-ray; @=1-164.
+DR   PDB; 1L24; X-ray; @=1-164.
+DR   PDB; 1L25; X-ray; @=1-164.
+DR   PDB; 1L26; X-ray; @=-.
+DR   PDB; 1L27; X-ray; @=1-164.
+DR   PDB; 1L28; X-ray; @=1-164.
+DR   PDB; 1L29; X-ray; @=1-164.
+DR   PDB; 1L30; X-ray; @=1-164.
+DR   PDB; 1L31; X-ray; @=1-164.
+DR   PDB; 1L32; X-ray; @=1-164.
+DR   PDB; 1L33; X-ray; @=1-164.
+DR   PDB; 1L34; X-ray; @=1-164.
+DR   PDB; 1L35; X-ray; @=1-163.
+DR   PDB; 1L36; X-ray; @=1-164.
+DR   PDB; 1L37; X-ray; @=1-164.
+DR   PDB; 1L38; X-ray; @=1-164.
+DR   PDB; 1L39; X-ray; @=1-164.
+DR   PDB; 1L40; X-ray; @=1-164.
+DR   PDB; 1L41; X-ray; @=1-164.
+DR   PDB; 1L42; X-ray; @=1-164.
+DR   PDB; 1L43; X-ray; @=1-164.
+DR   PDB; 1L44; X-ray; @=1-164.
+DR   PDB; 1L45; X-ray; @=1-164.
+DR   PDB; 1L46; X-ray; @=1-164.
+DR   PDB; 1L47; X-ray; @=1-164.
+DR   PDB; 1L48; X-ray; @=1-164.
+DR   PDB; 1L49; X-ray; @=1-164.
+DR   PDB; 1L50; X-ray; @=1-164.
+DR   PDB; 1L51; X-ray; @=1-164.
+DR   PDB; 1L52; X-ray; @=1-164.
+DR   PDB; 1L53; X-ray; @=1-164.
+DR   PDB; 1L54; X-ray; @=1-164.
+DR   PDB; 1L55; X-ray; @=1-164.
+DR   PDB; 1L56; X-ray; @=1-164.
+DR   PDB; 1L57; X-ray; @=1-164.
+DR   PDB; 1L58; X-ray; @=1-164.
+DR   PDB; 1L59; X-ray; @=1-164.
+DR   PDB; 1L60; X-ray; @=1-164.
+DR   PDB; 1L61; X-ray; @=1-164.
+DR   PDB; 1L62; X-ray; @=1-164.
+DR   PDB; 1L63; X-ray; @=1-164.
+DR   PDB; 1L64; X-ray; @=1-164.
+DR   PDB; 1L65; X-ray; @=1-164.
+DR   PDB; 1L66; X-ray; @=1-164.
+DR   PDB; 1L67; X-ray; @=1-164.
+DR   PDB; 1L68; X-ray; @=1-164.
+DR   PDB; 1L69; X-ray; @=1-164.
+DR   PDB; 1L70; X-ray; @=1-164.
+DR   PDB; 1L71; X-ray; @=1-164.
+DR   PDB; 1L72; X-ray; @=1-164.
+DR   PDB; 1L73; X-ray; @=1-164.
+DR   PDB; 1L74; X-ray; @=1-164.
+DR   PDB; 1L75; X-ray; @=1-164.
+DR   PDB; 1L76; X-ray; @=1-164.
+DR   PDB; 1L77; X-ray; @=1-164.
+DR   PDB; 1L79; X-ray; @=1-164.
+DR   PDB; 1L80; X-ray; @=1-164.
+DR   PDB; 1L81; X-ray; @=1-164.
+DR   PDB; 1L82; X-ray; @=1-164.
+DR   PDB; 1L83; X-ray; @=1-164.
+DR   PDB; 1L84; X-ray; @=1-164.
+DR   PDB; 1L85; X-ray; @=1-164.
+DR   PDB; 1L86; X-ray; @=1-164.
+DR   PDB; 1L87; X-ray; @=1-164.
+DR   PDB; 1L88; X-ray; @=1-164.
+DR   PDB; 1L89; X-ray; @=1-164.
+DR   PDB; 1L90; X-ray; @=1-164.
+DR   PDB; 1L91; X-ray; @=1-164.
+DR   PDB; 1L92; X-ray; @=1-164.
+DR   PDB; 1L93; X-ray; @=1-164.
+DR   PDB; 1L94; X-ray; @=1-164.
+DR   PDB; 1L95; X-ray; @=1-164.
+DR   PDB; 1L96; X-ray; @=2-164.
+DR   PDB; 1L97; X-ray; A/B=2-164.
+DR   PDB; 1L98; X-ray; @=1-164.
+DR   PDB; 1L99; X-ray; @=1-164.
+DR   PDB; 1LGU; X-ray; A=1-164.
+DR   PDB; 1LGW; X-ray; A=1-164.
+DR   PDB; 1LGX; X-ray; A=1-164.
+DR   PDB; 1LI2; X-ray; A=1-164.
+DR   PDB; 1LI3; X-ray; A=1-164.
+DR   PDB; 1LI6; X-ray; A=1-164.
+DR   PDB; 1LLH; X-ray; A=1-164.
+DR   PDB; 1LPY; X-ray; A=2-164.
+DR   PDB; 1LW9; X-ray; A=1-164.
+DR   PDB; 1LWG; X-ray; A=1-164.
+DR   PDB; 1LWK; X-ray; A=2-164.
+DR   PDB; 1LYD; X-ray; @=1-164.
+DR   PDB; 1LYE; X-ray; @=1-164.
+DR   PDB; 1LYF; X-ray; @=1-164.
+DR   PDB; 1LYG; X-ray; @=1-164.
+DR   PDB; 1LYH; X-ray; @=1-164.
+DR   PDB; 1LYI; X-ray; @=1-164.
+DR   PDB; 1LYJ; X-ray; @=1-164.
+DR   PDB; 1NHB; X-ray; @=1-164.
+DR   PDB; 1OV5; X-ray; A=1-164.
+DR   PDB; 1OV7; X-ray; A=1-164.
+DR   PDB; 1OVH; X-ray; A=1-164.
+DR   PDB; 1OVJ; X-ray; A=1-164.
+DR   PDB; 1OVK; X-ray; A=1-164.
+DR   PDB; 1OWY; X-ray; A=1-164.
+DR   PDB; 1OWZ; X-ray; A=1-164.
+DR   PDB; 1OYU; X-ray; A/B=1-164.
+DR   PDB; 1P2L; X-ray; A=1-164.
+DR   PDB; 1P2R; X-ray; A=1-164.
+DR   PDB; 1P36; X-ray; A=1-164.
+DR   PDB; 1P37; X-ray; A=1-164.
+DR   PDB; 1P3N; X-ray; A=1-164.
+DR   PDB; 1P46; X-ray; A=1-164.
+DR   PDB; 1P5C; X-ray; A/B/C/D=13-163.
+DR   PDB; 1P64; X-ray; A=1-164.
+DR   PDB; 1P6Y; X-ray; A=1-164.
+DR   PDB; 1P7S; X-ray; A=1-164.
+DR   PDB; 1PQD; X-ray; A=1-164.
+DR   PDB; 1PQI; X-ray; A=1-164.
+DR   PDB; 1PQJ; X-ray; A=1-164.
+DR   PDB; 1PQK; X-ray; A/B/C=1-164.
+DR   PDB; 1PQM; X-ray; A=1-164.
+DR   PDB; 1PQO; X-ray; A=1-164.
+DR   PDB; 1QS5; X-ray; A=1-162.
+DR   PDB; 1QS9; X-ray; A=1-162.
+DR   PDB; 1QSB; X-ray; A=1-162.
+DR   PDB; 1QSQ; X-ray; A=1-164.
+DR   PDB; 1QT3; X-ray; A=1-164.
+DR   PDB; 1QT4; X-ray; A=1-164.
+DR   PDB; 1QT5; X-ray; A=1-164.
+DR   PDB; 1QT6; X-ray; A=1-164.
+DR   PDB; 1QT7; X-ray; A=1-164.
+DR   PDB; 1QT8; X-ray; A=1-164.
+DR   PDB; 1QTB; X-ray; A=1-162.
+DR   PDB; 1QTC; X-ray; A=1-162.
+DR   PDB; 1QTD; X-ray; A=1-162.
+DR   PDB; 1QTH; X-ray; A/B=1-164.
+DR   PDB; 1QTV; X-ray; A=1-164.
+DR   PDB; 1QTZ; X-ray; A=1-164.
+DR   PDB; 1QUD; X-ray; A=1-162.
+DR   PDB; 1QUG; X-ray; A=1-162.
+DR   PDB; 1QUH; X-ray; A=1-162.
+DR   PDB; 1QUO; X-ray; A=1-162.
+DR   PDB; 1SSW; X-ray; A=1-164.
+DR   PDB; 1SSY; X-ray; A/B=1-164.
+DR   PDB; 1SWY; X-ray; A=1-164.
+DR   PDB; 1SWZ; X-ray; A=1-164.
+DR   PDB; 1SX2; X-ray; A=1-164.
+DR   PDB; 1SX7; X-ray; A=1-164.
+DR   PDB; 1T6H; X-ray; A=1-164.
+DR   PDB; 1T8A; X-ray; A=1-164.
+DR   PDB; 1T8F; X-ray; A=1-164.
+DR   PDB; 1T8G; X-ray; A=1-164.
+DR   PDB; 1T97; X-ray; A/B=1-164.
+DR   PDB; 1TLA; X-ray; @=1-164.
+DR   PDB; 200L; X-ray; @=1-164.
+DR   PDB; 201L; X-ray; A/B=1-164.
+DR   PDB; 205L; X-ray; @=1-164.
+DR   PDB; 216L; X-ray; A/B=1-164.
+DR   PDB; 217L; X-ray; @=1-164.
+DR   PDB; 221L; X-ray; @=1-164.
+DR   PDB; 224L; X-ray; @=1-164.
+DR   PDB; 255L; X-ray; @=1-164.
+DR   PDB; 2L78; X-ray; @=1-164.
+DR   PDB; 2LZM; X-ray; @=1-164.
+DR   PDB; 3LZM; X-ray; @=1-164.
+DR   PDB; 4LZM; X-ray; @=1-164.
+DR   PDB; 5LZM; X-ray; @=1-164.
+DR   PDB; 6LZM; X-ray; @=1-164.
+DR   PDB; 7LZM; X-ray; @=1-164.
+DR   InterPro; IPR002196; Glyco_hydro_24.
+DR   InterPro; IPR001165; Glyco_hydro_30T4.
+DR   Pfam; PF00959; Phage_lysozyme; 1.
+DR   PRINTS; PR00684; T4LYSOZYME.
+KW   3D-structure; Bacteriolytic enzyme; Direct protein sequencing;
+KW   Glycosidase; Hydrolase.
+FT   ACT_SITE     11     11       Proton donor.
+FT   ACT_SITE     20     20       Nucleophile.
+FT   CONFLICT     12     12       G -> R (in Ref. 3 and 4).
+FT   CONFLICT    137    137       R -> I (in Ref. 3 and 4).
+FT   HELIX         3     11
+FT   STRAND       14     19
+FT   TURN         21     22
+FT   STRAND       25     28
+FT   TURN         29     30
+FT   STRAND       31     34
+FT   HELIX        39     50
+FT   TURN         51     51
+FT   TURN         55     56
+FT   STRAND       57     57
+FT   HELIX        60     80
+FT   TURN         82     83
+FT   HELIX        84     90
+FT   HELIX        93    112
+FT   TURN        113    113
+FT   HELIX       115    122
+FT   TURN        123    124
+FT   HELIX       126    134
+FT   HELIX       137    141
+FT   HELIX       143    155
+FT   HELIX       159    161
+SQ   SEQUENCE   164 AA;  18635 MW;  6042E2F77B6308A0 CRC64;
+     MNIFEMLRID EGLRLKIYKD TEGYYTIGIG HLLTKSPSLN AAKSELDKAI GRNCNGVITK
+     DEAEKLFNQD VDAAVRGILR NAKLKPVYDS LDAVRRCALI NMVFQMGETG VAGFTNSLRM
+     LQQKRWDEAA VNLAKSRWYN QTPNRAKRVI TTFRTGTWDA YKNL
+//
+ID   CDN2A_HUMAN    STANDARD;      PRT;   156 AA.
+AC   P42771; Q15191;
+DT   01-NOV-1995 (Rel. 32, Created)
+DT   15-JUL-1998 (Rel. 36, Last sequence update)
+DT   10-MAY-2005 (Rel. 47, Last annotation update)
+DE   Cyclin-dependent kinase 4 inhibitor A (CDK4I) (p16-INK4) (p16-INK4a)
+DE   (Multiple tumor suppressor 1) (MTS1).
+GN   Name=CDKN2A; Synonyms=CDKN2;
+OS   Homo sapiens (Human).
+OC   Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+OC   Mammalia; Eutheria; Euarchontoglires; Primates; Catarrhini; Hominidae;
+OC   Homo.
+OX   NCBI_TaxID=9606;
+RN   [1]
+RP   NUCLEOTIDE SEQUENCE.
+RX   MEDLINE=94081956; PubMed=8259215; DOI=10.1038/366704a0;
+RA   Serrano M., Hannon G.J., Beach D.;
+RT   "A new regulatory motif in cell-cycle control causing specific
+RT   inhibition of cyclin D/CDK4.";
+RL   Nature 366:704-707(1993).
+RN   [2]
+RP   NUCLEOTIDE SEQUENCE.
+RA   Kohno T., Inoue K., Kitagawa Y., Hayashi Y., Matsuo Y., Mizoguchi H.,
+RA   Yokota J.;
+RT   "Prevalent involvement of illegitimate V(D)J recombination in
+RT   chromosome 9p21 deletions in lymphoid Leukemia.";
+RL   Submitted (APR-2001) to the EMBL/GenBank/DDBJ databases.
+RN   [3]
+RP   NUCLEOTIDE SEQUENCE [GENOMIC DNA].
+RA   Rieder M.J., Livingston R.J., Daniels M.R., Montoya M.A., Chung M.-W.,
+RA   Miyamoto K.E., Nguyen C.P., Nguyen D.A., Poel C.L., Robertson P.D.,
+RA   Schackwitz W.S., Sherwood J.K., Witrak L.A., Nickerson D.A.;
+RT   "NIEHS-SNPs, environmental genome project, NIEHS ES15478, Department
+RT   of Genome Sciences, Seattle, WA (URL: http://egp.gs.washington.edu).";
+RL   Submitted (JUL-2002) to the EMBL/GenBank/DDBJ databases.
+RN   [4]
+RP   NUCLEOTIDE SEQUENCE OF 51-152.
+RX   MEDLINE=94204645; PubMed=8153634;
+RA   Kamb A., Gruis N.A., Weaver-Feldhaus J., Liu Q., Harshman K.,
+RA   Tavtigian S.V., Stockert E., Day R.S. III, Johnson B.E.,
+RA   Skolnick M.H.;
+RT   "A cell cycle regulator potentially involved in genesis of many tumor
+RT   types.";
+RL   Science 264:436-440(1994).
+RN   [5]
+RP   NUCLEOTIDE SEQUENCE OF 1-20.
+RX   MEDLINE=96182088; PubMed=8622687;
+RA   Hara E., Smith R., Parry D., Tahara H., Stone S., Peters G.;
+RT   "Regulation of p16CDKN2 expression and its implications for cell
+RT   immortalization and senescence.";
+RL   Mol. Cell. Biol. 16:859-867(1996).
+RN   [6]
+RP   FUNCTION.
+RX   PubMed=7972006;
+RA   Okamoto A., Demetrick D.J., Spillare E.A., Hagiwara K., Hussain S.P.,
+RA   Bennett W.P., Forrester K., Gerwin B., Serrano M., Beach D.H.,
+RA   Harris C.C.;
+RT   "Mutations and altered expression of p16INK4 in human cancer.";
+RL   Proc. Natl. Acad. Sci. U.S.A. 91:11045-11049(1994).
+RN   [7]
+RP   X-RAY CRYSTALLOGRAPHY (2.8 ANGSTROMS) OF COMPLEX WITH CDK6.
+RX   MEDLINE=98421670; PubMed=9751050; DOI=10.1038/26155;
+RA   Russo A.A., Tong L., Lee J.O., Jeffrey P.D., Pavletich N.P.;
+RT   "Structural basis for inhibition of the cyclin-dependent kinase Cdk6
+RT   by the tumour suppressor p16INK4a.";
+RL   Nature 395:237-243(1998).
+RN   [8]
+RP   STRUCTURE BY NMR.
+RX   MEDLINE=20026852; PubMed=10559205; DOI=10.1074/jbc.274.47.33296;
+RA   Yuan C., Li J., Selby T.L., Byeon I.J., Tsai M.D.;
+RT   "Tumor suppressor INK4: comparisons of conformational properties
+RT   between p16(INK4A) and p18(INK4C).";
+RL   J. Mol. Biol. 294:201-211(1999).
+RN   [9]
+RP   REVIEW ON MELANOMA VARIANTS.
+RX   MEDLINE=96377761; PubMed=8783570;
+RA   Dracopoli N.C., Fountain J.W.;
+RT   "CDKN2 mutations in melanoma.";
+RL   Cancer Surv. 26:115-132(1996).
+RN   [10]
+RP   REVIEW ON VARIANTS.
+RX   MEDLINE=96303699; PubMed=8723678;
+RX   DOI=10.1002/(SICI)1098-1004(1996)7:4<294::AID-HUMU2>3.3.CO;2-I;
+RA   Smith-Soerensen B., Hovig E.;
+RT   "CDKN2A (p16INK4A) somatic and germline mutations.";
+RL   Hum. Mutat. 7:294-303(1996).
+RN   [11]
+RP   VARIANTS NON-SMALL CELL LUNG CARCINOMA TYR-66; HIS-84; ALA-93; ALA-95;
+RP   GLN-99; LEU-114; ALA-120; LYS-120; PRO-132; VAL-134; TYR-142 AND
+RP   VAL-150.
+RX   MEDLINE=94338359; PubMed=8060323;
+RA   Hayashi N., Sugimoto Y., Tsuchiya E., Ogawa M., Nakamura Y.;
+RT   "Somatic mutations of the MTS (multiple tumor suppressor) 1/CDK4l
+RT   (cyclin-dependent kinase-4 inhibitor) gene in human primary non-small
+RT   cell lung carcinomas.";
+RL   Biochem. Biophys. Res. Commun. 202:1426-1430(1994).
+RN   [12]
+CC   -!- FUNCTION: Interacts strongly with CDK4 and CDK6. Inhibits their
+CC       ability to interact with cyclins D. Could act as a negative
+CC       regulator of the proliferation of normal cells.
+CC   -!- SUBUNIT: Heterodimer with CDK4 or CDK6.
+CC   -!- INTERACTION:
+CC       O75419:CDC45L; NbExp=1; IntAct=EBI-375053, EBI-374969;
+CC       Q99741:CDC6; NbExp=1; IntAct=EBI-375053, EBI-374862;
+CC       O00311:CDC7; NbExp=1; IntAct=EBI-375053, EBI-374980;
+CC       P11802:CDK4; NbExp=1; IntAct=EBI-375053, EBI-295644;
+CC       Q00534:CDK6; NbExp=1; IntAct=EBI-375053, EBI-295663;
+CC       O75496:GMNN; NbExp=1; IntAct=EBI-375053, EBI-371669;
+CC       Q7L590:MCM10; NbExp=1; IntAct=EBI-375053, EBI-374912;
+CC       P49736:MCM2; NbExp=1; IntAct=EBI-375053, EBI-374819;
+CC       P33992:MCM5; NbExp=1; IntAct=EBI-375053, EBI-359410;
+CC       O43929:ORC4L; NbExp=1; IntAct=EBI-375053, EBI-374889;
+CC       O43913:ORC5L; NbExp=1; IntAct=EBI-375053, EBI-374928;
+CC   -!- DISEASE: Defects in CDKN2A are involved in tumor formation in a
+CC       wide range of tissues.
+CC   -!- DISEASE: Defects in CDKN2A are the cause of cutaneous malignant
+CC       melanoma 2 (CMM2) [MIM:155601]. Inheritance is autosomal dominant.
+CC       Malignant melanoma is a malignant neoplasm of melanocytes, arising
+CC       de novo or from a preexisting benign nevus, which occurs most
+CC       often in the skin but also may involve other sites.
+CC   -!- DISEASE: Defects in CDKN2A are the cause of familial atypical
+CC       multiple mole melanoma-pancreatic carcinoma syndrome (FAMMMPC)
+CC       [MIM:606719].
+CC   -!- DISEASE: Defects in CDKN2A are a cause of Li-Fraumeni syndrome
+CC       (LFS) [MIM:151623]. LFS is a highly penetrant familial cancer
+CC       phenotype usually associated with inherited mutations in TP53.
+CC   -!- SIMILARITY: Belongs to the CDKN2 cyclin-dependent kinase inhibitor
+CC       family.
+CC   -!- SIMILARITY: Contains 4 ANK repeats.
+CC   --------------------------------------------------------------------------
+CC   This Swiss-Prot entry is copyright. It is produced through a collaboration
+CC   between  the Swiss Institute of Bioinformatics  and the  EMBL outstation -
+CC   the European Bioinformatics Institute.  There are no  restrictions on  its
+CC   use as long as its content is in no way modified and this statement is not
+CC   removed.
+CC   --------------------------------------------------------------------------
+DR   EMBL; L27211; AAA92554.1; -; mRNA.
+DR   EMBL; AB060808; BAB91133.1; -; Genomic_DNA.
+DR   EMBL; AF527803; AAR05391.1; -; Genomic_DNA.
+DR   EMBL; U12820; AAB60645.1; ALT_INIT; Genomic_DNA.
+DR   EMBL; U12818; AAB60645.1; JOINED; Genomic_DNA.
+DR   EMBL; U12819; AAB60645.1; JOINED; Genomic_DNA.
+DR   EMBL; S69804; AAD14048.1; -; Genomic_DNA.
+DR   EMBL; X94154; CAA63870.1; -; Genomic_DNA.
+DR   PIR; JE0141; JE0141.
+DR   PDB; 1A5E; NMR; @=1-156.
+DR   PDB; 1BI7; X-ray; B=1-156.
+DR   PDB; 1DC2; NMR; A=1-156.
+DR   PDB; 2A5E; NMR; @=1-156.
+DR   IntAct; P42771; -.
+DR   Ensembl; ENSG00000147889; Homo sapiens.
+DR   Genew; HGNC:1787; CDKN2A.
+DR   MIM; 600160; -.
+DR   MIM; 155601; -.
+DR   MIM; 606719; -.
+DR   MIM; 151623; -.
+DR   GO; GO:0004861; F:cyclin-dependent protein kinase inhibitor a...; TAS.
+DR   GO; GO:0007050; P:cell cycle arrest; TAS.
+DR   GO; GO:0000075; P:cell cycle checkpoint; TAS.
+DR   GO; GO:0008285; P:negative regulation of cell proliferation; TAS.
+DR   GO; GO:0000079; P:regulation of cyclin dependent protein kina...; TAS.
+DR   InterPro; IPR002110; ANK.
+DR   Pfam; PF00023; Ank; 3.
+DR   PROSITE; PS50297; ANK_REP_REGION; 1.
+DR   PROSITE; PS50088; ANK_REPEAT; FALSE_NEG.
+KW   3D-structure; ANK repeat; Anti-oncogene; Cell cycle; Disease mutation;
+KW   Li-Fraumeni syndrome; Polymorphism; Repeat.
+FT   REPEAT       11     40       ANK 1.
+FT   REPEAT       44     72       ANK 2.
+FT   REPEAT       77    106       ANK 3.
+FT   REPEAT      110    139       ANK 4.
+FT   VARIANT      14     14       D -> E (in a biliary tract tumor).
+FT                                /FTId=VAR_001408.
+FT   VARIANT      16     16       L -> P (in a biliary tract tumor and a
+FT                                familial melanoma).
+FT                                /FTId=VAR_001409.
+FT   VARIANT      20     20       A -> P (in a lung tumor and melanoma).
+FT                                /FTId=VAR_001410.
+FT   VARIANT      20     20       A -> S (in a biliary tract tumor).
+FT                                /FTId=VAR_001411.
+FT   VARIANT      23     23       G -> D (in a pancreas tumor).
+FT                                /FTId=VAR_001412.
+FT   VARIANT      24     24       R -> C (in melanoma).
+FT                                /FTId=VAR_001413.
+FT   VARIANT      24     24       R -> P (in CMM2 and melanoma).
+FT                                /FTId=VAR_001414.
+FT   VARIANT      26     26       E -> D (in a biliary tract tumor).
+FT                                /FTId=VAR_001415.
+FT   VARIANT      32     32       L -> P (in CMM2).
+FT                                /FTId=VAR_001416.
+FT   VARIANT      33     33       E -> D (in a biliary tract tumor).
+FT                                /FTId=VAR_001417.
+FT   VARIANT      35     35       G -> A (in CMM2 and a biliary tract
+FT                                tumor).
+FT                                /FTId=VAR_001418.
+FT   VARIANT      35     35       G -> E (in melanoma).
+FT                                /FTId=VAR_001419.
+FT   VARIANT      48     48       P -> L (in melanoma and a head and neck
+FT                                tumor; somatic mutation).
+FT                                /FTId=VAR_001420.
+FT   VARIANT      49     49       I -> S (in a biliary tract tumor).
+FT                                /FTId=VAR_001421.
+FT   VARIANT      49     49       I -> T.
+FT                                /FTId=VAR_001422.
+FT   VARIANT      50     50       Q -> R (in CMM2).
+FT                                /FTId=VAR_001423.
+FT   VARIANT      53     53       M -> I (in CMM2).
+FT                                /FTId=VAR_001424.
+FT   VARIANT      56     56       S -> I (possible polymorphism).
+FT                                /FTId=VAR_001425.
+FT   VARIANT      57     57       A -> V (in pancreas carcinoma; somatic
+FT                                mutation).
+FT                                /FTId=VAR_001426.
+FT   VARIANT      59     59       V -> G (in CMM2).
+FT                                /FTId=VAR_001427.
+FT   VARIANT      60     60       A -> T.
+FT                                /FTId=VAR_001428.
+FT   VARIANT      61     62       EL -> DV.
+FT                                /FTId=VAR_001429.
+FT   VARIANT      62     62       L -> P (in familial melanoma).
+FT                                /FTId=VAR_001430.
+FT   VARIANT      66     66       H -> Y (in non-small cell lung
+FT                                carcinoma).
+FT                                /FTId=VAR_001431.
+FT   VARIANT      68     68       A -> L (in familial melanoma; requires 2
+FT                                nucleotide substitutions).
+FT                                /FTId=VAR_001432.
+FT   VARIANT      68     68       A -> T (in an esophagus tumor).
+FT                                /FTId=VAR_001433.
+FT   VARIANT      68     68       A -> V.
+FT                                /FTId=VAR_001434.
+FT   VARIANT      69     69       E -> K (in a bladder tumor).
+FT                                /FTId=VAR_001435.
+FT   VARIANT      69     69       E -> V (in a lung tumor).
+FT                                /FTId=VAR_001436.
+FT   VARIANT      71     71       N -> K (in familial melanoma).
+FT                                /FTId=VAR_001437.
+FT   VARIANT      71     71       N -> S.
+FT                                /FTId=VAR_001438.
+FT   VARIANT      72     72       C -> G (in an esophagus tumor).
+FT                                /FTId=VAR_001439.
+FT   VARIANT      74     74       D -> N (in a bladder tumor).
+FT                                /FTId=VAR_001440.
+FT   VARIANT      74     74       D -> V (in a biliary tract tumor).
+FT                                /FTId=VAR_001441.
+FT   VARIANT      80     80       R -> L (in a head and neck tumor).
+FT                                /FTId=VAR_001442.
+FT   VARIANT      81     81       P -> L (in melanoma; impairs the
+FT                                function; dbSNP:11552823).
+FT                                /FTId=VAR_001443.
+FT   VARIANT      83     83       H -> N (in a lung tumor).
+FT                                /FTId=VAR_001445.
+FT   VARIANT      83     83       H -> Y (in a pancreas and a head and neck
+FT                                tumor).
+FT                                /FTId=VAR_001444.
+FT   VARIANT      84     84       D -> E (in a bladder tumor).
+FT                                /FTId=VAR_001446.
+FT   VARIANT      84     84       D -> H (in non-small cell lung
+FT                                carcinoma).
+FT                                /FTId=VAR_001447.
+FT   VARIANT      84     84       D -> N (in an esophagus, a head and neck
+FT                                and a lung tumor).
+FT                                /FTId=VAR_001448.
+FT   VARIANT      84     84       D -> Y (in CMM2; also found in a lung and
+FT                                a prostate tumor; dbSNP:11552822).
+FT                                /FTId=VAR_001449.
+FT   VARIANT      85     85       A -> T.
+FT                                /FTId=VAR_001450.
+FT   VARIANT      87     87       R -> P (in CMM2; impairs the function).
+FT                                /FTId=VAR_001451.
+FT   VARIANT      87     87       R -> W (in CMM2).
+FT                                /FTId=VAR_012317.
+FT   VARIANT      88     88       E -> D (in a biliary tract tumor).
+FT                                /FTId=VAR_001452.
+FT   VARIANT      89     89       G -> D (in melanoma; somatic mutation).
+FT                                /FTId=VAR_001453.
+FT   VARIANT      89     89       G -> S (in melanoma).
+FT                                /FTId=VAR_001454.
+FT   VARIANT      93     93       T -> A (in non-small cell lung
+FT                                carcinoma).
+FT                                /FTId=VAR_001455.
+FT   VARIANT      95     95       V -> A (in non-small cell lung
+FT                                carcinoma).
+FT                                /FTId=VAR_001456.
+FT   VARIANT      97     97       L -> R (possible polymorphism).
+FT                                /FTId=VAR_001457.
+FT   VARIANT      98     98       H -> P (in melanoma).
+FT                                /FTId=VAR_001458.
+FT   VARIANT      98     98       H -> Q (in melanoma).
+FT                                /FTId=VAR_001459.
+FT   VARIANT      99     99       R -> P (in familial melanoma).
+FT                                /FTId=VAR_001460.
+FT   VARIANT      99     99       R -> Q (in non-small cell lung
+FT                                carcinoma).
+FT                                /FTId=VAR_001461.
+FT   VARIANT     100    100       A -> L (in melanoma; requires 2
+FT                                nucleotide substitutions).
+FT                                /FTId=VAR_001462.
+FT   VARIANT     100    100       A -> P.
+FT                                /FTId=VAR_001463.
+FT   VARIANT     101    101       G -> W (in CMM2 and FAMMMPC; impairs the
+FT                                function).
+FT                                /FTId=VAR_001464.
+FT   VARIANT     102    102       A -> E (in LFS; somatic mutation).
+FT                                /FTId=VAR_015818.
+FT   VARIANT     104    105       Missing.
+FT                                /FTId=VAR_001465.
+FT   VARIANT     107    107       R -> C (in CMM2).
+FT                                /FTId=VAR_001466.
+FT   VARIANT     107    107       R -> H.
+FT                                /FTId=VAR_001467.
+FT   VARIANT     108    108       D -> H (in a bladder tumor).
+FT                                /FTId=VAR_001469.
+FT   VARIANT     108    108       D -> Y (in a head and neck tumor).
+FT                                /FTId=VAR_001468.
+FT   VARIANT     114    114       P -> L (in non-small cell lung
+FT                                carcinoma).
+FT                                /FTId=VAR_001470.
+FT   VARIANT     117    117       L -> M (in melanoma; somatic mutation).
+FT                                /FTId=VAR_001471.
+FT   VARIANT     118    118       A -> T (in CMM2).
+FT                                /FTId=VAR_001472.
+FT   VARIANT     119    119       E -> Q (in a biliary tract tumor).
+FT                                /FTId=VAR_001473.
+FT   VARIANT     120    120       E -> A (in non-small cell lung
+FT                                carcinoma).
+FT                                /FTId=VAR_001474.
+FT   VARIANT     120    120       E -> K (in non-small cell lung
+FT                                carcinoma).
+FT                                /FTId=VAR_001475.
+FT   VARIANT     122    122       G -> S (in a biliary tract tumor).
+FT                                /FTId=VAR_001476.
+FT   VARIANT     123    123       H -> Q (in leukemia; dbSNP:6413463).
+FT                                /FTId=VAR_001477.
+FT   VARIANT     124    124       R -> H (in an esophagus tumor).
+FT                                /FTId=VAR_001478.
+FT   VARIANT     126    126       V -> D (in CMM2; impairs the function).
+FT                                /FTId=VAR_001479.
+FT   VARIANT     127    127       A -> S (in squamous cell carcinoma;
+FT                                dbSNP:6413464).
+FT                                /FTId=VAR_001480.
+FT   VARIANT     132    132       A -> P (in non-small cell lung
+FT                                carcinoma).
+FT                                /FTId=VAR_001481.
+FT   VARIANT     134    134       A -> V (in non-small cell lung
+FT                                carcinoma).
+FT                                /FTId=VAR_001482.
+FT   VARIANT     142    142       H -> Y (in non-small cell lung
+FT                                carcinoma).
+FT                                /FTId=VAR_001483.
+FT   VARIANT     144    144       R -> C (in squamous cell carcinoma).
+FT                                /FTId=VAR_001484.
+FT   VARIANT     148    148       A -> T (in dbSNP:3731249).
+FT                                /FTId=VAR_001486.
+FT   VARIANT     150    150       G -> V (in non-small cell lung
+FT                                carcinoma).
+FT                                /FTId=VAR_001487.
+FT   TURN         13     14
+FT   HELIX        15     22
+FT   TURN         23     23
+FT   HELIX        25     32
+FT   TURN         33     35
+FT   TURN         38     39
+FT   TURN         48     50
+FT   TURN         54     55
+FT   HELIX        57     64
+FT   TURN         65     67
+FT   TURN         75     77
+FT   HELIX        81     88
+FT   TURN         89     89
+FT   HELIX        91    100
+FT   TURN        101    101
+FT   TURN        109    110
+FT   HELIX       114    121
+FT   TURN        122    122
+FT   HELIX       124    130
+SQ   SEQUENCE   156 AA;  16533 MW;  E59C0E6174B48255 CRC64;
+     MEPAAGSSME PSADWLATAA ARGRVEEVRA LLEAGALPNA PNSYGRRPIQ VMMMGSARVA
+     ELLLLHGAEP NCADPATLTR PVHDAAREGF LDTLVVLHRA GARLDVRDAW GRLPVDLAEE
+     LGHRDVARYL RAAAGGTRGS NHARIDAAEG PSDIPD
+//
+ID   ITHA_HIRME     STANDARD;      PRT;    65 AA.
+AC   P28501;
+DT   01-DEC-1992 (Rel. 24, Created)
+DT   01-DEC-1992 (Rel. 24, Last sequence update)
+DT   10-MAY-2005 (Rel. 47, Last annotation update)
+DE   Hirudin I (Fragments).
+OS   Hirudo medicinalis (Medicinal leech).
+OC   Eukaryota; Metazoa; Annelida; Clitellata; Hirudinida; Hirudinea;
+OC   Arhynchobdellida; Hirudiniformes; Hirudinidae; Hirudo.
+OX   NCBI_TaxID=6421;
+RN   [1]
+RP   PROTEIN SEQUENCE.
+RX   MEDLINE=90005945; PubMed=2792365; DOI=10.1016/0014-5793(89)81070-1;
+RA   Scharf M., Engels J., Tripier D.;
+RT   "Primary structures of new 'iso-hirudins'.";
+RL   FEBS Lett. 255:105-110(1989).
+CC   -!- FUNCTION: Hirudin is a potent thrombin-specific protease
+CC       inhibitor. It forms a stable non-covalent complex with alpha-
+CC       thrombin, thereby abolishing its ability to cleave fibrinogen.
+CC   -!- SUBCELLULAR LOCATION: Secreted.
+CC   -!- SIMILARITY: Belongs to the hirudin family.
+CC   --------------------------------------------------------------------------
+CC   This Swiss-Prot entry is copyright. It is produced through a collaboration
+CC   between  the Swiss Institute of Bioinformatics  and the  EMBL outstation -
+CC   the European Bioinformatics Institute.  There are no  restrictions on  its
+CC   use as long as its content is in no way modified and this statement is not
+CC   removed.
+CC   --------------------------------------------------------------------------
+DR   PIR; S05672; S05672.
+DR   PDB; 1A2C; X-ray; I=54-62.
+DR   PDB; 1A46; X-ray; I=54-62.
+DR   PDB; 1AE8; X-ray; I=55-62.
+DR   PDB; 1AFE; X-ray; I=55-62.
+DR   PDB; 1AI8; X-ray; I=55-62.
+DR   PDB; 1AWF; X-ray; I=55-62.
+DR   PDB; 1D3D; X-ray; H=54-64.
+DR   PDB; 1D3P; X-ray; H=54-64.
+DR   PDB; 1D3Q; X-ray; H=54-64.
+DR   PDB; 1D3T; X-ray; H=54-64.
+DR   PDB; 1D4P; X-ray; H=54-64.
+DR   PDB; 1QHR; X-ray; I=55-62.
+DR   PDB; 1QJ1; X-ray; I=55-62.
+DR   PDB; 1QJ6; X-ray; I=55-62.
+DR   PDB; 1QJ7; X-ray; I=55-62.
+DR   PDB; 1UMA; X-ray; I=55-64.
+DR   PDB; 1WBG; X-ray; I=-.
+DR   SMR; P28501; 1-65.
+DR   InterPro; IPR011061; Antihaemostatic.
+DR   InterPro; IPR000429; Prot_inh_hirudin.
+DR   PIRSF; PIRSF001640; Hirudin; 1.
+DR   PRINTS; PR00777; HIRUDIN.
+DR   ProDom; PD004216; Prot_inh_hirudin; 1.
+KW   3D-structure; Direct protein sequencing; Multigene family;
+KW   Protease inhibitor; Serine protease inhibitor; Sulfation.
+FT   MOD_RES      63     63       Sulfotyrosine.
+FT   DISULFID      6     14       By similarity.
+FT   DISULFID     16     28       By similarity.
+FT   DISULFID     22     39       By similarity.
+SQ   SEQUENCE   65 AA;  7138 MW;  B79C5A9D11677AD5 CRC64;
+     VVYTDCTESG QNLCLCEXXX XXXXXXXCIL GSDGEKNQCV TGEGTPKPQS HNDGDFEEIP
+     EEYLQ
+//
+ID   THRB_HUMAN     STANDARD;      PRT;   622 AA.
+AC   P00734;
+DT   21-JUL-1986 (Rel. 01, Created)
+DT   01-JAN-1990 (Rel. 13, Last sequence update)
+DT   10-MAY-2005 (Rel. 47, Last annotation update)
+DE   Prothrombin precursor (EC 3.4.21.5) (Coagulation factor II).
+GN   Name=F2;
+OS   Homo sapiens (Human).
+OC   Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+OC   Mammalia; Eutheria; Euarchontoglires; Primates; Catarrhini; Hominidae;
+OC   Homo.
+OX   NCBI_TaxID=9606;
+RN   [1]
+RP   NUCLEOTIDE SEQUENCE.
+RX   MEDLINE=88077877; PubMed=2825773;
+RA   Degen S.J.F., Davie E.W.;
+RT   "Nucleotide sequence of the gene for human prothrombin.";
+RL   Biochemistry 26:6165-6177(1987).
+RN   [2]
+RP   NUCLEOTIDE SEQUENCE [GENOMIC DNA], AND VARIANT MET-165.
+RA   Rieder M.J., Armel T.Z., Carrington D.P., Chung M.-W., Lee K.L.,
+RA   Ozuna M., Poel C.L., Toth E.J., Yi Q., Nickerson D.A.;
+RT   "SeattleSNPs. NHLBI HL66682 program for genomic applications, UW-
+RT   FHCRC, Seattle, WA (URL: http://pga.gs.washington.edu).";
+RL   Submitted (JAN-2002) to the EMBL/GenBank/DDBJ databases.
+RN   [3]
+RP   NUCLEOTIDE SEQUENCE OF 8-622.
+RX   MEDLINE=83231469; PubMed=6305407;
+RA   Degen S.J.F., McGillivray R.T.A., Davie E.W.;
+RT   "Characterization of the complementary deoxyribonucleic acid and gene
+RT   coding for human prothrombin.";
+RL   Biochemistry 22:2087-2097(1983).
+RN   [4]
+RP   PROTEIN SEQUENCE OF 44-314.
+RX   MEDLINE=77193964; PubMed=266717;
+RA   Walz D.A., Hewett-Emmett D., Seegers W.H.;
+RT   "Amino acid sequence of human prothrombin fragments 1 and 2.";
+RL   Proc. Natl. Acad. Sci. U.S.A. 74:1969-1972(1977).
+RN   [5]
+RP   PROTEIN SEQUENCE OF 315-622.
+RX   MEDLINE=77207112; PubMed=873923;
+RA   Butkowski R.J., Elion J., Downing M.R., Mann K.G.;
+RT   "Primary structure of human prethrombin 2 and alpha-thrombin.";
+RL   J. Biol. Chem. 252:4942-4957(1977).
+RN   [6]
+RP   PROCESSING.
+RX   MEDLINE=87008532; PubMed=3759958;
+RA   Rabiet M.J., Blashill A., Furie B., Furie B.C.;
+RT   "Prothrombin fragment 1 X 2 X 3, a major product of prothrombin
+RT   activation in human plasma.";
+RL   J. Biol. Chem. 261:13210-13215(1986).
+RN   [7]
+RP   X-RAY CRYSTALLOGRAPHY (1.9 ANGSTROMS).
+RX   MEDLINE=90059942; PubMed=2583108;
+RA   Bode W., Mayr I., Baumann U., Huber R., Stone S.R., Hofsteenge J.;
+RT   "The refined 1.9 A crystal structure of human alpha-thrombin:
+RT   interaction with D-Phe-Pro-Arg chloromethylketone and significance of
+RT   the Tyr-Pro-Pro-Trp insertion segment.";
+RL   EMBO J. 8:3467-3475(1989).
+RN   [8]
+RP   X-RAY CRYSTALLOGRAPHY (2.3 ANGSTROMS).
+RX   MEDLINE=90327074; PubMed=2374926;
+RA   Rydel T.J., Ravichandran K.G., Tulinsky A., Bode W., Huber R.,
+RA   Roitsch C., Fenton J.W. II;
+RT   "The structure of a complex of recombinant hirudin and human alpha-
+RT   thrombin.";
+RL   Science 249:277-280(1990).
+RN   [9]
+RP   X-RAY CRYSTALLOGRAPHY (2.5 ANGSTROMS).
+RX   MEDLINE=94350942; PubMed=8071320;
+RA   Rydel T.J., Yin M., Padmanabhan K.P., Blankenship D.T., Cardin A.D.,
+RA   Correa P.E., Fenton J.W. II, Tulinsky A.;
+RT   "Crystallographic structure of human gamma-thrombin.";
+RL   J. Biol. Chem. 269:22000-22006(1994).
+RN   [10]
+RP   X-RAY CRYSTALLOGRAPHY (2.3 ANGSTROMS).
+RX   MEDLINE=97357286; PubMed=9214615; DOI=10.1093/emboj/16.11.2977;
+RA   van de Locht A., Bode W., Huber R., le Bonniec B.F., Stone S.R.,
+RA   Esmon C.T., Stubbs M.T.;
+RT   "The thrombin E192Q-BPTI complex reveals gross structural
+RT   rearrangements: implications for the interaction with antithrombin and
+RT   thrombomodulin.";
+RL   EMBO J. 16:2977-2984(1997).
+RN   [11]
+RP   X-RAY CRYSTALLOGRAPHY (2.1 ANGSTROMS) OF 328-601.
+RX   MEDLINE=99162521; PubMed=10051558; DOI=10.1073/pnas.96.5.1852;
+RA   Guinto E.R., Caccia S., Rose T., Fuetterer K., Waksman G., di Cera E.;
+RT   "Unexpected crucial role of residue 225 in serine proteases.";
+RL   Proc. Natl. Acad. Sci. U.S.A. 96:1852-1857(1999).
+RN   [12]
+RP   VARIANT DYSPROTHROMBINEMIA CYS-314.
+RX   MEDLINE=87033739; PubMed=3771562;
+RA   Rabiet M.-J., Furie B.C., Furie B.;
+RT   "Molecular defect of prothrombin Barcelona. Substitution of cysteine
+RT   for arginine at residue 273.";
+RL   J. Biol. Chem. 261:15045-15048(1986).
+RN   [13]
+RP   VARIANT DYSPROTHROMBINEMIA ALA-509.
+RX   MEDLINE=95313001; PubMed=7792730;
+RA   Degen S.J.F., McDowell S.A., Sparks L.M., Scharrer I.;
+RT   "Prothrombin Frankfurt: a dysfunctional prothrombin characterized by
+RT   substitution of Glu-466 by Ala.";
+RL   Thromb. Haemost. 73:203-209(1995).
+RN   [14]
+RP   VARIANTS DYSPROTHROMBINEMIA THR-380 AND HIS-431.
+RX   MEDLINE=93043342; PubMed=1421398;
+RA   Morishita E., Saito M., Kumabashiri I., Asakura H., Matsuda T.,
+RA   Yamaguchi K.;
+RT   "Prothrombin Himi: a compound heterozygote for two dysfunctional
+RT   prothrombin molecules (Met-337-->Thr and Arg-388-->His).";
+RL   Blood 80:2275-2280(1992).
+RN   [15]
+RP   VARIANT DYSPROTHROMBINEMIA HIS-314.
+RX   MEDLINE=95169898; PubMed=7865694;
+RA   James H.L., Kim D.J., Zheng D.-Q., Girolami A.;
+RT   "Prothrombin Padua I: incomplete activation due to an amino acid
+RT   substitution at a factor Xa cleavage site.";
+RL   Blood Coagul. Fibrinolysis 5:841-844(1994).
+RN   [16]
+RP   VARIANT DYSPROTHROMBINEMIA CYS-425.
+RX   MEDLINE=89207504; PubMed=3242619;
+RA   Henriksen R.A., Mann K.G.;
+RT   "Identification of the primary structural defect in the dysthrombin
+RT   thrombin Quick I: substitution of cysteine for arginine-382.";
+RL   Biochemistry 27:9160-9165(1988).
+RN   [17]
+RP   VARIANT DYSPROTHROMBINEMIA VAL-601.
+RX   MEDLINE=89247398; PubMed=2719946;
+RA   Henriksen R.A., Mann K.G.;
+RT   "Substitution of valine for glycine-558 in the congenital dysthrombin
+RT   thrombin Quick II alters primary substrate specificity.";
+RL   Biochemistry 28:2078-2082(1989).
+RN   [18]
+RP   VARIANT DYSPROTHROMBINEMIA ALA-509.
+RX   MEDLINE=92378975; PubMed=1354985;
+RA   Miyata T., Aruga R., Umeyama H., Bezeaud A., Guillin M.-C.,
+RA   Iwanaga S.;
+RT   "Prothrombin Salakta: substitution of glutamic acid-466 by alanine
+RT   reduces the fibrinogen clotting activity and the esterase activity.";
+RL   Biochemistry 31:7457-7462(1992).
+RN   [19]
+RP   VARIANT DYSPROTHROMBINEMIA TRP-461.
+RX   MEDLINE=87185407; PubMed=3567158;
+RA   Miyata T., Morita T., Inomoto T., Kawauchi S., Shirakami A.,
+RA   Iwanaga S.;
+RT   "Prothrombin Tokushima, a replacement of arginine-418 by tryptophan
+RT   that impairs the fibrinogen clotting activity of derived thrombin
+RT   Tokushima.";
+RL   Biochemistry 26:1117-1122(1987).
+RN   [20]
+RP   VARIANT DYSPROTHROMBINEMIA TRP-461.
+RX   MEDLINE=87101511; PubMed=3801671;
+RA   Inomoto T., Shirakami A., Kawauchi S., Shigekiyo T., Saito S.,
+RA   Miyoshi K., Morita T., Iwanaga S.;
+RT   "Prothrombin Tokushima: characterization of dysfunctional thrombin
+RT   derived from a variant of human prothrombin.";
+RL   Blood 69:565-569(1987).
+RN   [21]
+RP   VARIANT DYSPROTHROMBINEMIA TRP-461.
+RX   MEDLINE=92256895; PubMed=1349838;
+RA   Iwahana H., Yoshimoto K., Shigekiyo T., Shirakami A., Saito S.,
+RA   Itakura M.;
+RT   "Detection of a single base substitution of the gene for prothrombin
+RT   Tokushima. The application of PCR-SSCP for the genetic and molecular
+RT   analysis of dysprothrombinemia.";
+RL   Int. J. Hematol. 55:93-100(1992).
+RN   [22]
+RP   VARIANT DYSPROTHROMBINEMIA LYS-200.
+RX   MEDLINE=83204687; PubMed=6405779;
+RA   Board P.G., Shaw D.C.;
+RT   "Determination of the amino acid substitution in human prothrombin
+RT   type 3 (157 Glu leads to Lys) and the localization of a third thrombin
+RT   cleavage site.";
+RL   Br. J. Haematol. 54:245-254(1983).
+RN   [23]
+RP   VARIANTS MET-165 AND THR-386.
+RX   MEDLINE=99318093; PubMed=10391209; DOI=10.1038/10290;
+RA   Cargill M., Altshuler D., Ireland J., Sklar P., Ardlie K., Patil N.,
+RA   Shaw N., Lane C.R., Lim E.P., Kalyanaraman N., Nemesh J., Ziaugra L.,
+RA   Friedland L., Rolfe A., Warrington J., Lipshutz R., Daley G.Q.,
+RA   Lander E.S.;
+RT   "Characterization of single-nucleotide polymorphisms in coding regions
+RT   of human genes.";
+RL   Nat. Genet. 22:231-238(1999).
+RN   [24]
+RP   ERRATUM.
+RA   Cargill M., Altshuler D., Ireland J., Sklar P., Ardlie K., Patil N.,
+RA   Shaw N., Lane C.R., Lim E.P., Kalyanaraman N., Nemesh J., Ziaugra L.,
+RA   Friedland L., Rolfe A., Warrington J., Lipshutz R., Daley G.Q.,
+RA   Lander E.S.;
+RL   Nat. Genet. 23:373-373(1999).
+CC   -!- FUNCTION: Thrombin, which cleaves bonds after Arg and Lys,
+CC       converts fibrinogen to fibrin and activates factors V, VII, VIII,
+CC       XIII, and, in complex with thrombomodulin, protein C.
+CC   -!- CATALYTIC ACTIVITY: Selective cleavage of Arg-|-Gly bonds in
+CC       fibrinogen to form fibrin and release fibrinopeptides A and B.
+CC   -!- SUBCELLULAR LOCATION: Extracellular.
+CC   -!- TISSUE SPECIFICITY: Expressed by the liver and secreted in plasma.
+CC   -!- PTM: The gamma-carboxyglutamyl residues, which bind calcium ions,
+CC       result from the carboxylation of glutamyl residues by a microsomal
+CC       enzyme, the vitamin K-dependent carboxylase. The modified residues
+CC       are necessary for the calcium-dependent interaction with a
+CC       negatively charged phospholipid surface, which is essential for
+CC       the conversion of prothrombin to thrombin.
+CC   -!- DISEASE: Defects in F2 are the cause of various forms of
+CC       dysprothrombinemia [MIM:176930].
+CC   -!- MISCELLANEOUS: Prothrombin is activated on the surface of a
+CC       phospholipid membrane that binds the amino end of prothrombin and
+CC       factors Va and Xa in Ca-dependent interactions; factor Xa removes
+CC       the activation peptide and cleaves the remaining part into light
+CC       and heavy chains. The activation process starts slowly because
+CC       factor V itself has to be activated by the initial, small amounts
+CC       of thrombin.
+CC   -!- MISCELLANEOUS: It is not known whether 1 or 2 smaller activation
+CC       peptides, with additional cleavage after Arg-314, are released in
+CC       natural blood clotting.
+CC   -!- MISCELLANEOUS: Thrombin can itself cleave the N-terminal fragment
+CC       (fragment 1) of the prothrombin, prior to its activation by factor
+CC       Xa.
+CC   -!- MISCELLANEOUS: The cleavage after Arg-198, observed in vitro, does
+CC       not occur in plasma.
+CC   -!- SIMILARITY: Belongs to the peptidase S1 family.
+CC   -!- SIMILARITY: Contains 1 Gla (gamma-carboxy-glutamate) domain.
+CC   -!- SIMILARITY: Contains 2 kringle domains.
+CC   -!- SIMILARITY: Contains 1 peptidase S1 domain.
+CC   --------------------------------------------------------------------------
+CC   This Swiss-Prot entry is copyright. It is produced through a collaboration
+CC   between  the Swiss Institute of Bioinformatics  and the  EMBL outstation -
+CC   the European Bioinformatics Institute.  There are no  restrictions on  its
+CC   use as long as its content is in no way modified and this statement is not
+CC   removed.
+CC   --------------------------------------------------------------------------
+DR   EMBL; M17262; AAC63054.1; -; Genomic_DNA.
+DR   EMBL; AF478696; AAL77436.1; -; Genomic_DNA.
+DR   EMBL; V00595; CAA23842.1; -; mRNA.
+DR   PIR; A29351; TBHU.
+DR   PDB; 1A2C; X-ray; H=364-622, L=328-363.
+DR   PDB; 1A3B; X-ray; H=364-622, L=328-363.
+DR   PDB; 1A3E; X-ray; H=364-622, L=328-363.
+DR   PDB; 1A46; X-ray; H=364-622, L=328-363.
+DR   PDB; 1A4W; X-ray; H=364-622, L=328-363.
+DR   PDB; 1A5G; X-ray; H=364-622, L=328-363.
+DR   PDB; 1A61; X-ray; H=364-622, L=328-363.
+DR   PDB; 1ABI; X-ray; H=364-622, L=328-363.
+DR   PDB; 1ABJ; X-ray; H=364-622, L=328-363.
+DR   PDB; 1AD8; X-ray; H=364-622, L=328-363.
+DR   PDB; 1AE8; X-ray; H=364-622, L=328-363.
+DR   PDB; 1AFE; X-ray; H=364-622, L=328-363.
+DR   PDB; 1AHT; X-ray; H=364-622, L=328-363.
+DR   PDB; 1AI8; X-ray; H=364-622, L=328-363.
+DR   PDB; 1AIX; X-ray; H=364-622, L=328-363.
+DR   PDB; 1AWF; X-ray; H=364-622, L=328-363.
+DR   PDB; 1AWH; X-ray; A/C=328-363, B/D=364-622.
+DR   PDB; 1AY6; X-ray; H=364-622, L=328-363.
+DR   PDB; 1B5G; X-ray; H=364-622, L=328-363.
+DR   PDB; 1B7X; X-ray; A=328-363, B=364-622.
+DR   PDB; 1BA8; X-ray; A=328-363, B=364-622.
+DR   PDB; 1BB0; X-ray; A=328-363, B=364-622.
+DR   PDB; 1BCU; X-ray; H=364-622, L=328-363.
+DR   PDB; 1BHX; X-ray; A=331-360, B=364-510, F=518-622.
+DR   PDB; 1BMM; X-ray; H=364-622, L=328-363.
+DR   PDB; 1BMN; X-ray; H=364-622, L=328-363.
+DR   PDB; 1BTH; X-ray; H/K=364-622, J/L=328-363.
+DR   PDB; 1C1U; X-ray; H=364-622, L=328-363.
+DR   PDB; 1C1V; X-ray; H=364-622, L=328-363.
+DR   PDB; 1C1W; X-ray; H=364-622, L=328-363.
+DR   PDB; 1C4U; X-ray; 1=328-363, 2=364-622.
+DR   PDB; 1C4V; X-ray; 1=328-363, 2=364-622.
+DR   PDB; 1C4Y; X-ray; 1=328-363, 2=364-622.
+DR   PDB; 1C5L; X-ray; H=364-622, L=328-363.
+DR   PDB; 1C5N; X-ray; H=364-622, L=328-363.
+DR   PDB; 1C5O; X-ray; H=364-622, L=328-363.
+DR   PDB; 1CA8; X-ray; A=328-363, B=364-622.
+DR   PDB; 1D3D; X-ray; A=333-360, B=364-620.
+DR   PDB; 1D3P; X-ray; A=328-363, B=364-622.
+DR   PDB; 1D3Q; X-ray; A=328-363, B=364-622.
+DR   PDB; 1D3T; X-ray; A=328-363, B=364-622.
+DR   PDB; 1D4P; X-ray; A=328-363, B=364-622.
+DR   PDB; 1D6W; X-ray; A=334-620.
+DR   PDB; 1D9I; X-ray; A=334-621.
+DR   PDB; 1DE7; X-ray; H/K=364-622, J/L=328-363.
+DR   PDB; 1DIT; X-ray; H=364-622, L=328-363.
+DR   PDB; 1DM4; X-ray; A=328-362, B=363-622.
+DR   PDB; 1DOJ; X-ray; A=328-622.
+DR   PDB; 1DWB; X-ray; H=364-622, L=328-363.
+DR   PDB; 1DWC; X-ray; H=364-622, L=328-363.
+DR   PDB; 1DWD; X-ray; H=364-622, L=328-363.
+DR   PDB; 1DWE; X-ray; H=364-622, L=328-363.
+DR   PDB; 1DX5; X-ray; A/B/C=328-363, D/M=-, N/O/P=364-622.
+DR   PDB; 1E0F; X-ray; A/B/C=328-363, D/E/F=364-622.
+DR   PDB; 1EB1; X-ray; H=364-620, L=337-360.
+DR   PDB; 1EOJ; X-ray; A=334-620.
+DR   PDB; 1EOL; X-ray; A=334-620.
+DR   PDB; 1FPC; X-ray; H=364-622, L=328-363.
+DR   PDB; 1FPH; X-ray; H=364-622, L=328-363.
+DR   PDB; 1G30; X-ray; A=328-363, B=364-622.
+DR   PDB; 1G32; X-ray; A=328-363, B=364-622.
+DR   PDB; 1G37; X-ray; A=334-620.
+DR   PDB; 1GHV; X-ray; H=364-620, L=328-363.
+DR   PDB; 1GHW; X-ray; H=364-620, L=328-363.
+DR   PDB; 1GHX; X-ray; H=364-620, L=328-363.
+DR   PDB; 1GHY; X-ray; H=364-620, L=328-363.
+DR   PDB; 1GJ4; X-ray; H=364-621, L=328-363.
+DR   PDB; 1GJ5; X-ray; H=364-621, L=328-363.
+DR   PDB; 1H8D; X-ray; H=364-621, L=333-360.
+DR   PDB; 1H8I; X-ray; H=364-622, L=334-360.
+DR   PDB; 1HAG; X-ray; E=328-622.
+DR   PDB; 1HAH; X-ray; H=364-622, L=328-363.
+DR   PDB; 1HAI; X-ray; H=364-622, L=328-363.
+DR   PDB; 1HAO; X-ray; H=364-622, L=328-363.
+DR   PDB; 1HAP; X-ray; H=364-622, L=328-363.
+DR   PDB; 1HBT; X-ray; H=364-622, L=328-363.
+DR   PDB; 1HDT; X-ray; H/L=-.
+DR   PDB; 1HGT; X-ray; H=364-622, L=328-363.
+DR   PDB; 1HLT; X-ray; H/K=364-622, J/L=334-360.
+DR   PDB; 1HUT; X-ray; H=364-622, L=328-363.
+DR   PDB; 1HXE; X-ray; H=364-622, L=328-363.
+DR   PDB; 1HXF; X-ray; H=364-622, L=328-363.
+DR   PDB; 1IHS; X-ray; H=364-622, L=328-363.
+DR   PDB; 1IHT; X-ray; H=364-622, L=328-363.
+DR   PDB; 1JMO; X-ray; H=363-622, L=-.
+DR   PDB; 1JOU; X-ray; A/C/E=315-363, B/D/F=364-622.
+DR   PDB; 1JWT; X-ray; A=328-622.
+DR   PDB; 1K21; X-ray; H=364-622, L=328-363.
+DR   PDB; 1K22; X-ray; H=364-622, L=328-363.
+DR   PDB; 1KTS; X-ray; A=328-363, B=364-622.
+DR   PDB; 1KTT; X-ray; A=328-363, B=364-622.
+DR   PDB; 1LHC; X-ray; H=364-622, L=328-363.
+DR   PDB; 1LHD; X-ray; H=364-622, L=328-363.
+DR   PDB; 1LHE; X-ray; H=364-622, L=328-363.
+DR   PDB; 1LHF; X-ray; H=364-622, L=328-363.
+DR   PDB; 1LHG; X-ray; H=364-622, L=328-363.
+DR   PDB; 1MH0; X-ray; A/B=334-620.
+DR   PDB; 1MU6; X-ray; A=328-363, B=364-622.
+DR   PDB; 1MU8; X-ray; A=328-363, B=364-622.
+DR   PDB; 1MUE; X-ray; A=328-363, B=364-622.
+DR   PDB; 1NM6; X-ray; A=335-621.
+DR   PDB; 1NO9; X-ray; H=364-622, L=-.
+DR   PDB; 1NRN; X-ray; H=364-622, L=328-363.
+DR   PDB; 1NRO; X-ray; H=364-622, L=328-363.
+DR   PDB; 1NRP; X-ray; H=364-622, L=328-363.
+DR   PDB; 1NRQ; X-ray; H=364-622, L=328-363.
+DR   PDB; 1NRR; X-ray; H=364-622, L=-.
+DR   PDB; 1NRS; X-ray; H=364-622, L=328-363.
+DR   PDB; 1NT1; X-ray; A=335-621.
+DR   PDB; 1NU7; X-ray; A/E=332-359, B/F=364-622.
+DR   PDB; 1NU9; X-ray; A/D=332-622.
+DR   PDB; 1NY2; X-ray; 1=328-363, 2=364-622.
+DR   PDB; 1NZQ; X-ray; H=364-622, L=328-363.
+DR   PDB; 1O0D; X-ray; H=364-622, L=328-363.
+DR   PDB; 1O2G; X-ray; H=364-622, L=328-363.
+DR   PDB; 1O5G; X-ray; H=364-622, L=-.
+DR   PDB; 1OOK; X-ray; A=328-363, B=364-622.
+DR   PDB; 1OYT; X-ray; H=364-622, L=-.
+DR   PDB; 1P8V; X-ray; B=333-361, C=364-622.
+DR   PDB; 1PPB; X-ray; H=364-622, L=328-363.
+DR   PDB; 1QBV; X-ray; H=364-622, L=328-363.
+DR   PDB; 1QHR; X-ray; A=328-363, B=364-622.
+DR   PDB; 1QJ1; X-ray; A=328-363, B=364-622.
+DR   PDB; 1QJ6; X-ray; A=328-363, B=364-622.
+DR   PDB; 1QJ7; X-ray; A=328-363, B=364-622.
+DR   PDB; 1QUR; X-ray; H=364-620, L=334-360.
+DR   PDB; 1QVH; X-ray; A/D=328-363, B/E=364-622.
+DR   PDB; 1RD3; X-ray; A/C=328-363, B/D=364-622.
+DR   PDB; 1RIW; X-ray; A=328-363, B=364-510, C=518-622.
+DR   PDB; 1SB1; X-ray; H=364-621, L=333-361.
+DR   PDB; 1SFQ; X-ray; A/D=328-363, B/E=364-622.
+DR   PDB; 1SG8; X-ray; A/D=328-363, B/E=364-622.
+DR   PDB; 1SGI; X-ray; A/D=328-363, B/E=364-622.
+DR   PDB; 1SHH; X-ray; A/D=328-363, B/E=364-622.
+DR   PDB; 1SL3; X-ray; A=335-621.
+DR   PDB; 1SR5; X-ray; B=328-363, C=364-622.
+DR   PDB; 1TA2; X-ray; A=335-621.
+DR   PDB; 1TA6; X-ray; A=335-621.
+DR   PDB; 1TB6; X-ray; H=364-622, L=315-363.
+DR   PDB; 1TBZ; X-ray; H=364-622, L=328-363.
+DR   PDB; 1THP; X-ray; A=328-363, B=364-622.
+DR   PDB; 1THR; X-ray; H=364-622, L=328-363.
+DR   PDB; 1THS; X-ray; H=364-622, L=328-363.
+DR   PDB; 1TMB; X-ray; H=364-622, L=328-363.
+DR   PDB; 1TMT; X-ray; H=364-622, L=328-363.
+DR   PDB; 1TMU; X-ray; H=364-622, L=333-360.
+DR   PDB; 1TOM; X-ray; H=364-622, L=328-363.
+DR   PDB; 1TQ0; X-ray; A/C=333-363, B/D=364-620.
+DR   PDB; 1TQ7; X-ray; A=320-363, B=364-620.
+DR   PDB; 1UMA; X-ray; H=364-622, L=328-363.
+DR   PDB; 1UVS; X-ray; H=364-622, L=328-363.
+DR   PDB; 1VR1; X-ray; H=364-620.
+DR   PDB; 1WAY; X-ray; A=328-363, B=364-622.
+DR   PDB; 1WBG; X-ray; A/B=-.
+DR   PDB; 1XMN; X-ray; A/C/E/G=328-363, B/D/F/H=364-622.
+DR   PDB; 2HGT; X-ray; H=364-622, L=328-363.
+DR   PDB; 2HNT; X-ray; C=364-433, E=437-517, F=518-622, L=328-363.
+DR   PDB; 2HPP; X-ray; H=364-622, L=328-363.
+DR   PDB; 2HPQ; X-ray; H=364-622, L=328-363, P=213-291.
+DR   PDB; 2THF; X-ray; A=328-363, B=364-622.
+DR   PDB; 3HAT; X-ray; H=364-622, L=-.
+DR   PDB; 3HTC; X-ray; H=364-622, L=328-363.
+DR   PDB; 4HTC; X-ray; H=364-622, L=328-363.
+DR   PDB; 4THN; X-ray; H=364-622.
+DR   PDB; 5GDS; X-ray; H=364-622, L=328-363.
+DR   PDB; 7KME; X-ray; H=364-622, L=328-363.
+DR   PDB; 8KME; X-ray; 1=328-363, 2=364-622.
+DR   SMR; P00734; 207-363.
+DR   IntAct; P00734; -.
+DR   MEROPS; S01.217; -.
+DR   GlycoSuiteDB; P00734; -.
+DR   SWISS-2DPAGE; P00734; HUMAN.
+DR   Ensembl; ENSG00000180210; Homo sapiens.
+DR   Genew; HGNC:3535; F2.
+DR   MIM; 176930; -.
+DR   GO; GO:0005615; C:extracellular space; TAS.
+DR   GO; GO:0005625; C:soluble fraction; TAS.
+DR   GO; GO:0005102; F:receptor binding; IPI.
+DR   GO; GO:0008236; F:serine-type peptidase activity; TAS.
+DR   GO; GO:0003809; F:thrombin activity; IDA.
+DR   GO; GO:0006915; P:apoptosis; TAS.
+DR   GO; GO:0006919; P:caspase activation; TAS.
+DR   GO; GO:0007275; P:development; TAS.
+DR   GO; GO:0042730; P:fibrinolysis; IDA.
+DR   GO; GO:0030168; P:platelet activation; TAS.
+DR   GO; GO:0006508; P:proteolysis and peptidolysis; TAS.
+DR   GO; GO:0030193; P:regulation of blood coagulation; TAS.
+DR   GO; GO:0000074; P:regulation of cell cycle; TAS.
+DR   GO; GO:0009611; P:response to wounding; TAS.
+DR   GO; GO:0007262; P:STAT protein nuclear translocation; TAS.
+DR   GO; GO:0007260; P:tyrosine phosphorylation of STAT protein; TAS.
+DR   InterPro; IPR002383; GLA_blood.
+DR   InterPro; IPR000001; Kringle.
+DR   InterPro; IPR001254; Peptidase_S1_S6.
+DR   InterPro; IPR001314; Peptidase_S1A.
+DR   InterPro; IPR003966; Peptidase_S1A_pr.
+DR   InterPro; IPR012051; Thrombin.
+DR   InterPro; IPR000294; VitK_dep_GLA.
+DR   Pfam; PF00594; Gla; 1.
+DR   Pfam; PF00051; Kringle; 2.
+DR   Pfam; PF00089; Trypsin; 1.
+DR   PIRSF; PIRSF001149; Thrombin; 1.
+DR   PRINTS; PR00722; CHYMOTRYPSIN.
+DR   PRINTS; PR00001; GLABLOOD.
+DR   PRINTS; PR00018; KRINGLE.
+DR   PRINTS; PR01505; PROTHROMBIN.
+DR   ProDom; PD000395; Kringle; 2.
+DR   PROSITE; PS00011; GLA_1; 1.
+DR   PROSITE; PS50998; GLA_2; 1.
+DR   PROSITE; PS00021; KRINGLE_1; 2.
+DR   PROSITE; PS50070; KRINGLE_2; 2.
+DR   PROSITE; PS50240; TRYPSIN_DOM; 1.
+DR   PROSITE; PS00134; TRYPSIN_HIS; 1.
+DR   PROSITE; PS00135; TRYPSIN_SER; 1.
+KW   3D-structure; Acute phase; Blood coagulation; Calcium;
+KW   Calcium-binding; Direct protein sequencing; Disease mutation;
+KW   Gamma-carboxyglutamic acid; Glycoprotein; Hydrolase; Kringle; Plasma;
+KW   Polymorphism; Protease; Repeat; Serine protease; Signal; Zymogen.
+FT   SIGNAL        1     24       Potential.
+FT   PROPEP       25     43
+FT   CHAIN        44    622       Prothrombin.
+FT   PEPTIDE      44    198       Activation peptide (fragment 1).
+FT   PEPTIDE     199    327       Activation peptide (fragment 2).
+FT   CHAIN       328    363       Thrombin light chain.
+FT   CHAIN       364    622       Thrombin heavy chain.
+FT   DOMAIN       44     89       Gla.
+FT   DOMAIN      108    186       Kringle 1.
+FT   DOMAIN      213    291       Kringle 2.
+FT   DOMAIN      364    618       Peptidase S1.
+FT   ACT_SITE    406    406       Charge relay system.
+FT   ACT_SITE    462    462       Charge relay system.
+FT   ACT_SITE    568    568       Charge relay system.
+FT   SITE        198    199       Cleavage (by thrombin).
+FT   SITE        327    328       Cleavage (by factor Xa).
+FT   SITE        363    364       Cleavage (by factor Xa).
+FT   MOD_RES      49     49       4-carboxyglutamate.
+FT   MOD_RES      50     50       4-carboxyglutamate.
+FT   MOD_RES      57     57       4-carboxyglutamate.
+FT   MOD_RES      59     59       4-carboxyglutamate.
+FT   MOD_RES      62     62       4-carboxyglutamate.
+FT   MOD_RES      63     63       4-carboxyglutamate.
+FT   MOD_RES      68     68       4-carboxyglutamate.
+FT   MOD_RES      69     69       4-carboxyglutamate.
+FT   MOD_RES      72     72       4-carboxyglutamate.
+FT   MOD_RES      75     75       4-carboxyglutamate.
+FT   CARBOHYD    121    121       N-linked (GlcNAc...).
+FT   CARBOHYD    143    143       N-linked (GlcNAc...).
+FT   CARBOHYD    416    416       N-linked (GlcNAc...).
+FT   DISULFID     60     65
+FT   DISULFID     90    103
+FT   DISULFID    108    186
+FT   DISULFID    129    169
+FT   DISULFID    157    181
+FT   DISULFID    213    291
+FT   DISULFID    234    274
+FT   DISULFID    262    286
+FT   DISULFID    336    482       Interchain (between light and heavy
+FT                                chains).
+FT   DISULFID    391    407
+FT   DISULFID    536    550       By similarity.
+FT   DISULFID    564    594       By similarity.
+FT   VARIANT     165    165       T -> M (in dbSNP:5896).
+FT                                /FTId=VAR_011781.
+FT   VARIANT     200    200       E -> K (in dysprothrombinemia;
+FT                                prothrombin type 3).
+FT                                /FTId=VAR_006711.
+FT   VARIANT     314    314       R -> C (in dysprothrombinemia; Barcelona/
+FT                                Madrid).
+FT                                /FTId=VAR_006712.
+FT   VARIANT     314    314       R -> H (in dysprothrombinemia; Padua-1).
+FT                                /FTId=VAR_006713.
+FT   VARIANT     380    380       M -> T (in dysprothrombinemia; Himi-1).
+FT                                /FTId=VAR_006714.
+FT   VARIANT     386    386       P -> T (in dbSNP:5897).
+FT                                /FTId=VAR_011782.
+FT   VARIANT     425    425       R -> C (in dysprothrombinemia; Quick-1).
+FT                                /FTId=VAR_006715.
+FT   VARIANT     431    431       R -> H (in dysprothrombinemia; Himi-2).
+FT                                /FTId=VAR_006716.
+FT   VARIANT     461    461       R -> W (in dysprothrombinemia;
+FT                                Tokushima).
+FT                                /FTId=VAR_006717.
+FT   VARIANT     509    509       E -> A (in dysprothrombinemia; Salakta/
+FT                                Frankfurt).
+FT                                /FTId=VAR_006718.
+FT   VARIANT     601    601       G -> V (in dysprothrombinemia; Quick-2).
+FT                                /FTId=VAR_006719.
+FT   CONFLICT    119    119       H -> N (in Ref. 4).
+FT   CONFLICT    121    121       N -> S (in Ref. 4).
+FT   CONFLICT    164    164       T -> I (in Ref. 4).
+FT   CONFLICT    164    164       T -> N (in Ref. 3).
+FT   CONFLICT    176    176       V -> A (in Ref. 4).
+FT   CONFLICT    183    183       I -> T (in Ref. 4).
+FT   CONFLICT    194    195       AM -> MV (in Ref. 4).
+FT   CONFLICT    308    308       D -> DEE (in Ref. 4).
+FT   CONFLICT    335    335       D -> N (in Ref. 5).
+FT   CONFLICT    349    349       D -> N (in Ref. 5).
+FT   CONFLICT    369    369       D -> N (in Ref. 5).
+FT   CONFLICT    398    398       D -> N (in Ref. 5).
+FT   CONFLICT    414    414       D -> N (in Ref. 5).
+FT   CONFLICT    485    485       D -> N (in Ref. 5).
+FT   CONFLICT    494    494       Q -> G (in Ref. 5).
+FT   CONFLICT    504    504       W -> Y (in Ref. 5).
+FT   CONFLICT    509    509       E -> S (in Ref. 5).
+FT   CONFLICT    511    511       W -> V (in Ref. 5).
+FT   CONFLICT    514    514       N -> D (in Ref. 5).
+FT   CONFLICT    529    530       PI -> AL (in Ref. 5).
+FT   CONFLICT    532    532       E -> Q (in Ref. 5).
+FT   STRAND      214    214
+FT   HELIX       216    218
+FT   TURN        219    220
+FT   STRAND      227    228
+FT   TURN        229    230
+FT   STRAND      233    233
+FT   TURN        237    238
+FT   HELIX       242    245
+FT   HELIX       246    248
+FT   TURN        253    254
+FT   TURN        259    260
+FT   STRAND      263    263
+FT   STRAND      273    273
+FT   STRAND      275    275
+FT   TURN        280    281
+FT   STRAND      283    283
+FT   STRAND      286    286
+FT   STRAND      290    290
+FT   TURN        336    337
+FT   TURN        340    346
+FT   TURN        350    351
+FT   HELIX       352    360
+FT   STRAND      365    365
+FT   STRAND      368    369
+FT   TURN        372    373
+FT   TURN        376    377
+FT   STRAND      378    383
+FT   TURN        384    387
+FT   STRAND      388    395
+FT   STRAND      400    403
+FT   HELIX       405    407
+FT   TURN        408    408
+FT   STRAND      409    410
+FT   HELIX       411    413
+FT   TURN        414    414
+FT   STRAND      415    416
+FT   TURN        419    421
+FT   STRAND      422    426
+FT   STRAND      430    430
+FT   TURN        436    438
+FT   STRAND      440    442
+FT   STRAND      444    449
+FT   TURN        451    452
+FT   STRAND      454    454
+FT   TURN        455    458
+FT   STRAND      460    460
+FT   TURN        461    461
+FT   STRAND      464    468
+FT   STRAND      475    475
+FT   TURN        476    477
+FT   STRAND      478    478
+FT   STRAND      482    482
+FT   HELIX       486    492
+FT   TURN        495    496
+FT   STRAND      498    503
+FT   STRAND      522    522
+FT   STRAND      524    531
+FT   HELIX       533    537
+FT   TURN        538    539
+FT   TURN        546    547
+FT   STRAND      548    551
+FT   HELIX       555    557
+FT   STRAND      562    562
+FT   TURN        565    566
+FT   TURN        568    569
+FT   STRAND      571    575
+FT   TURN        577    579
+FT   STRAND      582    591
+FT   TURN        597    598
+FT   STRAND      601    605
+FT   HELIX       607    609
+FT   HELIX       610    617
+FT   TURN        618    619
+SQ   SEQUENCE   622 AA;  70037 MW;  8A25E1DA88208FCF CRC64;
+     MAHVRGLQLP GCLALAALCS LVHSQHVFLA PQQARSLLQR VRRANTFLEE VRKGNLEREC
+     VEETCSYEEA FEALESSTAT DVFWAKYTAC ETARTPRDKL AACLEGNCAE GLGTNYRGHV
+     NITRSGIECQ LWRSRYPHKP EINSTTHPGA DLQENFCRNP DSSTTGPWCY TTDPTVRRQE
+     CSIPVCGQDQ VTVAMTPRSE GSSVNLSPPL EQCVPDRGQQ YQGRLAVTTH GLPCLAWASA
+     QAKALSKHQD FNSAVQLVEN FCRNPDGDEE GVWCYVAGKP GDFGYCDLNY CEEAVEEETG
+     DGLDEDSDRA IEGRTATSEY QTFFNPRTFG SGEADCGLRP LFEKKSLEDK TERELLESYI
+     DGRIVEGSDA EIGMSPWQVM LFRKSPQELL CGASLISDRW VLTAAHCLLY PPWDKNFTEN
+     DLLVRIGKHS RTRYERNIEK ISMLEKIYIH PRYNWRENLD RDIALMKLKK PVAFSDYIHP
+     VCLPDRETAA SLLQAGYKGR VTGWGNLKET WTANVGKGQP SVLQVVNLPI VERPVCKDST
+     RIRITDNMFC AGYKPDEGKR GDACEGDSGG PFVMKSPFNN RWYQMGIVSW GEGCDRDGKY
+     GFYTHVFRLK KWIQKVIDQF GE
+//
+ID   O67198_AQUAE PRELIMINARY;      PRT;   439 AA.
+AC   O67198;
+DT   01-AUG-1998 (TrEMBLrel. 07, Created)
+DT   01-AUG-1998 (TrEMBLrel. 07, Last sequence update)
+DT   01-MAR-2004 (TrEMBLrel. 26, Last annotation update)
+DE   Transcriptional regulator (NtrC family).
+GN   Name=ntrC1; OrderedLocusNames=AQ_1117;
+OS   Aquifex aeolicus.
+OC   Bacteria; Aquificae; Aquificales; Aquificaceae; Aquifex.
+OX   NCBI_TaxID=63363;
+RN   [1]
+RP   NUCLEOTIDE SEQUENCE.
+RC   STRAIN=VF5;
+RX   MEDLINE=98196666; PubMed=9537320; DOI=10.1038/32831;
+RA   Deckert G., Warren P.V., Gaasterland T., Young W.G., Lenox A.L.,
+RA   Graham D.E., Overbeek R., Snead M.A., Keller M., Aujay M., Huber R.,
+RA   Feldman R.A., Short J.M., Olsen G.J., Swanson R.V.;
+RT   "The complete genome of the hyperthermophilic bacterium Aquifex
+RT   aeolicus.";
+RL   Nature 392:353-358(1998).
+DR   EMBL; AE000724; AAC07159.1; -; Genomic_DNA.
+DR   PIR; C70396; C70396.
+DR   PDB; 1NY5; X-ray; A/B=1-387.
+DR   PDB; 1NY6; X-ray; A/B/C/D/E/F/G/H/I/J/K/L/M/N=122-387.
+DR   GO; GO:0005524; F:ATP binding; IEA.
+DR   GO; GO:0016831; F:carboxy-lyase activity; IEA.
+DR   GO; GO:0016829; F:lyase activity; IEA.
+DR   GO; GO:0017111; F:nucleoside-triphosphatase activity; IEA.
+DR   GO; GO:0000166; F:nucleotide binding; IEA.
+DR   GO; GO:0003700; F:transcription factor activity; IEA.
+DR   GO; GO:0000156; F:two-component response regulator activity; IEA.
+DR   GO; GO:0006811; P:ion transport; IEA.
+DR   GO; GO:0007600; P:sensory perception; IEA.
+DR   GO; GO:0000160; P:two-component signal transduction system (p...; IEA.
+DR   InterPro; IPR003593; AAA_ATPase.
+DR   InterPro; IPR012287; Homeodomain-rel.
+DR   InterPro; IPR002197; HTH_Fis.
+DR   InterPro; IPR001789; Response_reg.
+DR   InterPro; IPR002078; Sig54_interact.
+DR   Pfam; PF02954; HTH_8; 1.
+DR   Pfam; PF00072; Response_reg; 1.
+DR   Pfam; PF00158; Sigma54_activat; 1.
+DR   PRINTS; PR01590; HTHFIS.
+DR   ProDom; PD000039; Response_reg; 1.
+DR   SMART; SM00382; AAA; 1.
+DR   SMART; SM00448; REC; 1.
+DR   TIGRFAMs; TIGR01199; HTH_fis; 1.
+DR   PROSITE; PS50110; RESPONSE_REGULATORY; 1.
+DR   PROSITE; PS00675; SIGMA54_INTERACT_1; 1.
+DR   PROSITE; PS00676; SIGMA54_INTERACT_2; 1.
+DR   PROSITE; PS50045; SIGMA54_INTERACT_4; 1.
+KW   Complete proteome.
+SQ   SEQUENCE   439 AA;  50366 MW;  AAE1E9780271DFC0 CRC64;
+     MNVLVIEDDK VFRGLLEEYL SMKGIKVESA ERGKEAYKLL SEKHFNVVLL DLLLPDVNGL
+     EILKWIKERS PETEVIVITG HGTIKTAVEA MKMGAYDFLT KPCMLEEIEL TINKAIEHRK
+     LRKENELLRR EKDLKEEEYV FESPKMKEIL EKIKKISCAE CPVLITGESG VGKEVVARLI
+     HKLSDRSKEP FVALNVASIP RDIFEAELFG YEKGAFTGAV SSKEGFFELA DGGTLFLDEI
+     GELSLEAQAK LLRVIESGKF YRLGGRKEIE VNVRILAATN RNIKELVKEG KFREDLYYRL
+     GVIEIEIPPL RERKEDIIPL ANHFLKKFSR KYAKEVEGFT KSAQELLLSY PWYGNVRELK
+     NVIERAVLFS EGKFIDRGEL SCLVNSKGIK NKHKSIKEIE KEEIIKVLKE VNFNKKLASE
+     ILGIPLRTLY RRLKEYGIE
+//
+ID   FCERA_HUMAN    STANDARD;      PRT;   257 AA.
+AC   P12319;
+DT   01-OCT-1989 (Rel. 12, Created)
+DT   01-OCT-1989 (Rel. 12, Last sequence update)
+DT   10-MAY-2005 (Rel. 47, Last annotation update)
+DE   High affinity immunoglobulin epsilon receptor alpha-subunit precursor
+DE   (FcERI) (IgE Fc receptor, alpha-subunit) (Fc-epsilon RI-alpha).
+GN   Name=FCER1A; Synonyms=FCE1A;
+OS   Homo sapiens (Human).
+OC   Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+OC   Mammalia; Eutheria; Euarchontoglires; Primates; Catarrhini; Hominidae;
+OC   Homo.
+OX   NCBI_TaxID=9606;
+RN   [1]
+RP   NUCLEOTIDE SEQUENCE.
+RX   MEDLINE=88233953; PubMed=2967464;
+RA   Kochan J., Pettine L.F., Hakimi J., Kishi K., Kinet J.-P.;
+RT   "Isolation of the gene coding for the alpha subunit of the human high
+RT   affinity IgE receptor.";
+RL   Nucleic Acids Res. 16:3584-3584(1988).
+RN   [2]
+RP   NUCLEOTIDE SEQUENCE, AND PARTIAL PROTEIN SEQUENCE.
+RC   TISSUE=Mast cells;
+RX   MEDLINE=88158102; PubMed=2964640;
+RA   Shimizu A., Tepler I., Benfey P.N., Berenstein E.H., Siraganian R.P.,
+RA   Leder P.;
+RT   "Human and rat mast cell high-affinity immunoglobulin E receptors:
+RT   characterization of putative alpha-chain gene products.";
+RL   Proc. Natl. Acad. Sci. U.S.A. 85:1907-1911(1988).
+RN   [3]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA].
+RC   TISSUE=Prostate;
+RX   MEDLINE=22388257; PubMed=12477932; DOI=10.1073/pnas.242603899;
+RA   Strausberg R.L., Feingold E.A., Grouse L.H., Derge J.G.,
+RA   Klausner R.D., Collins F.S., Wagner L., Shenmen C.M., Schuler G.D.,
+RA   Altschul S.F., Zeeberg B., Buetow K.H., Schaefer C.F., Bhat N.K.,
+RA   Hopkins R.F., Jordan H., Moore T., Max S.I., Wang J., Hsieh F.,
+RA   Diatchenko L., Marusina K., Farmer A.A., Rubin G.M., Hong L.,
+RA   Stapleton M., Soares M.B., Bonaldo M.F., Casavant T.L., Scheetz T.E.,
+RA   Brownstein M.J., Usdin T.B., Toshiyuki S., Carninci P., Prange C.,
+RA   Raha S.S., Loquellano N.A., Peters G.J., Abramson R.D., Mullahy S.J.,
+RA   Bosak S.A., McEwan P.J., McKernan K.J., Malek J.A., Gunaratne P.H.,
+RA   Richards S., Worley K.C., Hale S., Garcia A.M., Gay L.J., Hulyk S.W.,
+RA   Villalon D.K., Muzny D.M., Sodergren E.J., Lu X., Gibbs R.A.,
+RA   Fahey J., Helton E., Ketteman M., Madan A., Rodrigues S., Sanchez A.,
+RA   Whiting M., Madan A., Young A.C., Shevchenko Y., Bouffard G.G.,
+RA   Blakesley R.W., Touchman J.W., Green E.D., Dickson M.C.,
+RA   Rodriguez A.C., Grimwood J., Schmutz J., Myers R.M.,
+RA   Butterfield Y.S.N., Krzywinski M.I., Skalska U., Smailus D.E.,
+RA   Schnerch A., Schein J.E., Jones S.J.M., Marra M.A.;
+RT   "Generation and initial analysis of more than 15,000 full-length human
+RT   and mouse cDNA sequences.";
+RL   Proc. Natl. Acad. Sci. U.S.A. 99:16899-16903(2002).
+RN   [4]
+RP   PROTEIN SEQUENCE OF 26-197.
+RX   PubMed=8125119;
+RA   Yagi S., Yanagida M., Tanida I., Hasegawa A., Okumura K., Ra C.;
+RT   "High-level expression of the truncated alpha chain of human high-
+RT   affinity receptor for IgE as a soluble form by baculovirus-infected
+RT   insect cells. Biochemical characterization of the recombinant
+RT   product.";
+RL   Eur. J. Biochem. 220:593-598(1994).
+RN   [5]
+RP   3D-STRUCTURE MODELING OF 26-197.
+RX   MEDLINE=93113350; PubMed=1472946;
+RA   Padlan E.A., Helm B.A.;
+RT   "A modeling study of the alpha-subunit of human high-affinity receptor
+RT   for immunoglobulin-E.";
+RL   Receptor 2:129-144(1992).
+CC   -!- FUNCTION: Binds to the Fc region of immunoglobulins epsilon. High
+CC       affinity receptor. Responsible for initiating the allergic
+CC       response. Binding of allergen to receptor-bound IgE leads to cell
+CC       activation and the release of mediators (such as histamine)
+CC       responsible for the manifestations of allergy. The same receptor
+CC       also induces the secretion of important lymphokines.
+CC   -!- SUBUNIT: Tetramer of an alpha chain, a beta chain, and two
+CC       disulfide linked gamma chains.
+CC   -!- SUBCELLULAR LOCATION: Type I membrane protein.
+CC   -!- SIMILARITY: Contains 2 Ig-like (immunoglobulin-like) domains.
+CC   --------------------------------------------------------------------------
+CC   This Swiss-Prot entry is copyright. It is produced through a collaboration
+CC   between  the Swiss Institute of Bioinformatics  and the  EMBL outstation -
+CC   the European Bioinformatics Institute.  There are no  restrictions on  its
+CC   use as long as its content is in no way modified and this statement is not
+CC   removed.
+CC   --------------------------------------------------------------------------
+DR   EMBL; X06948; CAA30025.1; -; mRNA.
+DR   EMBL; J03605; AAA36204.1; -; mRNA.
+DR   EMBL; BC005912; AAH05912.1; -; mRNA.
+DR   EMBL; A21606; CAA01564.1; -; Unassigned_DNA.
+DR   PIR; S00682; S00682.
+DR   PDB; 1ALS; Model; @=26-197.
+DR   PDB; 1ALT; Model; @=26-197.
+DR   PDB; 1F2Q; X-ray; A=26-201.
+DR   PDB; 1F6A; X-ray; A=26-201.
+DR   PDB; 1J86; X-ray; A/B=26-201.
+DR   PDB; 1J87; X-ray; A=26-196.
+DR   PDB; 1J88; X-ray; A/B/C/D/E=26-197.
+DR   PDB; 1J89; X-ray; A/B/C/D/E=26-197.
+DR   PDB; 1RPQ; X-ray; A/B/C/D=26-201.
+DR   Ensembl; ENSG00000179639; Homo sapiens.
+DR   Genew; HGNC:3609; FCER1A.
+DR   H-InvDB; HIX0001199; -.
+DR   MIM; 147140; -.
+DR   GO; GO:0005887; C:integral to plasma membrane; TAS.
+DR   GO; GO:0005886; C:plasma membrane; TAS.
+DR   InterPro; IPR007110; Ig-like.
+DR   InterPro; IPR003598; Ig_c2.
+DR   Pfam; PF00047; ig; 2.
+DR   SMART; SM00408; IGc2; 1.
+DR   PROSITE; PS50835; IG_LIKE; 2.
+KW   3D-structure; Direct protein sequencing; Glycoprotein;
+KW   IgE-binding protein; Immunoglobulin domain; Polymorphism; Receptor;
+KW   Repeat; Signal; Transmembrane.
+FT   SIGNAL        1     25
+FT   CHAIN        26    257       High affinity immunoglobulin epsilon
+FT                                receptor alpha-subunit.
+FT   TOPO_DOM     26    205       Extracellular (Potential).
+FT   TRANSMEM    206    224       Potential.
+FT   TOPO_DOM    225    257       Cytoplasmic (Potential).
+FT   DOMAIN       30    110       Ig-like 1.
+FT   DOMAIN      111    193       Ig-like 2.
+FT   CARBOHYD     46     46       N-linked (GlcNAc...) (Potential).
+FT   CARBOHYD     67     67       N-linked (GlcNAc...) (Potential).
+FT   CARBOHYD     75     75       N-linked (GlcNAc...) (Potential).
+FT   CARBOHYD     99     99       N-linked (GlcNAc...) (Potential).
+FT   CARBOHYD    160    160       N-linked (GlcNAc...) (Potential).
+FT   CARBOHYD    165    165       N-linked (GlcNAc...) (Potential).
+FT   CARBOHYD    191    191       N-linked (GlcNAc...) (Potential).
+FT   DISULFID     51     93       By similarity.
+FT   DISULFID    132    176       By similarity.
+FT   VARIANT      84     84       K -> R (in dbSNP:2298804).
+FT                                /FTId=VAR_020091.
+FT   VARIANT     101    101       S -> N (in dbSNP:2298805).
+FT                                /FTId=VAR_020092.
+FT   STRAND       33     35
+FT   STRAND       40     42
+FT   TURN         43     44
+FT   STRAND       47     50
+FT   TURN         53     54
+FT   STRAND       63     66
+FT   TURN         67     68
+FT   STRAND       69     70
+FT   STRAND       77     80
+FT   HELIX        85     87
+FT   STRAND       89     94
+FT   TURN         96     97
+FT   STRAND      104    109
+FT   STRAND      113    117
+FT   STRAND      121    123
+FT   TURN        124    125
+FT   STRAND      128    134
+FT   HELIX       135    137
+FT   STRAND      140    147
+FT   TURN        148    149
+FT   STRAND      150    151
+FT   STRAND      160    163
+FT   HELIX       168    170
+FT   STRAND      172    180
+FT   TURN        181    182
+FT   STRAND      183    186
+FT   STRAND      190    195
+SQ   SEQUENCE   257 AA;  29596 MW;  F183BB2357DDAD58 CRC64;
+     MAPAMESPTL LCVALLFFAP DGVLAVPQKP KVSLNPPWNR IFKGENVTLT CNGNNFFEVS
+     STKWFHNGSL SEETNSSLNI VNAKFEDSGE YKCQHQQVNE SEPVYLEVFS DWLLLQASAE
+     VVMEGQPLFL RCHGWRNWDV YKVIYYKDGE ALKYWYENHN ISITNATVED SGTYYCTGKV
+     WQLDYESEPL NITVIKAPRE KYWLQFFIPL LVVILFAVDT GLFISTQQQV TFLLKIKRTR
+     KGFRLLNPHP KPNPKNN
+//
+ID   B2MG_MOUSE     STANDARD;      PRT;   119 AA.
+AC   P01887;
+DT   21-JUL-1986 (Rel. 01, Created)
+DT   21-JUL-1986 (Rel. 01, Last sequence update)
+DT   10-MAY-2005 (Rel. 47, Last annotation update)
+DE   Beta-2-microglobulin precursor.
+GN   Name=B2m;
+OS   Mus musculus (Mouse).
+OC   Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+OC   Mammalia; Eutheria; Euarchontoglires; Glires; Rodentia; Sciurognathi;
+OC   Muridae; Murinae; Mus.
+OX   NCBI_TaxID=10090;
+RN   [1]
+RP   NUCLEOTIDE SEQUENCE (A).
+RX   MEDLINE=84028577; PubMed=6354707;
+RA   Daniel F., Morello D., le Bail O., Chambon P., Cayre Y., Kourilsky P.;
+RT   "Structure and expression of the mouse beta 2-microglobulin gene
+RT   isolated from somatic and non-expressing teratocarcinoma cells.";
+RL   EMBO J. 2:1061-1065(1983).
+RN   [2]
+RP   NUCLEOTIDE SEQUENCE (A).
+RC   STRAIN=BALB/c;
+RX   MEDLINE=83001942; PubMed=6180834; DOI=10.1016/0092-8674(82)90182-9;
+RA   Parnes J.R., Seidman J.G.;
+RT   "Structure of wild-type and mutant mouse beta 2-microglobulin genes.";
+RL   Cell 29:661-669(1982).
+RN   [3]
+RP   NUCLEOTIDE SEQUENCE (W2/W3/W4/W5).
+RC   TISSUE=Liver;
+RX   MEDLINE=93246292; PubMed=8482575;
+RA   Hermel E., Robinson P.J., She J.-X., Lindahl K.F.;
+RT   "Sequence divergence of B2m alleles of wild Mus musculus and Mus
+RT   spretus implies positive selection.";
+RL   Immunogenetics 38:106-116(1993).
+RN   [4]
+RP   PROTEIN SEQUENCE OF 21-119 (A/B).
+RC   STRAIN=BALB/c, and C57BL/6;
+RX   MEDLINE=81223779; PubMed=6165997;
+RA   Gates F.T. III, Coligan J.E., Kindt T.J.;
+RT   "Complete amino acid sequence of murine beta 2-microglobulin:
+RT   structural evidence for strain-related polymorphism.";
+RL   Proc. Natl. Acad. Sci. U.S.A. 78:554-558(1981).
+RN   [5]
+RP   NUCLEOTIDE SEQUENCE OF 31-57 AND 86-119 (A).
+RX   MEDLINE=81223857; PubMed=6166005;
+RA   Parnes J.R., Velan B., Felsenfeld A., Ramanathan L., Ferrini U.,
+RA   Appella E., Seidman J.G.;
+RT   "Mouse beta 2-microglobulin cDNA clones: a screening procedure for
+RT   cDNA clones corresponding to rare mRNAs.";
+RL   Proc. Natl. Acad. Sci. U.S.A. 78:2253-2257(1981).
+RN   [6]
+RP   NUCLEOTIDE SEQUENCE OF 1-3 (A).
+RX   MEDLINE=86106202; PubMed=3510743; DOI=10.1016/0092-8674(86)90760-9;
+RA   Kimura A., Israel A., le Bail O., Kourilsky P.;
+RT   "Detailed analysis of the mouse H-2Kb promoter: enhancer-like
+RT   sequences and their role in the regulation of class I gene
+RT   expression.";
+RL   Cell 44:261-272(1986).
+RN   [7]
+RP   PROTEIN SEQUENCE OF 21-60 (A).
+RX   MEDLINE=76231543; PubMed=59595;
+RA   Appella E., Tanigaki N., Natori T., Pressman D.;
+RT   "Partial amino acid sequence of mouse beta2-microglobulin.";
+RL   Biochem. Biophys. Res. Commun. 70:425-430(1976).
+RN   [8]
+RP   X-RAY CRYSTALLOGRAPHY (2.3 ANGSTROMS).
+RX   MEDLINE=92367003; PubMed=1323877;
+RA   Fremont D.H., Matsumura M., Stura E.A., Peterson P.A., Wilson I.A.;
+RT   "Crystal structures of two viral peptides in complex with murine MHC
+RT   class I H-2Kb.";
+RL   Science 257:919-927(1992).
+RN   [9]
+RP   X-RAY CRYSTALLOGRAPHY (2.4 ANGSTROMS).
+RX   MEDLINE=94116065; PubMed=7506996; DOI=10.1016/0092-8674(94)90171-6;
+RA   Young A.C.M., Zhang W., Sacchettini J.C., Nathenson S.G.;
+RT   "The three-dimensional structure of H-2Db at 2.4-A resolution:
+RT   implications for antigen-determinant selection.";
+RL   Cell 76:39-50(1994).
+RN   [10]
+RP   X-RAY CRYSTALLOGRAPHY (2.4 ANGSTROMS).
+RX   MEDLINE=97338113; PubMed=9192660; DOI=10.1073/pnas.94.13.6880;
+RA   Balendiran G.K., Solheim J.C., Young A.C., Hansen T.H.,
+RA   Nathenson S.G., Sacchettini J.C.;
+RT   "The three-dimensional structure of an H-2Ld-peptide complex explains
+RT   the unique interaction of Ld with beta-2 microglobulin and peptide.";
+RL   Proc. Natl. Acad. Sci. U.S.A. 94:6880-6885(1997).
+RN   [11]
+RP   X-RAY CRYSTALLOGRAPHY (2.4 ANGSTROMS).
+RX   MEDLINE=98397257; PubMed=9729040; DOI=10.1016/S1074-7613(00)80602-0;
+RA   Achour A., Persson K., Harris R.A., Sundbaeck J., Sentman C.L.,
+RA   Lindqvist Y., Schneider G., Kaerre K.;
+RT   "The crystal structure of H-2Dd MHC class I complexed with the HIV-1-
+RT   and NK cell recognition.";
+RL   Immunity 9:199-208(1998).
+CC   -!- FUNCTION: Beta-2-microglobulin is the beta-chain of major
+CC       histocompatibility complex class I molecules.
+CC   -!- SUBCELLULAR LOCATION: Secreted.
+CC   -!- POLYMORPHISM: The following alleles of B2M are known: A, B, W2,
+CC       W3, W4 and W5 (C). The sequence shown is that of allele A.
+CC   -!- SIMILARITY: Contains 1 Ig-like (immunoglobulin-like) domain.
+CC   --------------------------------------------------------------------------
+CC   This Swiss-Prot entry is copyright. It is produced through a collaboration
+CC   between  the Swiss Institute of Bioinformatics  and the  EMBL outstation -
+CC   the European Bioinformatics Institute.  There are no  restrictions on  its
+CC   use as long as its content is in no way modified and this statement is not
+CC   removed.
+CC   --------------------------------------------------------------------------
+DR   EMBL; X01838; CAA25970.1; -; mRNA.
+DR   EMBL; M12485; -; NOT_ANNOTATED_CDS; Genomic_DNA.
+DR   EMBL; M84363; AAA39667.1; -; Genomic_DNA.
+DR   EMBL; M84364; AAA39668.1; -; Genomic_DNA.
+DR   EMBL; M84365; AAA39669.1; -; Genomic_DNA.
+DR   EMBL; M84366; AAA39670.1; -; Genomic_DNA.
+DR   EMBL; M84367; AAA39671.1; -; Genomic_DNA.
+DR   EMBL; M10389; AAA39536.1; -; mRNA.
+DR   EMBL; M10416; AAA39537.1; -; mRNA.
+DR   PIR; A90822; MGMSB2.
+DR   PDB; 1BII; X-ray; B=1-119.
+DR   PDB; 1BQH; X-ray; B/E=21-119.
+DR   PDB; 1BZ9; X-ray; B=21-119.
+DR   PDB; 1CD1; X-ray; B/D=21-119.
+DR   PDB; 1DDH; X-ray; B=22-119.
+DR   PDB; 1FFN; X-ray; B/E=21-119.
+DR   PDB; 1FFO; X-ray; B/E=21-119.
+DR   PDB; 1FFP; X-ray; B/E=21-119.
+DR   PDB; 1FG2; X-ray; B/E/H/K=21-119.
+DR   PDB; 1FO0; X-ray; L=21-119.
+DR   PDB; 1FZJ; X-ray; B=21-119.
+DR   PDB; 1FZK; X-ray; B=21-119.
+DR   PDB; 1FZM; X-ray; B=21-119.
+DR   PDB; 1FZO; X-ray; B=21-119.
+DR   PDB; 1G6R; X-ray; L/M=21-119.
+DR   PDB; 1G7P; X-ray; B=21-119.
+DR   PDB; 1G7Q; X-ray; B=21-119.
+DR   PDB; 1HOC; X-ray; B=21-119.
+DR   PDB; 1INQ; X-ray; B=21-119.
+DR   PDB; 1JPF; X-ray; B=21-119.
+DR   PDB; 1JPG; X-ray; B=21-119.
+DR   PDB; 1JUF; X-ray; B=21-119.
+DR   PDB; 1K8D; X-ray; B=21-119.
+DR   PDB; 1KBG; X-ray; L=-.
+DR   PDB; 1KJ2; X-ray; L/M=21-119.
+DR   PDB; 1KJ3; X-ray; L/M=21-119.
+DR   PDB; 1LD9; X-ray; B/E=-.
+DR   PDB; 1LDP; X-ray; L=21-119.
+DR   PDB; 1LEG; X-ray; B=21-119.
+DR   PDB; 1LEK; X-ray; B=21-119.
+DR   PDB; 1LK2; X-ray; B=21-119.
+DR   PDB; 1MHC; X-ray; B/E=21-119.
+DR   PDB; 1MWA; X-ray; L/M=21-119.
+DR   PDB; 1N3N; X-ray; B/D/F/H=21-119.
+DR   PDB; 1N59; X-ray; B/D=21-119.
+DR   PDB; 1N5A; X-ray; B/E/H/K=21-119.
+DR   PDB; 1NAM; X-ray; L=21-119.
+DR   PDB; 1NAN; X-ray; I/P=21-119.
+DR   PDB; 1OSZ; X-ray; B=21-119.
+DR   PDB; 1P4L; X-ray; B=21-119.
+DR   PDB; 1PQZ; X-ray; B=21-119.
+DR   PDB; 1QO3; X-ray; B=21-119.
+DR   PDB; 1RJY; X-ray; B/E=21-119.
+DR   PDB; 1RJZ; X-ray; B/E=21-119.
+DR   PDB; 1RK0; X-ray; B=21-119.
+DR   PDB; 1RK1; X-ray; B=21-119.
+DR   PDB; 1S7Q; X-ray; B=21-119.
+DR   PDB; 1S7R; X-ray; B/E=21-119.
+DR   PDB; 1S7S; X-ray; B=21-119.
+DR   PDB; 1S7T; X-ray; B/E=21-119.
+DR   PDB; 1S7U; X-ray; B/E/H/K=21-119.
+DR   PDB; 1S7V; X-ray; B/E=21-119.
+DR   PDB; 1S7W; X-ray; B/E/H/K=21-119.
+DR   PDB; 1S7X; X-ray; B/E/H/K=21-119.
+DR   PDB; 1T0M; X-ray; B/E=21-119.
+DR   PDB; 1T0N; X-ray; B/E=21-119.
+DR   PDB; 1VAC; X-ray; B=21-119.
+DR   PDB; 1VAD; X-ray; B=21-119.
+DR   PDB; 1WBX; X-ray; B=21-119.
+DR   PDB; 1WBY; X-ray; B=21-119.
+DR   PDB; 1WBZ; X-ray; B/D=21-119.
+DR   PDB; 2CKB; X-ray; L/M=21-119.
+DR   PDB; 2MHA; X-ray; B/D=21-119.
+DR   PDB; 2VAA; X-ray; B=21-119.
+DR   PDB; 2VAB; X-ray; B=21-119.
+DR   SWISS-2DPAGE; P01887; MOUSE.
+DR   Ensembl; ENSMUSG00000060802; Mus musculus.
+DR   MGI; MGI:88127; B2m.
+DR   GO; GO:0005615; C:extracellular space; TAS.
+DR   GO; GO:0005887; C:integral to plasma membrane; TAS.
+DR   GO; GO:0006968; P:cellular defense response; TAS.
+DR   InterPro; IPR007110; Ig-like.
+DR   InterPro; IPR003006; Ig_MHC.
+DR   Pfam; PF00047; ig; 1.
+DR   PROSITE; PS50835; IG_LIKE; 1.
+DR   PROSITE; PS00290; IG_MHC; 1.
+KW   3D-structure; Direct protein sequencing; Immunoglobulin domain; MHC I;
+KW   Polymorphism; Signal.
+FT   SIGNAL        1     20
+FT   CHAIN        21    119       Beta-2-microglobulin.
+FT   DOMAIN       25    114       Ig-like.
+FT   DISULFID     45    100
+FT   VARIANT       8      8       V -> I (in W3).
+FT   VARIANT      54     54       H -> Q (in W4).
+FT   VARIANT      64     64       K -> E (in W3).
+FT   VARIANT     101    101       R -> T (in W2).
+FT   VARIANT     105    105       D -> A (in B, strain C57BL/6).
+FT   VARIANT     105    105       D -> V (in W2, W4 and W5).
+FT   STRAND       23     23
+FT   STRAND       26     31
+FT   STRAND       36     36
+FT   TURN         37     38
+FT   STRAND       39     39
+FT   STRAND       41     51
+FT   STRAND       55     61
+FT   TURN         62     63
+FT   STRAND       64     65
+FT   STRAND       70     71
+FT   STRAND       75     76
+FT   TURN         78     79
+FT   STRAND       82     90
+FT   TURN         94     95
+FT   STRAND       98    104
+FT   TURN        105    106
+FT   STRAND      111    114
+FT   TURN        117    119
+SQ   SEQUENCE   119 AA;  13823 MW;  94F649EBCF1D7E1F CRC64;
+     MARSVTLVFL VLVSLTGLYA IQKTPQIQVY SRHPPENGKP NILNCYVTQF HPPHIEIQML
+     KNGKKIPKVE MSDMSFSKDW SFYILAHTEF TPTETDTYAC RVKHDSMAEP KTVYWDRDM
+//
