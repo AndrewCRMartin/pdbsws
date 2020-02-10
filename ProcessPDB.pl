@@ -4,11 +4,11 @@
 #   Program:    
 #   File:       
 #   
-#   Version:    V1.2
-#   Date:       17.08.98
-#   Function:   Build DBM hash of SwissProt info from the PDB
+#   Version:    V1.3
+#   Date:       15.09.05
+#   Function:   Build database table of SwissProt info from the PDB
 #   
-#   Copyright:  (c) UCL / Dr. Andrew C. R. Martin 1997-8
+#   Copyright:  (c) UCL / Dr. Andrew C. R. Martin 1997-2005
 #   Author:     Dr. Andrew C. R. Martin
 #   Address:    Biomolecular Structure & Modelling Unit,
 #               Department of Biochemistry & Molecular Biology,
@@ -16,10 +16,8 @@
 #               Gower Street,
 #               London.
 #               WC1E 6BT.
-#   Phone:      (Home) +44 (0)1372 275775
-#               (Work) +44 (0)171 419 3890
 #   EMail:      martin@biochem.ucl.ac.uk
-#               andrew@stagleys.demon.co.uk
+#               andrew@bioinf.org.uk
 #               
 #*************************************************************************
 #
@@ -60,6 +58,7 @@
 #   V1.2  17.08.98 Commented out the special case code for single chain
 #                  entries. This caused PDB files with a single chain,
 #                  but WITH a chain label, to break.
+#   V1.3  15.09.05 Database version
 #
 #*************************************************************************
 # Packages to use
@@ -192,7 +191,9 @@ sub ProcessFile
         last if(/^ATOM  /);
         if(/^DBREF /)
         {
-            if(substr($_,26,5) eq "SWS  ")
+            # Allow UNP as well as SWS - 1uw5 does this
+            if((substr($_,26,5) eq "SWS  ") ||
+               (substr($_,26,5) eq "UNP  "))
             {
                 $chain = substr($_,12,1);
                 $start = substr($_,14,5);
