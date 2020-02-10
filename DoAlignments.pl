@@ -104,6 +104,9 @@ $::tmp3 = "/tmp/DA.$$._temp3.faa";
 $::tmp4 = "/tmp/DA.$$._temp4.faa";
 
 DoProcessing();
+#ProcessEntry("2if1", " ", "P41567", "14", "126",
+#             "MSAIQNLHSFDPFADASKGDDLLPAGTEDYIHIRIQQRNGRKTLTTVQGIADDYDKKKLVKAFKKKFACNGTVIEHPEYGEVIQLQGDQRKNICQFLVEIGLAKDDQLKVHGF",
+#             $::tmp1, $::tmp2, $::tmp3, $::tmp4);
 #ProcessEntry("101m", " ", "P02185", "1", "153",
 #             "VLSEGEWQLVLHVWAKVEADVAGHGQDILIRLFKSHPETLEKFDRFKHLKTEAEMKASEDLKKHGVTVLTALGAILKKKGHHEAELKPLAQSHATKHKIPIKYLEFISEAIIHVLHSRHPGDFGADAQGAMNKALELFRKDIAAKYKELGYQG",
 #             $::tmp1, $::tmp2, $::tmp3, $::tmp4);
@@ -421,7 +424,8 @@ sub WritePDBSequence
                 if($chain eq $chainid)
                 {
 #ACRM120505         $inRegion = 1 if(($start ne '?') && ($resid eq $start));
-                    $inRegion = 1 if(($start ne '?    ') && ($resid ge $start));
+#ACRM050905         $inRegion = 1 if(($start ne '?    ') && ($resid ge $start));
+                    $inRegion = 1 if(($start ne '?    ') && ResGE($resid, $start));
                     
                     if($inRegion)
                     {
@@ -438,7 +442,8 @@ sub WritePDBSequence
                     }
                     
 #ACRM120505         $inRegion = 0 if(($stop ne '?') && ($resid eq $stop));
-                    $inRegion = 0 if(($stop ne '?    ') && ($resid ge $stop));
+#ACRM050905         $inRegion = 0 if(($stop ne '?    ') && ($resid ge $stop));
+                    $inRegion = 0 if(($stop ne '?    ') && ResGE($resid, $stop));
                 }
             }
             elsif(/^ENDMDL/)
@@ -456,5 +461,33 @@ sub WritePDBSequence
         return(1);
     }
     return($retval);
+}
+
+#*************************************************************************
+# Returns 1 if $resid is >= $start, taking account of insert codes
+sub ResGE
+{
+    my($resid, $start) = @_;
+    my($num1, $ins1, $num2, $ins2);
+    $resid =~ s/\s//g;
+    $resid =~ /([0-9]+)([A-Z]*)/;
+    $num1 = $1;
+    $ins1 = $2;
+
+    $start =~ s/\s//g;
+    $start =~ /([0-9]+)([A-Z]*)/;
+    $num2 = $1;
+    $ins2 = $2;
+
+    return(1) if($num1 > $num2); # Numeric part is greater - match
+    return(0) if($num1 < $num2); # Numeric part is smaller - no match
+
+    # Numeric part is equal
+    # Pad to a space if insert code is missing;
+    $ins1 = " " if($ins1 eq "");
+    $ins2 = " " if($ins2 eq "");
+
+    return(1) if($ins1 ge $ins2); # Insert is >=
+    return(0);
 }
 
