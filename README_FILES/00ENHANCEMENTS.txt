@@ -1,0 +1,5 @@
+Modify BruteForceScan.pl so that it checks for identity between chains
+within a PDB file. That way it doesn't run unnecessary searches once
+it's found a match, that can be propagated to the other chains in the
+PDB entry.
+

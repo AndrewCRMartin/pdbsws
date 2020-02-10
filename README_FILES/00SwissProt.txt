@@ -1,0 +1,16 @@
+Valid SwissProt accessions are described at
+http://www.expasy.org/sprot/userman.html#AC_line
+
+Accession numbers consist of 6 alphanumerical characters in the
+following format:
+
+1         2     3          4          5          6
+[A-N,R-Z] [0-9] [A-Z]      [A-Z, 0-9] [A-Z, 0-9] [0-9]
+[O,P,Q]   [0-9] [A-Z, 0-9] [A-Z, 0-9] [A-Z, 0-9] [0-9]
+
+Note that ProcessPDB.pl includes a regular expression to check for
+this:
+
+if((!($word2 =~ /^[OPQ]\d[A-Z0-9][A-Z0-9][A-Z0-9]\d/)) &&
+   (!($word2 =~ /^[A-NR-Z]\d[A-Z][A-Z0-9][A-Z0-9]\d/)))
+

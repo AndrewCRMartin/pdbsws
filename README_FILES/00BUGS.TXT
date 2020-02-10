@@ -1,0 +1,291 @@
+22.04.17
+Lots of trEMBL entries now have longer identifiers:
+INFO: Storing entry: A0A088N6L6
+DBD::Pg::db do failed: ERROR:  value too long for type character varying(8) at /home/bsm/martin/pdbcec_new//ProcessSP
+rot.pl line 95, <> line 2603.
+DBD::Pg::db do failed: ERROR:  value too long for type character varying(8) at /home/bsm/martin/pdbcec_new//ProcessSP
+rot.pl line 100, <> line 2603.
+DBD::Pg::db do failed: ERROR:  value too long for type character varying(8) at /home/bsm/martin/pdbcec_new//ProcessSP
+rot.pl line 123, <> line 2603.
+
+
+
+07.11.07 When a PDB entry expires, the entries from the alignment
+table need to be dropped.
+
+
+1. BruteForceScan: Need to change update procedure so it only replaces
+an existing entry of the new one is really considerably better
+
+2. Need to improve parsers so they recognize changes to formats
+properly and then exit
+
+3. Need to find where getchain is used so that it is case sensitive
+
+
+4. (19.10.07) Need to modify ProcessSProt.pl so that it makes use
+of the chain information in SwissProt. In 1nfi, there are multiple
+chains with B/D mapping to P19838 and A/C mapping to Q04206. This
+information appears correctly in the relevant SwissProt entries,
+but our mapping screws up! Same applies to 2AST. Somewhat bizarre
+as it seems to be taking the residue range from the mapping in
+the PDB file, but gets the wrong SwissProt AC
+
+From: "Pawel Smialowski" <pawelsm@gmail.com>
+To: andrew@bioinf.org.uk, martin@biochem.ucl.ac.uk
+Date: 19 October 2007 11:39:07
+
+Dear Sir,
+
+I was using your mapping file and there are some mistakes in it.
+For example:
+1NFI has chains A(C), B(D), E(F) mapping to Q04206, P19838, P25963. In
+your file it maps A(C) to P19838.
+Mapping in the PDB and Uniprot are good but in uniprot if you follow
+the "Detailed list of linked structures" link then you can see the
+wrong assigment contained in your file.
+
+I hope that this hint will help you to improve you mapping rutine.
+
+
+
+
+--------------------------------------------------------------------
+24.06.08
+1. Would be good to have something on the download files or web site
+   to say what version of the databanks is used
+   Could use the time stamp on /acrm/data/tmp/sprottrembl.faa
+
+2. If an alignment fails cos the /tmp disk fills up, the 'aligned'
+   flag still gets set to true!
+
+--------------------------------------------------------------------
+08.07.08
+In some cases a SwissProt entry will have a x-ref to PDB which gets
+used but another SwissProt entry is a much better example.
+e.g. P01116 gives a x-ref to 1d8dA which ends up in the database,
+but Q04631 is much better. (I've fixed this one manually)
+
+--------------------------------------------------------------------
+23.10.08
+There is a problem that sometimes when a primary accession becomes and
+secondary accession, the ACAC table is not having the primary:primary
+mapping removed. e.g.
+
+CP110_HUMAN:
+AC   Q7Z7A1; A2A2Y1; Q3MN79; Q5FWF8; Q5JVD0; Q6MZR3; Q6PKC1; Q8TEP3;
+AC   Q9Y489;
+
+Q9Y489 used to be a primary accession and the Q9Y489->Q9Y489 mapping
+has not been deleted from ACAC (it should just have Q9Y489->Q7Z7A1
+which is also present)
+
+--------------------------------------------------------------------
+06.03.09
+Check that the SwissProt parser deals with lines like:
+DR   PDB; 2I13; X-ray; 1.96 A; A=218-372, B=-.
+(Q07230) where mapping is to both chains A and B in the PDB file
+
+2i13 had chain A mapped, but chain B was listed as DNA. Presumably a
+change in the chain labelling in the PDB? (Fixed manually) Need a
+script to checkthat chains flagged as DNA really are DNA - if not
+untag and re-run them.
+
+--------------------------------------------------------------------
+26.11.09 
+
+A huge number of mappings are not being aligned. Most of these (64408)
+are new entries that just haven't made it through all the processing
+yet. But 186 are old entries that just aren't aligning for one reason
+or another
+
+select count(*) from pdbsws 
+where valid = 't' and ac != 'ERROR' and ac != 'SHORT' and ac != 'DNA' 
+and aligned = 'f' and date < '01-Nov-2009';
+
+--------------------------------------------------------------------
+22.02.10 - FIXED
+
+Some sequences for which mappings have been updated aren't being
+re-aligned. e.g. 3ft5 is now mapped to P07900 (HS90A_HUMAN), (and
+flagged as not aligned), but the alignment table says Q3T007
+(Q3T007_BOVIN)
+
+Notify: Peter Schmidtke <pschmidtke@mmb.pcb.ub.es>
+
+
+--------------------------------------------------------------------
+30.03.10
+
+1sbbA->P01852 / 1becA->Q8K1Z5 - these should be the same thing
+
+This is another nightmare scenario that PDBSWS doesn't cope with... 
+
+So it looks like what happened is that 1becA was mapped to Q8K1Z5
+through the cross-reference provided in the PDB file.  Normally any
+expired accession simply becomes a secondary accession for a new
+primary. The acac table in the PDBSWS database deals with
+this.... HOWEVER! in this case the accession Q8K1Z5 has simply been
+deleted rather than becoming a secondary accession - as I understand
+it this is not supposed to happen :-S
+
+I guess we need an additional step in PDBSWS to remove any entries
+which are simply deleted. These PDB chains should then be cleared and
+re-processed, but there also needs to be a check for cases where a PDB
+file provides a cross-reference to a non-existent Uniprot entry...
+
+1ghqB->Q5VW85 / 1ly2A->P20023
+
+This is the same problem. In this case the mapping of 1ghqB to Q5VW85
+was done by my brute force mapping. In fact the PDB entry has now been
+updated with a cross-reference to P20023. Again Q5VW85 gas been
+deleted from UniProt rather then becoming a secondary accession!
+
+
+04.05.10
+
+Still some problems with wrong chain labels. e.g. 3cpa listed in db
+as having Chain S. Look for:
+ERROR: Failed to write sequence file for 3cpa chain 'S'
+
+
+09.06.10
+
+pdbsws table has 121 unaligned sequences. e.g.
+pdbc    ac      start   stop
+1yboC / P31431  -10   | 6    
+1ezqB / P00742  -82   | 51  
+
+These start/stop positions come from DBREF entries in the PDB file,
+but the numbering in the file does not start from residue -10 or -82
+respectively. Code should either truncate the ranges appropriately to
+that for which ATOM records are present, or should simply behave as if
+no DBREF range was found.
+
+09.06.10
+
+I believe the code is not handling lower case chain names properly.
+e.g. 1vsaw vs. 1vsaW
+
+
+29.03.11
+
+1kki chains A and B ended up being marked as DNA although already in the
+alignment table. No clue as to why!
+
+08.04.11
+1yqvH is now marked as DNA!
+ 
+-------------------------------------------------------------------------------
+
+2gpo - both chains mapped to the same entry...
+
+So why is this entry wrong? I suspect this is a victim of the PDB
+remediation. When they did this a couple of years ago, they replaced
+all 'blank' chain names with the letter A. In a small number of
+entries, one chain has a blank chain name while others had letters
+(A,B,C etc).
+
+PDBSWS really was not designed to cope with such changes! Consequently
+we have had to do quite a lot of updating runs to fix these changes.
+
+My initial conclusion about 2gpo was as follows:
+
+When these blank chains were renamed A, the other chains also changed
+label. In this example, I suspect that the old file had chain names
+'blank' and 'A' and this changed to 'A' and 'C'.
+
+So originally we had
+   2gpo.' ' -> P62508
+   2gpo.'A' -> P48552
+They then changed the labels such that what had been called chain ' '
+became chain 'A' and the old chain 'A' became 'C'. As you point out
+the correct mapping is then
+   2gpo.'A' -> P62508
+   2gpo.'C' -> P48552
+Chain 'C' is a new chain in the database so the PDBSWS update maps
+this to P48552, but chain A was already in the database and already
+mapped to P48552, so hasn't been updated.
+
+However, checking the database entries suggests this conclusion is wrong.
+ pdb  | chain |   ac   | valid | source |    date    |
+------+-------+--------+-------+--------+------------+
+ 2gpo | A     | P48552 | t     | sprot  | 2012-02-04 |
+ 2gpo | C     | P48552 | t     | pdb    | 2006-10-10 |
+
+As you see chain A isn't an old entry - in fact it was updated in Feb
+2012 and Chain C's mapping hasn't changed since 2006. Consequently I
+suspect that the following has happened:
+
+The original entry had chain ' ' and chain 'C' to the original mapping was:
+   2gpo.' ' -> P62508
+   2gpo.'C' -> P48552
+When they updated the blank chain label to 'A' this was
+re-run. Remembering that the UniProtKB cross references are checked
+before the PDB cross-references, by chance, P48552 was found before
+P62508. As described above, when a cross reference from SwissProt is
+found to a PDB file, all the chains in the PDB file are examined and
+the best matching chain(s) are selected. In fact, it is slightly more
+complicated than that - only unassigned chains are considered - so in
+this case, only chain 'A' was looked at. Obviously it therefore had
+the best match and was assigned.
+
+What I need to do is remove all entries for 2gpo from the database and
+run an update. This should then solve the problem. Of course there may
+well be other similar cases and I would be grateful if you could bring
+them to my attention.
+
+Longer term we should do the following:
+1. Modify the mapping from UniProtKB such that it makes use of chain
+   information in the entry
+2. Modify the code such that a new chain appearing in a PDB file
+   causes the whole PDB file to be re-processed rather than just the
+   new chain.
+3. At some stage we should do a complete re-population of PDBSWS. At
+   the time when I wrote PDBSWS, complete population took around 2
+   weeks and an update took about a day. The vast explosion in the
+   amount of data means that I estimate a complete population would
+   now take closer to 2 months on a single CPU so we really need to
+   port the code to run on a farm. That said, PDB and UniProtKB are
+   now much better at including cross-references so there is much much
+   less brute force scanning needed - things may now have got a lot
+   better!
+
+I am running an update at the moment. Once that finishes, I will
+remove 2gpo and re-do the update which should fix the problem. If you
+find any more problem entries, please let me know and I will reprocess
+them.
+
+
+12.03.12 Where a uniprot accession (cross-linked from PDB) is no
+longer valid we should do a brute-force scan.
+
+
+02.04.12 1xpu has DBREF records for P22869 (MEMA_METCA) But the PDB
+file says it's an E.coli protein and the alignment shows the sequence
+is clearly wrong. This one ought to be redone using the Brute Force
+scan.
+
+
+19.12.13
+
+http://www.bioinf.org.uk/cgi-bin/pdbsws/query.pl?qtype=ac&id=Q15848&all=yes
+shows lots of mismatches:
+   It seems that the PDB file to which Q15848 maps (4dou chain A) is an
+artificial construct in which 3 copies of the globular (C-terminal)
+domain of human adiponectin are joined to one another. The PDBSWS code
+manages to align the last of these three copies correctly.
+   So the UniProt entry is something like X-Y-Z (where X, Y and Z are
+domains), while the PDB entry is Z-Z-Z. Consequently the alignment
+step ends up with doing something like:
+     Y-Z
+   Z-Z-Z
+   This is the first instance I've seen of this and the PDBSWS code has
+not been designed to deal with such cases. PDBSWS does deal with
+chimerics in the PDB providing the DBREF entry in the PDB file
+correctly specfies the component sequences. In this case, the DBREF
+actually provides a cross reference to P25801, the mouse homologue in
+UniProt, despite being a human sequence. PDBSWS correctly finds the
+human entry in UniProt, but doesn't use the DBREF records to create
+this 'self-chimeric'.
+

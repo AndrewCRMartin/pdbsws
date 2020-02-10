@@ -1,0 +1,17 @@
+Look at BruteForceScan.log to see chains that no longer exist
+e.g.
+INFO: Updating 12as chain 'X'
+Error: No memory for sequence data
+ERROR: Failed to write sequence file for 12as chain 'X'
+
+--or--
+
+INFO: Processing 3f9k chain 'd' : Error: No memory for sequence data
+ERROR: Failed to write sequence file for 3f9k chain 'd'
+
+This is because chain names have changed
+
+
+Errors such as:
+INFO: Processing 3chx chain 'N' : ERROR: Failed to write sequence file for 3chx chain 'N'
+are genuine cases where the sequence is non-standard and full of Xs

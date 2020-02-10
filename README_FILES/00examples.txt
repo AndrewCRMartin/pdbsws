@@ -1,0 +1,16 @@
+Forcing re-run of a particular PDBc:
+
+DB=pdbsws
+DAYSOLD=150
+SPROT_TREMBL=/acrm/data/tmp/sprottrembl.faa
+./BruteForceScan.pl -pdbc=XXXXX -dbname=$DB -daysold=$DAYSOLD $SPROT_TREMBL
+ 
+
+
+------------------------------------------------------------------
+1c9s / Q9X6J6
+Found by brute, but now in Sprot 
+Sprot says all residue ranges are 1-74:
+DR   PDB; 1C9S; X-ray; A/B/C/D/E/F/G/H/I/J/K/L/M/N/O/P/Q/R/S/T/U/V=1-74.
+but the chains are different lengths (confusing)
+

@@ -1,0 +1,13 @@
+1pdgB and 1pdgC fail in BruteForceScan because there is a stretch
+of 11 residues missing from the coordinates (and from the sequence
+used for the scan). Therefore the percentage ID over that matched
+range falls to 88.298%, although it is 100% over the aligned
+residues. Currently, the code picks up the percent ID from the
+FASTA printed info - perhaps we should change this so it works
+it out itself over aligned residues. Would need a change to
+BruteForceScan.pl/BruteFASTA()
+
+What happens with 1pdgA? We don't seem to be getting the whole
+sequence aligned.
+
+

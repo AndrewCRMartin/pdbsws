@@ -1,0 +1,360 @@
+02.02.06
+Processed   86919 new entries from trEMBL
+Processed      51 new entries from UniProt/KB
+Processed     415 new entries from PDB
+Found         606 additional mappings through brute-force scan
+
+04.02.06
+Processed       0 new entries from trEMBL
+Processed       0 new entries from UniProt/KB
+Processed     189 new entries from PDB
+Found         145 additional mappings through brute-force scan
+
+03.03.06
+Processed   37100 new entries from trEMBL
+Processed      93 new entries from UniProt/KB
+Processed     378 new entries from PDB
+Found        1321 additional mappings through brute-force scan
+
+04.05.06
+Processed  109981 new entries from trEMBL
+Processed       0 new entries from UniProt/KB
+Processed     479 new entries from PDB
+Found        1356 additional mappings through brute-force scan
+
+20.06.06
+Processed  171528 new entries from trEMBL
+Processed     118 new entries from UniProt/KB
+Processed     776 new entries from PDB
+Found        1605 additional mappings through brute-force scan
+
+09.10.06
+Processed   21772 new entries from trEMBL
+Processed       0 new entries from UniProt/KB
+Processed     777 new entries from PDB
+Found        1707 additional mappings through brute-force scan
+
+01.12.06
+Processed  235732 new entries from trEMBL
+Processed     296 new entries from UniProt/KB
+Processed    1259 new entries from PDB
+Found         346 additional mappings through brute-force scan
+
+15.01.07
+Processed  134124 new entries from trEMBL
+Processed      69 new entries from UniProt/KB
+Processed     720 new entries from PDB
+Found         146 additional mappings through brute-force scan
+
+15.04.07
+Processed 568120 new entries from trEMBL
+Processed  10614 new entries from UniProt/KB
+Processed   1530 new entries from PDB
+Found       4282 additional mappings through brute-force scan
+[RUN INCOMPLETE - ADD DATA FROM FINISHING RUN]
+
+12.07.07
+Processed 243084 new entries from trEMBL
+Processed   9475 new entries from UniProt/KB
+Processed    924 new entries from PDB
+Found       2083 additional mappings through brute-force scan
+
+04.08.07
+Processed  136147 new entries from trEMBL
+Processed    7466 new entries from UniProt/KB
+Processed     554 new entries from PDB
+Found        1131 additional mappings through brute-force scan
+
+13.09.07
+Processed  249144 new entries from trEMBL
+Processed   10636 new entries from UniProt/KB
+Processed     191 new entries from PDB
+Found         319 additional mappings through brute-force scan
+
+19.10.07 (Mirrored files had moved!)
+Processed       0 new entries from trEMBL
+Processed       0 new entries from UniProt/KB
+Processed      49 new entries from PDB
+Found       0 additional mappings through brute-force scan
+
+15.11.07
+Processed 295817 new entries from trEMBL
+Processed    245 new entries from UniProt/KB
+Processed     49 new entries from PDB
+Found         40 additional mappings through brute-force scan
+
+[Partial update run to fix problems from FASTA file being >2Gb]
+
+02.01.08
+Processed  131560 new entries from trEMBL
+Processed     183 new entries from UniProt/KB
+Processed      49 new entries from PDB
+Found          10 additional mappings through brute-force scan
+
+26.01.08
+Processed  162537 new entries from trEMBL
+Processed     118 new entries from UniProt/KB
+Processed      49 new entries from PDB
+Found           5 additional mappings through brute-force scan
+
+27.02.08
+Processed  234154 new entries from trEMBL
+Processed      70 new entries from UniProt/KB
+Processed      86 new entries from PDB
+Found          83 additional mappings through brute-force scan
+
+12.03.08
+Processed   75612 new entries from trEMBL
+Processed      84 new entries from UniProt/KB
+Processed      53 new entries from PDB
+Found          25 additional mappings through brute-force scan
+
+30.04.08
+Processed  216176 new entries from trEMBL
+Processed     174 new entries from UniProt/KB
+Processed      53 new entries from PDB
+Found       3 additional mappings through brute-force scan
+
+16.05.08
+Processed  159809 new entries from trEMBL
+Processed      33 new entries from UniProt/KB
+Processed    6110 new entries from PDB
+Found       11111 additional mappings through brute-force scan
+
+15.07.08
+Processed  375954 new entries from trEMBL
+Processed     306 new entries from UniProt/KB
+Processed     899 new entries from PDB
+Found        2213 additional mappings through brute-force scan
+
+24.09.08
+Processed  230690 new entries from trEMBL
+Processed     255 new entries from UniProt/KB
+Processed    1371 new entries from PDB
+Found          20 additional mappings through brute-force scan
+
+27.11.08 (Partial run)
+Processed  540251 new entries from trEMBL
+Processed     177 new entries from UniProt/KB
+Processed    1586 new entries from PDB
+Found          94 additional mappings through brute-force scan
+
+10.02.09
+Processed  219201 new entries from trEMBL
+Processed      98 new entries from UniProt/KB
+Processed    1065 new entries from PDB
+Found         117 additional mappings through brute-force scan
+
+15.04.09 (Re-run to deal with chain name changes)
+Processed  461851 new entries from trEMBL
+Processed     180 new entries from UniProt/KB
+Processed    3613 new entries from PDB
+Found        3246 additional mappings through brute-force scan
+
+[***Still going***]
+Processed  289320 new entries from trEMBL
+Processed    1520 new entries from UniProt/KB
+Processed    2463 new entries from PDB
+Found        3558 additional mappings through brute-force scan
+
+[***Still going***]
+Processed 0 new entries from trEMBL
+Processed 0 new entries from UniProt/KB
+Processed 2463 new entries from PDB
+Found 140 additional mappings through brute-force scan
+
+[***Still going***]
+Processed 0 new entries from trEMBL
+Processed 715 new entries from UniProt/KB
+Processed 476 new entries from PDB
+Found 2443 additional mappings through brute-force scan
+
+nohup nice -10 ./build_part.sh &> build.out &
+.......
+
+15.06.09
+Processed 0 new entries from trEMBL
+Processed 0 new entries from UniProt/KB
+Processed 56 new entries from PDB
+Found 0 additional mappings through brute-force scan
+
+30.07.09
+Processed 0 new entries from trEMBL
+Processed 0 new entries from UniProt/KB
+Processed 1551 new entries from PDB
+Found 2712 additional mappings through brute-force scan
+
+21.08.09
+Processed 0 new entries from trEMBL
+Processed 0 new entries from UniProt/KB
+Processed 518 new entries from PDB
+Found 2208 additional mappings through brute-force scan
+
+25.09.09
+Processed 0 new entries from trEMBL
+Processed 0 new entries from UniProt/KB
+Processed 790 new entries from PDB
+Found 2864 additional mappings through brute-force scan
+
+01.11.09
+Processed 1989031 new entries from trEMBL
+Processed 13417 new entries from UniProt/KB
+Processed 1117 new entries from PDB
+Found 125 additional mappings through brute-force scan
+[...not finished...]
+
+13.11.09
+Processed 229292 new entries from trEMBL
+Processed 22 new entries from UniProt/KB
+Processed 220 new entries from PDB
+Found 507 additional mappings through brute-force scan
+[...not finished...]
+
+24.11.09
+Processed 0 new entries from trEMBL
+Processed 0 new entries from UniProt/KB
+Processed 231 new entries from PDB
+Found 828 additional mappings through brute-force scan
+[...not finished...]
+
+21.03.10
+Processed 588241 new entries from trEMBL
+Processed 106 new entries from UniProt/KB
+Processed 1806 new entries from PDB
+Found 4921 additional mappings through brute-force scan
+
+09.06.10
+Processed 680609 new entries from trEMBL
+Processed 468 new entries from UniProt/KB
+Processed 1613 new entries from PDB
+Found 4929 additional mappings through brute-force scan
+
+21.07.10 still running...
+Processed 731957 new entries from trEMBL
+Processed 311 new entries from UniProt/KB
+Processed 1277 new entries from PDB
+Found 2422 additional mappings through brute-force scan
+
+27.10.10 - still going
+Processed 825249 new entries from trEMBL
+Processed 297 new entries from UniProt/KB
+Processed 2830 new entries from PDB
+Found 1501 additional mappings through brute-force scan
+
+24.01.11 - still going
+Processed 701700 new entries from trEMBL
+Processed 125 new entries from UniProt/KB
+Processed 1506 new entries from PDB
+Found 834 additional mappings through brute-force scan
+
+28.01.11 - still going
+Processed 332281 new entries from trEMBL
+Processed 145 new entries from UniProt/KB
+Processed 660 new entries from PDB
+Found 156 additional mappings through brute-force scan
+
+08.02.11
+Processed 0 new entries from trEMBL
+Processed 0 new entries from UniProt/KB
+Processed 189 new entries from PDB
+Found 3598 additional mappings through brute-force scan
+
+13.04.11
+Processed 890570 new entries from trEMBL
+Processed 220 new entries from UniProt/KB
+Processed 911 new entries from PDB
+Found 2650 additional mappings through brute-force scan
+
+14.07.11
+Processed 1253118 new entries from trEMBL
+Processed 146 new entries from UniProt/KB
+Processed 1282 new entries from PDB
+Found 4473 additional mappings through brute-force scan
+
+09.08.11
+Processed 1520705 new entries from trEMBL
+Processed 1870 new entries from UniProt/KB
+Processed 2155 new entries from PDB
+Found 0 additional mappings through brute-force scan
+
+25.09.11
+Processed 425347 new entries from trEMBL
+Processed 64 new entries from UniProt/KB
+Processed 1199 new entries from PDB
+Found 0 additional mappings through brute-force scan
+
+11.10.11
+Processed 0 new entries from trEMBL
+Processed 0 new entries from UniProt/KB
+Processed 354 new entries from PDB
+Found 0 additional mappings through brute-force scan
+
+11.11.11
+Processed 786606 new entries from trEMBL
+Processed 119 new entries from UniProt/KB
+Processed 890 new entries from PDB
+Found 0 additional mappings through brute-force scan
+
+06.02.12
+Processed 1869213 new entries from trEMBL
+Processed 199 new entries from UniProt/KB
+Processed 2002 new entries from PDB
+Found 0 additional mappings through brute-force scan
+
+09.03.12
+Processed 716830 new entries from trEMBL
+Processed 78 new entries from UniProt/KB
+Processed 948 new entries from PDB
+Found 0 additional mappings through brute-force scan
+
+10.03.12
+(Removed a set of UniProt accessions that no longer exist and re-processed)
+Processed 0 new entries from trEMBL
+Processed 0 new entries from UniProt/KB
+Processed 803 new entries from PDB
+Found 0 additional mappings through brute-force scan
+
+13.03.12
+(Re processing of bad ID chains)
+Processed 0 new entries from trEMBL
+Processed 0 new entries from UniProt/KB
+Processed 309 new entries from PDB
+Found 0 additional mappings through brute-force scan
+
+02.04.12
+(More reprocessing)
+Processed 527121 new entries from trEMBL
+Processed 89 new entries from UniProt/KB
+Processed 625 new entries from PDB
+Found 0 additional mappings through brute-force scan
+
+20.11.12
+Processed 5125452 new entries from trEMBL
+Processed 447 new entries from UniProt/KB
+Processed 4137 new entries from PDB
+Found 0 additional mappings through brute-force scan
+
+07.12.12
+Processed 1327397 new entries from trEMBL
+Processed 70 new entries from UniProt/KB
+Processed 519 new entries from PDB
+Found 0 additional mappings through brute-force scan
+
+04.01.13
+Processed 0 new entries from trEMBL
+Processed 0 new entries from UniProt/KB
+Processed 620 new entries from PDB
+Found 0 additional mappings through brute-force scan
+
+11.02.15
+Processed 0 new entries from trEMBL
+Processed 0 new entries from UniProt/KB
+Processed 6184 new entries from PDB
+Found 0 additional mappings through brute-force scan
+
+20.04.16
+Processed 120862358 new entries from trEMBL
+Processed 1441 new entries from UniProt/KB
+Processed 6174 new entries from PDB
+Found 0 additional mappings through brute-force scan
+
