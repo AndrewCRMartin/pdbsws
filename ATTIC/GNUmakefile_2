@@ -1,0 +1,85 @@
+# Makefile for building the PDB/SwissProt lookup table
+
+#########################################################################
+# You NEED to alter these...
+############################
+# The SwissProt file
+# SPROT_DATA      = /home/bsm/martin/pdbcec_new/test.sprot
+SPROT_DATA      = /acrm/data/swissprot/full/uniprot_sprot.dat
+TREMBL_DATA     = /acrm/data/swissprot/full/uniprot_trembl.dat
+# Where the PDB lives
+PDBDIR          = /data/pdb
+LOGS            = /home/bsm/martin/pdbcec_new/
+TOUCH           = /home/bsm/martin/pdbcec_new/
+
+#########################################################################
+# Should NEVER need to alter below here...
+##########################################
+PROGS           = /home/bsm/martin/pdbcec_new/
+
+#####
+# include $(CATH_PARAM_FILE)
+#####
+
+# This is the basic 4 stages which must be done in sequence
+# ---------------------------------------------------------
+
+all : $(TOUCH)/Stage3.touch
+
+$(TOUCH)/Stage3.touch : $(TOUCH)/Stage2.touch 
+	$(PROGS)/FixPDBData.pl $(PDBDIR) &> $(LOGS)/FixPDBData.log
+	touch $(TOUCH)/Stage3.touch
+
+$(TOUCH)/Stage2.touch : $(TOUCH)/Stage1a.touch $(TOUCH)/Stage1b.touch 
+	$(PROGS)/ProcessPDBEntry.pl $(PDBDIR) &> $(LOGS)/ProcessPDB.log
+	touch $(TOUCH)/Stage2.touch
+
+$(TOUCH)/Stage1a.touch : $(SPROT_DATA)
+	$(PROGS)/ProcessSProt.pl $(SPROT_DATA) &> $(LOGS)/ProcessSProt.log
+	touch $(TOUCH)/Stage1a.touch
+
+$(TOUCH)/Stage1b.touch : $(TREMBL_DATA)
+	$(PROGS)/ProcessSProt.pl $(TREMBL_DATA) &> $(LOGS)/ProcessTrembl.log
+	touch $(TOUCH)/Stage1b.touch
+
+######
+# Utilities
+######
+clean :
+	\rm -f $(LOGS)/*.log
+
+database : clean
+	$(PROGS)/createdb.sh
+	\rm -f $(LOGS)/*.touch
+
+help :
+	@echo ''
+	@echo 'First you need to download the latest SwissProt and the new_seq.dat'
+	@echo 'Append the new_seq.dat file onto the end of the SwissPort release'
+	@echo '   cat new_seq.dat >>sprot36.dat'
+	@echo 'Now download the enzyme database (enzyme.dat)'
+	@echo ''
+	@echo 'Edit this makefile to set variables'
+	@echo 'Type: gmake dirs'
+	@echo '   if required to make subdirectories'
+	@echo 'Type: gmake >& gmake.out &'
+	@echo '   to build the PDB->EC file'
+	@echo 'Final result is in:'
+	@echo '   $(LOOKUP)/pdbcec.dat'
+	@echo '(actual location will depend on the variables you set)'
+	@echo 'The PDB-SwissProt file is in:'
+	@echo '   $(LOOKUP)/Stage4.dump'
+	@echo '(actual location will depend on the variables you set)'
+	@echo ''
+	@echo 'gmake clean'
+	@echo '   will remove log files'
+	@echo 'gmake distclean'
+	@echo '   will remove the derived and lookup subdirectories and contents'
+	@echo 'gmake touch'
+	@echo '   will stop the PDB->PIR stage rerunning if you are testing and'
+	@echo '   the PDB has been updated since you last ran'
+	@echo ''
+
+touch :
+	touch $(PDB_PIR_SEQ)
+
