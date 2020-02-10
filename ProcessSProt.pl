@@ -1,0 +1,237 @@
+#!/usr/bin/perl -s
+#*************************************************************************
+#
+#   Program:    
+#   File:       
+#   
+#   Version:    
+#   Date:       
+#   Function:   
+#   
+#   Copyright:  (c) UCL / Dr. Andrew C. R. Martin 2004
+#   Author:     Dr. Andrew C. R. Martin
+#   Address:    Biomolecular Structure & Modelling Unit,
+#               Department of Biochemistry & Molecular Biology,
+#               University College,
+#               Gower Street,
+#               London.
+#               WC1E 6BT.
+#   Phone:      +44 (0)171 679 7034
+#   EMail:      andrew@bioinf.org.uk
+#               martin@biochem.ucl.ac.uk
+#   Web:        http://www.bioinf.org.uk/
+#               
+#               
+#*************************************************************************
+#
+#   This program is not in the public domain, but it may be copied
+#   according to the conditions laid out in the accompanying file
+#   COPYING.DOC
+#
+#   The code may be modified as required, but any modifications must be
+#   documented so that the person responsible can be identified. If 
+#   someone else breaks this code, I don't want to be blamed for code 
+#   that does not work! 
+#
+#   The code may not be sold commercially or included as part of a 
+#   commercial product except as described in the file COPYING.DOC.
+#
+#*************************************************************************
+#
+#   Description:
+#   ============
+#
+#*************************************************************************
+#
+#   Usage:
+#   ======
+#
+#*************************************************************************
+#
+#   Revision History:
+#   =================
+#
+#*************************************************************************
+# Packages to use
+use ACRMPerlVars;
+use CGI;
+use DBI;
+
+use strict;
+
+$|=1;
+
+# Default variables
+$::dbname    = "pdbsws" if(!defined($::dbname));
+$::dbhost    = $ACRMPerlVars::pghost if(!defined($::dbhost));
+
+# Initialize array
+@::monthnames = ('JAN','FEB','MAR','APR','MAY','JUN',
+                 'JUL','AUG','SEP','OCT','NOV','DEC');
+
+# Connect to the database
+$::dbh = DBI->connect("dbi:Pg:dbname=$::dbname;host=$::dbhost");
+die "Could not connect to database: $DNI::errstr" if(!$::dbh);
+
+ProcessSwissProt();
+
+#######################################################################
+sub StoreEntry
+{
+    my($id, $date, $seq, $acs_p, $pdbs_p) = @_;
+    my($i, $sql, $olddate, $retval, $oldseq);
+
+    # See if this entry is already in the database
+    $sql = "SELECT date, sequence FROM sprot WHERE ac = '$$acs_p[0]'";
+    ($olddate, $oldseq) = $::dbh->selectrow_array($sql);
+
+    # If the entry was not found, then simply store this entry
+    if($olddate eq "")
+    {
+        print "INFO: Storing entry: $$acs_p[0]\n";
+
+        # Store the main entry
+        $sql = "INSERT INTO sprot VALUES ('$$acs_p[0]', '$seq', '$date')";
+        $retval = $::dbh->do($sql);
+
+        # Store a mapping from the primary accession to itself in the
+        # acac table to simplify queries
+        $sql = "INSERT INTO acac VALUES('$$acs_p[0]', '$$acs_p[0]')";
+        $retval = $::dbh->do($sql);
+
+        # if necessary store acac entries and remove the old main entry
+        # and IDAC entries for these superceeded ACs if they exist
+        for($i=1; $i<@$acs_p; $i++)
+        {
+            $sql = "INSERT INTO acac VALUES('$$acs_p[0]', '$$acs_p[$i]')";
+            $retval = $::dbh->do($sql);
+            $sql = "DELETE FROM sprot WHERE ac = '$$acs_p[$i]'";
+            $retval = $::dbh->do($sql);
+            $sql = "DELETE FROM idac WHERE ac = '$$acs_p[$i]'";
+            $retval = $::dbh->do($sql);
+            $sql = "DELETE FROM pdbac WHERE ac = '$$acs_p[$i]'";
+        }
+        # Delete this ID from the IDAC table (in case it exists and the
+        # old AC isn't listed in the Sprot Entry)
+        $sql = "DELETE FROM idac WHERE id = '$id'";
+        $retval = $::dbh->do($sql);
+        # Store the idac entry
+        $sql = "INSERT INTO idac VALUES ('$id', '$$acs_p[0]')";
+        $retval = $::dbh->do($sql);
+        # Store any pdbac entries
+        for($i=0; $i<@$pdbs_p; $i++)
+        {
+            $sql = "INSERT INTO pdbac VALUES ('$$acs_p[0]', '$$pdbs_p[$i]', 'f')";
+            $retval = $::dbh->do($sql);
+        }
+    }
+    else                        # Entry was found, check the date
+    {
+        $olddate = SimplifyDate($olddate);
+        if($date ne $olddate) # Entry has been updated
+        {
+            print "INFO: Updating entry $$acs_p[0]\n";
+
+            # update the main entry
+            $sql = "UPDATE sprot SET date = '$date', sequence = '$seq' WHERE ac = '$$acs_p[0]'";
+            $retval = $::dbh->do($sql);
+            # update the ACAC entries
+            ### Ideally this should all be in one transaction ###
+            $sql = "DELETE FROM acac WHERE ac = '$$acs_p[0]'";
+            $retval = $::dbh->do($sql);
+            for($i=0; $i<@$acs_p; $i++)
+            {
+                $sql = "INSERT INTO acac VALUES('$$acs_p[0]', '$$acs_p[$i]')";
+                $retval = $::dbh->do($sql);
+            }
+            # Update the PDBAC entries
+            ### Ideally this should all be in one transaction ###
+            $sql = "DELETE FROM pdbac WHERE ac = '$$acs_p[0]'";
+            $retval = $::dbh->do($sql);
+            for($i=0; $i<@$pdbs_p; $i++)
+            {
+                $sql = "INSERT INTO pdbac VALUES ('$$acs_p[0]', '$$pdbs_p[$i]', 'f')";
+                $retval = $::dbh->do($sql);
+            }
+
+            # If the sequence has changed, update the 'aligned' flag in the
+            # PDBSWS table entries which reference this AC. This will force 
+            # alignments to be re-done
+            $seq    =~ s/\s//g;
+            $oldseq =~ s/\s//g;
+            if($seq ne $oldseq)
+            {
+                $sql = "UPDATE pdbsws SET aligned = 'f' WHERE ac = '$$acs_p[0]'";
+            }
+        }
+        else
+        {
+            print "INFO: Already have entry for $$acs_p[0]\n";
+        }
+    }
+}
+
+#######################################################################
+sub SimplifyDate
+{
+    my($date) = @_;
+    my($simpledate,$year,$month,$day);
+    ($date) = split(/\s+/, $date);
+    ($year,$month,$day) = split(/-/, $date);
+    $simpledate = sprintf "$day-%s-$year", $::monthnames[$month-1];
+
+    return($simpledate);
+}
+
+#######################################################################
+sub ProcessSwissProt
+{
+    my($id, $date, $seq, @acs, @fields, @pdbs);
+    while(<>)
+    {
+        chomp;
+        if(/^\/\//)            # End of entry
+        {
+            $seq =~ s/\s//g;
+            StoreEntry($id, $date, $seq, \@acs, \@pdbs) if($id ne "");
+            $id  = "";
+            @acs  = ();
+            @pdbs = ();
+            $date = "";
+            $seq  = "";
+        }
+        if(/^ID /)
+        {
+            @fields = split;
+            $id = $fields[1];
+        }
+        elsif(/^AC /)
+        {
+            s/\;/ /g;           # Remove semi-colons
+            s/\s+/ /g;          # Condense white-space
+            @fields = split;    # Grab the accessions
+            shift @fields;
+            push @acs, @fields;
+        }
+        elsif(/^DT /)
+        {
+            @fields = split;    # Store the final date record
+            $date = $fields[1];
+        }
+        elsif(/^DR /)
+        {
+            s/\;/ /g;           # Remove semi-colons
+            s/\s+/ /g;          # Condense white-space
+            tr/A-Z/a-z/;        # Down-case
+            @fields = split;
+            if($fields[1] eq "pdb")
+            {
+                push @pdbs, $fields[2];
+            }
+        }
+        elsif(/^   /)
+        {
+            $seq .= $_;
+        }
+    }
+}
