@@ -1,0 +1,193 @@
+fixit1
+======
+A number of entries were erroneously marked as DNA.
+See fixit1.sh - This reruns these through BruteForceScan
+  ./fixit1.sh > fixit1.log
+
+
+fixit2
+======
+Check the following entries come into the 'idac' table from SwissProt on
+the next run:
+
+   IPKA_PIG       Q71U53
+   Q4US32_XANC8   Q4US32
+   (and others!)
+
+These are in the 'sprot' and 'acac' tables
+See fixit2.lis for a complete list
+This updates the table:
+    ./fixit2.pl fixit2.lis 
+
+There was a problem from this that entries are then marked as valid, but
+with a blank accession and also marked as aligned, but the alignment
+table has nothing in it:
+
+This SQL shows the problem:
+
+select pdb, chain from pdbsws p
+where p.ac = '' and p.valid = 't' and p.aligned = 't'
+and (select count(*) from alignment a where a.pdb = p.pdb and a.chain = p.chain) = 0;
+
+This SQL resets the flags for those cases:
+
+update pdbsws set valid = 'f', aligned = 'f', ac = '?'
+where pdbsws.ac = '' and pdbsws.valid = 't' and pdbsws.aligned = 't'
+and (select count(*) from alignment a where a.pdb = pdbsws.pdb and a.chain = pdbsws.chain) = 0;
+
+fixit3
+======
+
+And finally there were entries still marked as DNA but which aren't and have
+alignment entries
+
+   psql pdbsws <fixit3.sql >fixit3.out
+(remove headers and footer from fixit3.out - don't worry about lines where 
+the AC is blank - this is where the SwissProt entry doesn't have the whole
+sequence - the Perl code will deal with it)
+   ./fixit3.pl fixit3.out | psql pdbsws
+
+09.03.09 fixit3_ERROR.sql does the same for entries marked ERROR instead of DNA
+   psql pdbsws <fixit3_ERROR.sql >fixit3.out
+(edit fixit3.out)
+   ./fixit3.pl fixit3.out | psql pdbsws
+
+
+24.04.07 fixit4
+===============
+The SwissProt FASTA format has changed such that the headers were
+>ID (AC)
+and are now
+>AC|ID
+
+This meant that the population of the database messed up as the
+FASTA parser obtained AC|ID rather than just ID - the lookup
+in the IDAC table then failed and blank ACs were inserted into the
+the pdbsws table.
+
+fixit4.sql gets a list of these into fixit4.lis
+fixit4.pl then scans this list and runs BruteForceScan.pl on
+each in turn in 'force' mode
+nohup ./fixit4.pl fixit4.lis > fixit4.log 2>&1 &
+
+09.03.09 Run again
+
+
+fixit5.pl
+=========
+
+Because the swissprot/trembl database was >2Gig, the 32bit fasta
+was failing. this led to all brute force chains being labelled
+as DNA. This scripts finds all the DNA entries and re-runs them
+
+
+31.01.08 fixchainnames.pl
+=========================
+
+Sometimes PDB files seem to get their chain labels updated without
+any other indication of a change which PDBSWS can find.
+Often this is a blank chain to chain A...
+
+This script finds all instances of chain name discrepancies.
+If it's a ' ' -> 'A' change then the script will fix it.
+Otherwise it issues an error message so that the appropriate
+PDB files can be deleted from PDBSWS before the next update run.
+
+Re-ran 10.03.09
+
+
+22.02.08 fixalignedflag.pl
+==========================
+
+For some reason, some sequences appear in the alignment table (i.e.
+they have been aligned), but the 'aligned' flag in the pdbsws table
+is set to false. This should be fixed on the next run as the current
+alignment will be dropped and the sequences will be re-aligned.
+This script simply sets the aligned flag for every sequences that
+appears in the alignment table.
+
+26.06.08 fixalignedflag2.pl
+===========================
+
+This fixes the opposite problem where for some reason the 'aligned'
+flag in the pdbsws table is set to true, but there is no alignment.
+This can happen if the scratch space where the sequence and
+alignment files are written has filled up.
+
+08.07.08 knownprobs.sh
+======================
+Fixes instances where a x-ref from SwissProt isn't as good as
+another SwissProt entry
+
+--------------------------------------------------------------------
+29.10.08 fixprimaryac.perl
+==========================
+There is a problem that sometimes when a primary accession becomes and
+secondary accession, the ACAC table is not having the primary:primary
+mapping removed. e.g.
+
+CP110_HUMAN:
+AC   Q7Z7A1; A2A2Y1; Q3MN79; Q5FWF8; Q5JVD0; Q6MZR3; Q6PKC1; Q8TEP3;
+AC   Q9Y489;
+
+Q9Y489 used to be a primary accession and the Q9Y489->Q9Y489 mapping
+has not been deleted from ACAC (it should just have Q9Y489->Q7Z7A1
+which is also present)
+
+This script is run on 
+
+select a.ac, a.altac
+from acac a, acac b
+where a.ac != a.altac
+and a.ac = b.altac
+and b.ac != b.altac;
+
+
+select distinct a.ac, a.altac
+from acac a, acac b
+where a.altac = b.ac
+and a.altac != a.ac;
+
+--------------------------------------------------------------------
+09.03.09 deleteerrors.pl
+========================
+
+Because of the SwissProt FASTA dump format change, parsing of FASTA
+output to extract the SwissProt ID wasn't working properly leading to
+loads of sequences being flagged as ERROR or DNA (as nothing was extracted
+from the FASTA output).
+
+This script deletes everything for any PDB file which has at least on
+chain flagged as 'ERROR' so that the next run will simply do it again.
+
+10.03.09 checkdna.pl
+====================
+
+Again some entries were marked as DNA which weren't. This is a more
+intelligent version of fixit5.pl which checks things marked as DNA
+to see if they really are. Those which aren't get removed from the
+database to be handled on the next update.
+
+Also re-ran fixchainnames.pl as more PDB entries have changed name.
+
+15.04.09 More getting rid of changed chain names
+================================================
+grep "ERROR: Failed to write sequence file for" ../BruteForceScan.log | grep -v INFO | awk '{print $8}' | sort -u | ./fixit6.pl | psql pdbsws
+
+The re-run as normal
+
+
+26.05.09 Some examples where valid is false but the accession is valid
+======================================================================
+./fixvalidflag.pl
+
+09.03.12 Remove a set of entries for deleted UniprotKB accessions
+reported by Jules Kerssemakers J.Kerssemakers@cmbi.ru.nl
+==================================================================
+removedDeletedUniProt.sh
+
+02.04.12 Redo PDB files where the number of mismatched residues is
+greater than the number of matched residues -OR- mismatch > 200
+Again from list reported by Jules Kerssemakers J.Kerssemakers@cmbi.ru.nl
+==================================================================
+./redoMisMatches.pl mismatches.txt
