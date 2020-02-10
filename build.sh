@@ -3,7 +3,7 @@
 # You NEED to alter these...
 ############################
 # The final output map of PDB to SwissProt
-PDBSWSMAP=/acrm/data/tmp/pdb_sws_map.lst
+PDBSWSMAP=/acrm/data/pdbuniprot/pdb_uniprot_map.lst
 # The SwissProt and trEMBL files
 SPROT_DATA=/acrm/data/swissprot/full/uniprot_sprot.dat
 TREMBL_DATA=/acrm/data/swissprot/full/uniprot_trembl.dat
