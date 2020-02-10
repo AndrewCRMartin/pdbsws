@@ -103,7 +103,7 @@ $::tmp2 = "/tmp/DA.$$._temp2.faa";
 $::tmp3 = "/tmp/DA.$$._temp3.faa";
 $::tmp4 = "/tmp/DA.$$._temp4.faa";
 
-DoProcessing();
+DoProcessing($::redo);
 #ProcessEntry("2if1", " ", "P41567", "14", "126",
 #             "MSAIQNLHSFDPFADASKGDDLLPAGTEDYIHIRIQQRNGRKTLTTVQGIADDYDKKKLVKAFKKKFACNGTVIEHPEYGEVIQLQGDQRKNICQFLVEIGLAKDDQLKVHGF",
 #             $::tmp1, $::tmp2, $::tmp3, $::tmp4);
@@ -125,13 +125,23 @@ unlink($::tmp4);
 #*************************************************************************
 sub DoProcessing
 {
+    my($redo) = @_;
     my($sql, $sth, $rv, @results, $seq);
 
-    $sql = "SELECT pdb, chain, ac, start, stop FROM pdbsws WHERE valid = 't' AND aligned = 'f'";
+    if($redo)
+    {
+        $sql = "SELECT pdb, chain, ac, start, stop FROM pdbsws WHERE valid = 't' AND aligned = 't'";
+    }
+    else
+    {
+        $sql = "SELECT pdb, chain, ac, start, stop FROM pdbsws WHERE valid = 't' AND aligned = 'f'";
+    }
     $sth = $::dbh2->prepare($sql);
     $rv = $sth->execute;
     while(@results = $sth->fetchrow_array)
     {
+        DeleteCurrentAlignment($results[0], $results[1], $results[2]) if($redo);
+
         $sql   = "SELECT sequence FROM sprot WHERE ac = '$results[2]'";
         ($seq) = $::dbh->selectrow_array($sql);
         ProcessEntry($results[0], $results[1], $results[2], $results[3], 
@@ -152,6 +162,7 @@ sub ProcessEntry
 
     WriteFASTA($swsseqfile, $ac, $sequence);
     $retval = WritePDBSequence($pdbseqfile, $idmap, $pdb, $chain, $start, $stop);
+
     if($retval == 0)
     {
         ($swsaln, $pdbaln) = DoAlign($swsseqfile, $pdbseqfile, $alignout);
