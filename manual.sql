@@ -1,0 +1,2 @@
+INSERT INTO idac VALUES ('LYC_CHICK', 'P00698');
+ 
