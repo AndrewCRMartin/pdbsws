@@ -82,7 +82,14 @@ die "Could not connect to database: $DNI::errstr" if(!$::dbh);
 
 if(defined($::h))
 {
-    print STDERR "\nUsage: ProcessPDBEntry [-dbname=dbname] [-dbhost=dbhost] [-file] pdb\n";
+    print STDERR <<__EOF;
+
+Usage: ProcessPDBEntry [-dbname=dbname] [-dbhost=dbhost] [-file] pdb
+
+If -file is specified then the parameter is a specific file name rather than the
+PDB directory
+
+__EOF
     exit 0;
 }
 
